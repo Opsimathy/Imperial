@@ -1,0 +1,52 @@
+--------------------------------------
+Scientific Computation -- Project 1
+el1222
+--------------------------------------
+Part 1
+
+1. 
+Good description of the methods. Analysis of cost is correct.
+() You are asked to provide the cost for solving the given problem, 
+so the dependence of the cost on m should be considered here, not later in the question.
+
+Score:  4/4
+-------------
+2.
+
+Good 
+(-0.5) Though you should be careful with your wording and description. Saying " and vice versa" with 2 dependents 
+n or m, small or large... its confusing. Also " et because log n is
+negligible as long as n is not too large" what do you mean by this? if n >> 1 then nlog(n) vs log n
+are distinct? Again you say vice verse but m and n fixed!?!
+
+(-1) How do we know from your graph 
+that they follow the correct relationships?  You should check if the dependence of cost on n is 
+consistent with your analysis from question 1 and carefully consider the influence of m
+You should use loglog plots and polyfit or something similar 
+to carefully investigate this.
+(-1.5) The comparison of the two methods could have gone into greater depth about
+how m and n simultaneously affect the relative performance drawing upon your cost 
+estimates For full marks you should consider non-trivial relationships, such as m and n changing together etc. 
+
+
+Score:  3/6
+-------------
+Part 2 
+(a)  
+ 
+  Code is correct, however naive pattern search is not an efficient 
+  approach for this problem (-3)
+
+Score:  3/6 
+-------------
+(b) 
+ 
+ Analysis of time complexity is not correct as the cost of direct string 
+ comparison is O(m). (-1) Additionally, no discussion of the efficiency has 
+ been given (-1)
+ 
+Score:  2/4 
+-------------
+--------------------------------------
+Total score:  12.0/20.0
+--------------------------------------

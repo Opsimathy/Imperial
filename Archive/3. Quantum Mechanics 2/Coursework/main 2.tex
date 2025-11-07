@@ -1,0 +1,178 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{braket}
+\usepackage{xcolor}
+\usepackage[a4paper, margin=1in]{geometry}
+\title{Quantum Mechanics II, Coursework 2}
+\author{Jiaru (Eric) Li (CID: 02216531)}
+\date{8 March 2025}
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Recall that the Pauli $Y$ operator corresponds to the Pauli matrix $\sigma_y=\begin{pmatrix}0&-i\\i&0\end{pmatrix}$.
+
+This matrix has eigenvalues $1, -1$ which respectively correspond to the (normalised) eigenvectors
+$$v_1=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\i\end{pmatrix},\quad v_2=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\-i\end{pmatrix}.$$
+
+The eigenstates of the Pauli $Y$ operator are therefore
+$$\ket{y_+}=\frac{\ket{0}+i\ket{1}}{\sqrt{2}},\quad\ket{y_-}=\frac{\ket{0}-i\ket{1}}{\sqrt{2}}.$$
+
+We can then express the state $\ket{\psi}=\ket{0}$ in terms of $\ket{y_+},\ket{y_-}$ as
+$$\ket{0}=\frac{1}{\sqrt{2}}\left(\ket{y_+}+\ket{y_-}\right),$$
+
+so the probability of measuring $+1$ is the square of the modulus of the coefficient of $\ket{y_+}$, i.e.,
+$$\mathrm{P}(+1)=\left(\frac{1}{\sqrt{2}}\right)^2=\boxed{\frac{1}{2}}.$$
+
+\item Recall again that the Pauli matrices for $X$ and $Z$ are $\sigma_x=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad\sigma_z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$.
+
+Their $+1$ and $-1$ eigenstates can be easily calculated respectively as
+$$\ket{x_+}=\frac{\ket{0}+\ket{1}}{\sqrt{2}},\quad\ket{z_+}=\ket{0},\quad\ket{x_-}=\frac{\ket{0}-\ket{1}}{\sqrt{2}},\quad\ket{z_-}=\ket{1}.$$
+
+We are given the operator $\hat{O}=\cos(\theta)\hat{Z}+\sin(\theta)\hat{X}$. By the properties of $\hat{Z}$ and $\hat{X}$, we have
+$$\hat{Z}\ket{x_+}=\ket{x_-}=\frac{\ket{0}-\ket{1}}{\sqrt{2}},\quad\hat{Z}\ket{z_+}=\ket{z_+}=\ket{0},\quad\hat{X}\ket{x_+}=\ket{x_+}=\frac{\ket{0}+\ket{1}}{\sqrt{2}},\quad\hat{X}\ket{z_+}=\ket{z_-}=\ket{1},$$
+
+so that the expectations are
+$$\bra{x_+}\hat{Z}\ket{x_+}=0,\quad\bra{z_+}\hat{Z}\ket{z_+}=1,\quad\bra{x_+}\hat{X}\ket{x_+}=1,\quad\bra{z_+}\hat{X}\ket{z_+}=0.$$
+
+Since $\hat{O}$ is a linear combination of $\hat{Z}$ and $\hat{X}$, we have
+$$\bra{x_+}\hat{O}\ket{x_+}=\sin\theta,\quad\bra{z_+}\hat{O}\ket{z_+}=\cos\theta.$$
+
+To compute the probability of measuring $+1$, recall that
+$$\braket{\hat{O}}=(+1)\mathrm{P}(+1)+(-1)\mathrm{P}(-1)=\mathrm{P}(+1)-\mathrm{P}(-1),\quad\mathrm{P}(+1)+\mathrm{P}(-1)=1$$
+
+from the definition of expectation and probability, so we have $\displaystyle\mathrm{P}(+1)=\frac{1+\braket{\hat{O}}}{2}$.
+
+In this case, we have
+$$\mathrm{P}_x(+1)=\frac{1+\bra{x_+}\hat{O}\ket{x_+}}{2}=\frac{1+\sin\theta}{2},\quad\mathrm{P}_z(+1)=\frac{1+\bra{z_+}\hat{O}\ket{z_+}}{2}=\frac{1+\cos\theta}{2}.$$
+
+Since we are given a bag of qubits with half in the $+1$ eigenstate of Pauli $X$ and half in the $+1$ eigenstate of Pauli $Y$, the total probability of measuring $+1$ is
+$$\mathrm{P}_{\mathrm{tot}}(+1)=\frac{1}{2}\mathrm{P}_x(+1)+\frac{1}{2}\mathrm{P}_z(+1)=\boxed{\frac{2+\sin\theta+\cos\theta}{4}}.$$
+
+\item To achieve maximum distinguishability between the two states of the qubit bag, we need to ensure that the probabilities $\mathrm{P}_x(+1)$ and $\mathrm{P}_z(+1)$ have the maximum difference, i.e., we maximise
+$$\Delta\mathrm{P}=\abs{\mathrm{P}_x(+1)-\mathrm{P}_z(+1)}=\abs{\frac{1+\sin\theta}{2}-\frac{1+\cos\theta}{2}}=\abs{\frac{\sin\theta-\cos\theta}{2}}.$$
+
+Note that $\sin\theta-\cos\theta=\sqrt{2}\sin(\theta-\pi/4)$, which achieves its maximum $\sqrt 2$ at $\theta=2n\pi-\pi/4$ and its minimum $-\sqrt 2$ at $\theta=2n\pi+3\pi/4$ for all $n\in\mathbb{Z}$.
+
+After taking the modulus, we can then see that $\Delta\mathrm{P}$ is maximised when
+$$\theta=n\pi-\frac{\pi}{4}=\boxed{\cdots,-\frac{5\pi}{4},-\frac{\pi}{4},\frac{3\pi}{4},\frac{7\pi}{4},\cdots}.$$
+
+Without loss of generality, we may take $\theta=-\pi/4$. Then we have $\sin\theta=-1/\sqrt{2}$ and $\cos\theta=1/\sqrt{2}$.
+
+We calculate
+$$\mathrm{P}_x(+1)=\frac{1+\sin\theta}{2}=\frac{1-1/\sqrt{2}}{2}=\frac{2-\sqrt{2}}{4},\quad\mathrm{P}_z(+1)=\frac{1+\cos\theta}{2}=\frac{1+1/\sqrt{2}}{2}=\frac{2+\sqrt{2}}{4}.$$
+
+Our strategy is to guess $\ket{z_+}$ when the outcome is $+1$ and to guess $\ket{x_+}$ when the outcome is $-1$, so the probability of success is
+$$\mathrm{P}_{\mathrm{success}}=\frac{1}{2}\left(\mathrm{P}_z(+1)+(1-\mathrm{P}_x(+1)\right)=\frac{1}{2}\left(\frac{2+\sqrt{2}}{4}+\left(1-\frac{2-\sqrt{2}}{4}\right)\right)=\frac{2+\sqrt{2}}{4}\approx85.4\%.$$
+
+\item We consider again the operator $\hat{O}=\cos(\theta)\hat{Z}+\sin(\theta)\hat{X}$, represented in matrix form as $$\sin\theta\begin{pmatrix}0&1\\1&0\end{pmatrix}+\cos\theta\begin{pmatrix}1&0\\0&-1\end{pmatrix}=\begin{pmatrix}\cos\theta&\sin\theta\\\sin\theta&-\cos\theta\end{pmatrix},$$
+
+which has eigenvalues $1,-1$. To find the corresponding eigenstates, we consider
+$$\begin{pmatrix}\cos\theta&\sin\theta\\\sin\theta&-\cos\theta\end{pmatrix}\begin{pmatrix}a\\b\end{pmatrix}=\begin{pmatrix}a\cos\theta+b\sin\theta\\a\sin\theta-b\cos\theta\end{pmatrix}=\pm\begin{pmatrix}a\\b\end{pmatrix},$$
+
+which has solutions as normalised eigenvectors $$\begin{pmatrix}a\\b\end{pmatrix}=\begin{pmatrix}\cos\dfrac{\theta}{2}\\\sin\dfrac{\theta}{2}\end{pmatrix}, \begin{pmatrix}\sin\dfrac{\theta}{2}\\-\cos\dfrac{\theta}{2}\end{pmatrix},$$
+
+so the eigenstates can be expressed as
+$$\ket{+}=\cos\dfrac{\theta}{2}\ket{0}+\sin\dfrac{\theta}{2}\ket{1},\quad\ket{-}=\sin\dfrac{\theta}{2}\ket{0}-\cos\dfrac{\theta}{2}\ket{1}.$$
+
+This can be rewritten as
+$$\ket{0}=\cos\dfrac{\theta}{2}\ket{+}+\sin\dfrac{\theta}{2}\ket{-},\quad\ket{1}=\sin\dfrac{\theta}{2}\ket{+}-\cos\dfrac{\theta}{2}\ket{-},$$
+
+since the inverse matrix of $\begin{pmatrix}\cos\theta&\sin\theta\\\sin\theta&-\cos\theta\end{pmatrix}$ is itself.
+
+We are given the two-qubit state $\ket{\psi}$ which can be rewritten as \begin{align*}
+\ket{\psi}&=\dfrac{1}{\sqrt2}\left(\ket{00}+\ket{11}\right)=\dfrac{1}{\sqrt2}\left(\left(\ket{0}\right)\ket{0}+\left(\ket{1}\right)\ket{1}\right)\\
+&=\dfrac{1}{\sqrt2}\left(\left(\cos\dfrac{\theta}{2}\ket{+}+\sin\dfrac{\theta}{2}\ket{-}\right)\ket{0}+\left(\sin\dfrac{\theta}{2}\ket{+}-\cos\dfrac{\theta}{2}\ket{-}\right)\ket{1}\right)\\
+&=\dfrac{1}{\sqrt2}\left(\left(\cos\dfrac{\theta}{2}\ket{0}+\sin\dfrac{\theta}{2}\ket{1}\right)\ket{+}+\left(\sin\dfrac{\theta}{2}\ket{0}-\cos\dfrac{\theta}{2}\ket{1}\right)\ket{-}\right),
+\end{align*}
+
+so if $\ket{+}$ is measured in the first qubit, the second qubit collapses to
+$\cos\dfrac{\theta}{2}\ket{0}+\sin\dfrac{\theta}{2}\ket{1}$, and the probability that the second qubit is measured to be in the $\ket{1}$ state is just $\boxed{\sin^2\dfrac{\theta}{2}}$.
+
+\item We are given the Hamiltonian $$\hat{\mathcal{H}}=\frac{1}{2m}\hat{p}^2+\frac{1}{2}m\omega^2\hat{x}^2+\lambda\gamma\cos\left(\Omega t\right)\hat{x}=\hat{\mathcal{H}}_0+\lambda\hat{V},$$
+
+where the unperturbed term $\hat{\mathcal{H}}_0$ and the perturbation term $\hat{V}$ are given by $$\hat{\mathcal{H}}_0:=\frac{1}{2m}\hat{p}^2+\frac{1}{2}m\omega^2\hat{x}^2+\lambda\gamma\cos\left(\Omega t\right)\hat{x},\quad\hat{V}=\gamma\cos\left(\Omega t\right)\hat{x}.$$
+
+We are given that at $t = 0$, the system is in the ground state, i.e., we start from $\ket{0}$.
+
+Recall that the position operator is given by $$\hat{x}=\sqrt{\frac{\hbar}{2m\omega}}\left(\hat{a}+\hat{a}^\dagger\right),$$
+
+where we have $\hat{a}\ket{0}=\ket{0},\hat{a}^\dagger\ket{0}=\ket{1}$, so that $$\braket{n|\hat{a}|0}=\braket{n|0}=0,\quad\braket{n|\hat{a}^\dagger|0}=\braket{n|1}=\delta_{n1},$$ where $\delta_{n1}$ is the Kronecker delta. Combining these, we have
+\begin{align*}
+\braket{n|\hat{x}|0}&=\sqrt{\frac{\hbar}{2m\omega}}\left(\braket{n|\hat{a}|0}+\braket{n|\hat{a}^\dagger|0}\right)=\sqrt{\frac{\hbar}{2m\omega}}\delta_{n1},\\
+\braket{n|\hat{V}|0}&=\gamma\cos\left(\Omega t\right)\braket{n|\hat{x}|0}=\gamma\cos\left(\Omega t\right)\sqrt{\frac{\hbar}{2m\omega}}\delta_{n1}.
+\end{align*}
+
+This expression is equivalent to saying that $\braket{n|\hat{V}|0}=0$ for all $n\neq 1$, so we can focus on the $n=1$ case and neglect any terms higher than first order.
+
+From expression (5.5) given in lecture notes, the probability of transitioning from $0$ to $1$ is given by $$\mathrm{P}_{0\to1}=\frac{\lambda^2}{\hbar^2}\abs{\int_0^tdt'\braket{1|\hat{V}|0}e^{-i\omega_{01}t'}}^2,$$
+
+where by definition $$\varepsilon_n=\hbar\omega\left(n+\dfrac{1}{2}\right),\quad\omega_{01}=\frac{\varepsilon_0-\varepsilon_1}{\hbar}=\frac{\hbar\omega\left(0+\dfrac{1}{2}\right)-\hbar\omega\left(1+\dfrac{1}{2}\right)}{\hbar}=-\omega.$$
+
+We can now compute the integral
+\begin{align*}
+\int_0^tdt'\braket{1|\hat{V}|0}e^{-i\omega_{01}t'}&=\int_0^t\gamma\cos\left(\Omega t'\right)\sqrt{\frac{\hbar}{2m\omega}}e^{i\omega t'}dt'\\
+&=\frac{\gamma}{2}\sqrt{\frac{\hbar}{2m\omega}}\int_0^t\left(e^{i\left(\omega+\Omega\right)t'}+e^{i\left(\omega-\Omega\right)t'}\right)dt'\quad\left(\text{by }\cos\left(\Omega t'\right)=\frac{1}{2}\left(e^{i\Omega t'}+e^{-i\Omega t'}\right)\right)\\
+&=\frac{\gamma}{2i}\sqrt{\frac{\hbar}{2m\omega}}\left(\frac{e^{i\left(\omega+\Omega\right)t}-1}{\omega+\Omega}+\frac{e^{i\left(\omega-\Omega\right)t}-1}{\omega-\Omega}\right),
+\end{align*}
+
+and so the probability
+\begin{align*}
+\mathrm{P}_{0\to1}&=\frac{\lambda^2}{\hbar^2}\abs{\frac{\gamma}{2i}\sqrt{\frac{\hbar}{2m\omega}}\left(\frac{e^{i\left(\omega+\Omega\right)t}-1}{\omega+\Omega}+\frac{e^{i\left(\omega-\Omega\right)t}-1}{\omega-\Omega}\right)}^2\\
+&=\boxed{\frac{\lambda^2\gamma^2}{8m\omega\hbar}\abs{\frac{e^{i\left(\omega+\Omega\right)t}-1}{\omega+\Omega}+\frac{e^{i\left(\omega-\Omega\right)t}-1}{\omega-\Omega}}^2},
+\end{align*}
+
+which is the exact expression. However, since the question asked for approximation, we can consider the case near resonance $(\omega\approx\Omega)$ and neglect the first term inside the modulus function, so that
+\begin{align*}
+\mathrm{P}_{0\to1}&\approx\frac{\lambda^2\gamma^2}{8m\omega\hbar}\abs{\frac{e^{i\left(\omega-\Omega\right)t}-1}{\omega-\Omega}}^2\\
+&=\frac{\lambda^2\gamma^2}{8m\omega\hbar}\abs{e^{i\left(\omega-\Omega\right)t/2}\frac{e^{i\left(\omega-\Omega\right)t/2}-e^{-i\left(\omega-\Omega\right)t/2}}{\omega-\Omega}}^2\\
+&=\frac{\lambda^2\gamma^2}{8m\omega\hbar(\omega-\Omega)^2}\abs{e^{i\left(\omega-\Omega\right)t/2}-e^{-i\left(\omega-\Omega\right)t/2}}^2\\
+&=\frac{\lambda^2\gamma^2}{8m\omega\hbar(\omega-\Omega)^2}\abs{2i\sin\frac{\left(\omega-\Omega\right)t}{2}}^2\\
+&=\frac{1}{2m\omega\hbar}\left(\frac{\lambda\gamma}{\omega-\Omega}\sin\frac{\left(\omega-\Omega\right)t}{2}\right)^2.
+\end{align*}
+
+As a sanity check, for the case when we are right at resonance, our formula tells us
+$$\mathrm{P}_{0\to1}=\frac{\lambda^2\gamma^2}{8m\omega\hbar}t^2$$
+
+which matches the usual form for the transition probability.
+
+In conclusion, the approximate probability that at later time $t$, the system is in the $n^\mathrm{th}$ excited state from the ground state is
+\begin{equation*}
+\boxed{\mathrm{P}_{0\to n}=
+\begin{cases}
+\displaystyle\frac{1}{2m\omega\hbar}\left(\frac{\lambda\gamma}{\omega-\Omega}\sin\frac{\left(\omega-\Omega\right)t}{2}\right)^2,\quad n=1,\\
+0,\quad n\neq 1.
+\end{cases}}
+\end{equation*}
+
+\item We are given the Hamiltonian $$\hat{\mathcal{H}}=\varepsilon\hat{S}_z+\lambda\gamma\hat{S}_x^2=\hat{\mathcal{H}}_0+\lambda\hat{V},$$
+
+where the unperturbed term $\hat{\mathcal{H}}_0:=\varepsilon\hat{S}_z$ has eigenenergies $$E_n^{(0)}=\bra{n}\varepsilon\hat{S}_z\ket{n}=\varepsilon\bra{n}\left(\hbar n\ket{n}\right)=\varepsilon\hbar n,$$
+and we consider the perturbation term $\hat{V}:=\lambda\gamma\hat{S}_x^2$.
+
+Recall that the spin operators $\hat{S}_\pm=\hat{S}_x\pm i\hat{S}_y$, so we have $$\hat{S}_x^2=\left(\frac{\hat{S}_++\hat{S}_-}{2}\right)^2=\frac{\hat{S}_+^2+\hat{S}_-^2+\hat{S}_+\hat{S}_-+\hat{S}_-\hat{S}_+}{4},$$
+
+and we have already known that
+$$\hat{S}_+\ket{s,m}=\hbar\sqrt{s(s+1)-m(m+1)}\ket{s,m+1},\quad\hat{S}_-\ket{s,m}=\hbar\sqrt{s(s+1)-m(m-1)}\ket{s,m-1},$$
+
+so we have
+\begin{align*}
+\hat{S}_+\hat{S}_-\ket{s,m}&=\hbar^2\left(s(s+1)-m(m-1)\right)\ket{s,m},\\
+\hat{S}_-\hat{S}_+\ket{s,m}&=\hbar^2\left(s(s+1)-m(m+1)\right)\ket{s,m},\\
+\left(\hat{S}_+\hat{S}_-+\hat{S}_-\hat{S}_+\right)\ket{s,m}&=\hbar^2\left(s(s+1)-m(m-1)+s(s+1)-m(m+1)\right)\ket{s,m}\\
+&=2\hbar^2\left(s(s+1)-m^2\right)\ket{s,m}.
+\end{align*}
+
+Since we are only considering first-order perturbation energy, we neglect the $\hat{S}_+^2$ and $\hat{S}_-^2$ terms, and
+$$\bra{s,m}\hat{V}\ket{s,m}=\lambda\gamma\bra{s,m}\hat{S}_x^2\ket{s,m}\approx\frac{\lambda\gamma}{4}\bra{s,m}\left(\hat{S}_+\hat{S}_-+\hat{S}_-\hat{S}_+\right)\ket{s,m},$$
+
+so the eigenenergies for the perturbation term takes the form
+$$E_n^{(1)}\approx\frac{\lambda\gamma\hbar^2}{2}\left(s(s+1)-n^2\right).$$
+
+Therefore, the total approximate eigenenergies of this Hamiltonian are
+$$E_n=E_n^{(0)}+E_n^{(1)}\approx\boxed{\varepsilon\hbar n+\frac{\lambda\gamma\hbar^2}{2}\left(s(s+1)-n^2\right)}.$$
+\end{enumerate}
+\end{document}

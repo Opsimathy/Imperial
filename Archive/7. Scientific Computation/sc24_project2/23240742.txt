@@ -1,0 +1,62 @@
+--------------------------------------
+Scientific Computation -- Project 2
+el1222
+--------------------------------------
+Part 1 
+ 
+1(a) 
+ 
+Code for xbar is incorrect
+Code for eratio is incorrect
+Code for x0 is incorrect
+
+General approach isn't correct. You should find the leading eigenvalue of exp(Jt)
+
+Score: 0.5/2 
+------------
+1(b) 
+ 
+ (-0.5) Correct idea and test, however you should also scale the perturbation to keep it small, 
+ and should test convergence in this scaling. 
+
+Score:  1.5/2 
+------------
+1(c) 
+ 
+ (-1) The plot is showing an exponential increase in eratio, and an explanation of why 
+the behaviour is exponential was needed. This should relate to mu=0 and the systems eigenvalues. 
+
+ 
+Score:  1/2 
+------------
+2 
+ 
+ (-7.5) Lack of understanding of tools and methods from the course shown or used.
+
+Score:  1/8 
+-------------
+Part 2 
+ 
+(a) 
+ 
+   Code is incorrect and inefficient. loops should be avoided 
+   and a single call to solve_banded should be used instead of spsolve.
+ 
+Score:  0.5/2 
+------------
+(b) 
+ 
+ It is the right idea to examine how the error and cost vary with the grid size, 
+ however log-log plots should have been used and the rates at which the error and cost change 
+ should have been estimated using the test results. The timing results should have been compared 
+ to the theoretical time complexity.
+
+Wavenumber analysis should have been used to assess the methods'
+suitability for multiscale methods.
+
+ 
+Score:  2.0/4 
+-------------
+--------------------------------------
+Total score:  6.5/20.0
+--------------------------------------

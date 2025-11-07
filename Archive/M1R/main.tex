@@ -1,0 +1,101 @@
+\documentclass[xcolor={table}]{beamer}
+\usepackage[size=a0,orientation=portrait,scale=1.39]{beamerposter}
+\usepackage{svg}
+\usetheme{ImperialPoster}
+\usecolortheme{ImperialWhite}
+\title{Diffie–Hellman Key Exchange: from 2 
+Parties to \texorpdfstring{$\textbf{\textit{n}}$}{n} Parties}
+\author{Jiaru (Eric) Li\Tsup{1}}
+\institute{\Tsup{1}Department of Mathematics, Imperial College London}
+\addbibresource{sample.bib}
+\begin{document}
+\begin{frame}[fragile=singleslide,t]\centering
+\maketitle
+\begin{columns}[onlytextwidth,T]
+\begin{column}{.47\textwidth}
+\begin{block}{BACKGROUND AND INTRODUCTION \citep{NK}}
+We begin by introducing some basic concepts.
+\begin{itemize}
+\item \textbf{Cryptography} is the art and science of secret communication. 
+\item \textbf{Cryptographic key}, or simply \textbf{key}, is a piece of information used to encode or decode the messages.
+\item \textbf{Key exchange} is a method where keys are exchanged between parties, so that further cryptographic algorithms could be used.
+\item \textbf{Diffie–Hellman key exchange} is a key exchange algorithm, named after Whitfield Diffie and Martin Hellman.
+\end{itemize}
+This poster outlines the principle and implementation of the original Diffie–Hellman key exchange for $2$ parties (hereinafter \textbf{2-DH}) and generalises the algorithm to $n$ parties (hereinafter \textbf{\textit{n}-DH}). Throughout this poster, $\mathbb{N}$ excludes 0. Here is a figure illustrating how 2-DH works.
+\end{block}
+\begin{sidefigure}{AN ILLUSTRATION OF 2-DH}
+\includesvg[width=\hsize]{DH.svg}
+\caption{Alice and Bob wish to create a common secret (key) $b$ from some information $a$ that they have publicly agreed on. To do this, Alice and Bob each uses their own encoding algorithms $f$ and $g$ to encrypt their own messages, creating $f(a)$ and $g(a)$, respectively. After that, they send them to each other and encode once again, getting $f(g(a))$ for Alice and $g(f(a))$ for Bob. As long as $f$ and $g$ commute, we have $b \coloneqq f(g(a)) = g(f(a))$. An eavesdropper could overhear the whole conversation, obtaining $a$, $f(a)$ and $g(a)$, yet they cannot find $b$ if it is hard to find $f^{-1}$ and $g^{-1}$.}
+\end{sidefigure}
+\begin{block}{ORIGINAL IMPLEMENTATION \citep{DH}}
+Recall that a number $g\in\mathbb{N}$ is called a \textbf{primitive root modulo \textit{n}}, if for every $a\in\mathbb{N}$ coprime to $n$, there exists some $k\in\mathbb{N}$ such that $g^k \equiv a \pmod n$. Given that, Alice and Bob perform the following:
+\begin{itemize}
+\item They agree on a pair of values $(p,g)$ where $p$ is a prime number and $g$ is a primitive root modulo $p$. (This is to ensure that the resulting common secret could take any value between 1 and $p-1$.)
+\item They each generate a secret natural number $a$ and $b$ and compute $A \coloneqq g^a \bmod p$ and $B \coloneqq g^b \bmod p$, respectively.
+\item Bob receives $A$ from Alice and vice versa.
+\item They compute once again, giving $B^a \bmod p$ and $A^b \bmod p$.
+\item As $(g^b\bmod p)^a \bmod p = g^{ab}\bmod p = (g^a \bmod p)^b \bmod p$, Alice and Bob now have a common value $c \coloneqq g^{ab}\bmod p$.
+\end{itemize}
+Even if someone intercepts the whole transmission, they still cannot find $c$ from $g$, $A$ and $B$. Here is an extension of this algorithm to any finite cyclic group $G$; taking $G = (\mathbb{Z}/p\mathbb{Z})^\times$ gives back the original version.
+\end{block}
+\begin{sidefigure}{AN EXTENSION OF 2-DH}
+\includegraphics[width=\hsize]{AB.png}
+\caption{Recall that a group $G$ is called \textbf{cyclic} if there exists an element $g\in G$, called its \textbf{generator}, such that $G = \{g^k\mid k\in\mathbb{Z}\}$. Alice and Bob need to find a pair of numbers $(n, g)$ where $n\in\mathbb{N}$ and $g$ is the generator of some finite cyclic group $G$ of order $n$. They subsequently pick some integers $a$ and $b$, compute $g^a$ and $g^b$, exchange the results, then raise the power once again, obtaining a common value $c$ given by $c\coloneqq (g^b)^a = (g^a)^b = g^{ab}$.}
+\end{sidefigure}
+\end{column}
+\begin{column}{.47\textwidth}
+\begin{block}{FROM 2-DH TO 3-DH}
+Now that we have considered 2 parties, let us try to generalise the algorithm to the case of 3 parties by adding another party, Carol.
+\begin{itemize}
+\item Alice, Bob and Carol agree on their $(n, g)$ as defined above and generate their private keys $a,b,c$.
+\item Alice computes $g^a$ and sends it to Bob.
+\item Bob computes $(g^a)^b=g^{ab}$ and sends it to Carol.
+\item Carol computes $(g^{ab})^c=g^{abc}$.
+\item Repeat the process, now from Bob to Carol to Alice and from Carol to Alice to Bob.
+\item They each have a common value $g^{abc}$ which cannot be calculated easily from any combination of $g, g^a, g^b, g^c, g^{ab}, g^{ac}, g^{bc}$.
+\end{itemize}
+\end{block}
+\begin{block}{FROM 3-DH TO $n$-DH}
+It is easy to generalise the algorithm above to any number of parties. Denote these parties as $A_1$ to $A_n$, each possessing their own private key $a_1$ to $a_n$. Then they transfer the information in the following directions: $A_1\rightarrow A_2\rightarrow\cdots\rightarrow A_n$, $A_2\rightarrow A_3\rightarrow\cdots\rightarrow A_1$, $\cdots$, $A_n\rightarrow A_1\rightarrow\cdots\rightarrow A_{n-1}$, and they get a common value $g^{\prod_{i=1}^{n} a_i}$.
+
+However, this is not efficient when $n$ gets large. Notice that each party needs to perform $n$ times of exponentiation, giving a time complexity of $O(n^2)$. By using a \textbf{divide-and-conquer} algorithm, one might reduce it to $O(n\log n)$.
+We first consider a simpler case where $n$ is a power of 2. Perform the following process recursively for some $N\in\mathbb{N}$:
+\begin{itemize}
+\item (1) Divide the parties into two groups with an equal number of parties. Denote one group from $A_1$ to $A_N$ and another from $A_{N+1}$ to $A_{2N}$.
+\item (2) The first group, having their keys as $a_1$ to $a_N$, compute $g^{\prod_{i=1}^{N} a_i}$ and send it to the other group. The other group does the same thing.
+\item (3) Each group replaces their original $g$ with the new $g$ received.
+\item (4) Each group returns to (1) unless there is only one party left in that group. In this case, they perform a final exponentiation on their value of $g$ with their private key.
+\end{itemize}
+After that, each party should get a common key $g^{\prod_{i=1}^{n} a_i}$. Notice that each party only performs $\log_2 n + 1 = m + 1$ rounds of exponentiation. Indeed, if the number of parties, $n$, is not a power of 2, we can still do the same thing by rounding $n$ up to $2^{\left\lceil{\log_2 n}\right\rceil}$. As $\left\lceil{\log_2 n}\right\rceil+1\approx\log_2 n$ when $n$ is large, the revised algorithm is $O(n\log n)$ as desired.
+\end{block}
+\begin{block}{TABLE 1\quad THE IMPROVED 4-DH}
+To make it clearer, consider the following table illustrating the 4-DH case. Each cell represents the current value of $g$ a party possesses.
+\begin{table}
+\begin{tabularx}{\linewidth}{  X  X  X  X  X  }
+\rowcolor{ICLightBlue}\toprule
+Party (Key) & $A_1\ (a_1)$ & $A_2\ (a_2)$ & $A_3\ (a_3)$ & $A_4\ (a_4)$ \\
+\rowcolor{ICLightBlue}\midrule
+Before & $g$ & $g$ & $g$ & $g$ \\
+\rowcolor{ICLightBlue}\midrule
+1st Round & $g^{a_3 a_4}$ & $g^{a_3 a_4}$ & $g^{a_1 a_2}$ & $g^{a_1 a_2}$ \\
+\rowcolor{ICLightBlue}\midrule
+2nd Round & $g^{a_2 a_3 a_4}$ & $g^{a_1 a_3 a_4}$ & $g^{a_1 a_2 a_4}$ & $g^{a_1 a_2 a_3}$ \\
+\rowcolor{ICLightBlue}\midrule
+3nd Round & $g^{\prod_{i=1}^{4} a_i}$ & $g^{\prod_{i=1}^{4} a_i}$ & $g^{\prod_{i=1}^{4} a_i}$ & $g^{\prod_{i=1}^{4} a_i}$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+One can see that, while the usual algorithm requires 4 rounds, the improved algorithm requires only $\log_2 4 + 1 = 3$ rounds. As $n$ gets larger, $n\log n \ll n^2$, so this is a huge improvement.
+\end{block}
+\printbibliography
+\setlength{\baselineskip}{33.33pt}{\small Some of the ideas are taken from the introduction lecture by Paolo Cascini.
+
+The two figures used, which are both in public domain, were taken from https://commons.wikimedia.org/wiki/File:Diffie-Hellman\_Key\_Exchange.svg and https://commons.wikimedia.org/wiki/File:Public\_key\_shared\_secret.svg, respectively.
+
+The ideas behind the cases with more than two parties were taken from https://en.wikipedia.org/wiki/Diffie\%E2\%80\%93Hellman\_key\_exchange, but the general procedure for the divide-and-conquer algorithm was the author's original work.
+
+The poster template used was taken from https://github.com/mrc-ide/mrc-imperial-poster-template, and the author did some minor modifications for aesthetic purposes.}
+\end{column}
+\end{columns}
+\end{frame}
+\end{document}

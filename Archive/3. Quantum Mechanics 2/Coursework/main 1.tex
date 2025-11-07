@@ -1,0 +1,349 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{braket}
+\usepackage{xcolor}
+\usepackage[a4paper, margin=1in]{geometry}
+\title{Quantum Mechanics II, Coursework 1}
+\author{Jiaru (Eric) Li (CID: 02216531)}
+\date{12 February 2025}
+\begin{document}
+\maketitle
+\section*{Question 1}
+\begin{enumerate}[label=(\alph*)]
+\item We are given that $\phi(x)=Ax\mathrm{e}^{-x^2/a^2}$, which must satisfy the normalisation condition $$\int^\infty_{-\infty}\abs{\phi(x)}^2\mathrm{d}x=1.$$
+
+We have $\abs{\phi(x)}^2=A^2x^2\mathrm{e}^{-2x^2/a^2}$, and by setting $\alpha=2/a^2$, we get
+\begin{align*}
+\int^\infty_{-\infty}A^2x^2\mathrm{e}^{-2x^2/a^2}\mathrm{d}x&=A^2\int^\infty_{-\infty}x^2\mathrm{e}^{-\alpha x^2}\mathrm{d}x\\
+&=-A^2\int^\infty_{-\infty}\frac{\mathrm{d}}{\mathrm{d}\alpha}\left(\mathrm{e}^{-\alpha x^2}\right)\mathrm{d}x\\
+&=-A^2\frac{\mathrm{d}}{\mathrm{d}\alpha}\int^\infty_{-\infty}\mathrm{e}^{-\alpha x^2}\mathrm{d}x,
+\end{align*}
+where we recall the Gaussian integral $$\int^\infty_{-\infty}\mathrm{e}^{-\alpha x^2}\mathrm{d}x = \sqrt{\frac{\pi}{\alpha}}.$$
+
+This gives $$\frac{\mathrm{d}}{\mathrm{d}\alpha}\int^\infty_{-\infty}\mathrm{e}^{-\alpha x^2}\mathrm{d}x=-\frac{\sqrt{\pi}}{2}\alpha^{-3/2}=-\frac{a^3\sqrt{\pi}}{2^{5/2}}.$$
+
+Substituting into the normalisation condition gives
+\begin{align*}
+\left(-A^2\right)\left(-\frac{a^3\sqrt{\pi}}{2^{5/2}}\right)&=1\\
+A^2&=\frac{2^{5/2}}{a^3\sqrt{\pi}},
+\end{align*}
+
+so we take $A$ to be $$\boxed{A=\frac{2^{5/4}}{a^{3/2}\pi^{1/4}}}.$$
+
+\item To compute $\tilde{\phi}(p)$ in the momentum basis, we use the Fourier transform relation, namely
+$$\tilde{\phi}(p)=\frac{1}{\sqrt{2\pi\hbar}}\int^\infty_{-\infty}\phi(x)\mathrm{e}^{-\mathrm{i}xp/\hbar}\mathrm{d}x.$$
+
+Recall the standard definition of Fourier transform in the form of
+$$\mathcal{F}\{f(x)\}(k)=\frac{1}{\sqrt{2\pi}}\int^\infty_{-\infty}f(x)\mathrm{e}^{-\mathrm{i}kx}\mathrm{d}x.$$
+
+Therefore, by setting $k=p/\hbar$, we get
+$$\tilde{\phi}(p)=\frac{1}{\sqrt{\hbar}}\mathcal{F}\{\phi(x)\}(k).$$
+
+To compute the Fourier transform of $\phi(x)=Ax\mathrm{e}^{-x^2/a^2}$, we recall a property of Fourier transform
+$$\mathcal{F}\{xf(x)\}(k)=\mathrm{i}\frac{\mathrm{d}}{\mathrm{d}k}\left(\mathcal{F}\{f(x)\}(k)\right),$$
+
+and we already know the Fourier transform of a Gaussian function $f(x)=\mathrm{e}^{-\alpha x^2}$ as
+$$\mathcal{F}\{f(x)\}(k)=\sqrt{\frac{1}{2\alpha}}\mathrm{e}^{-k^2/4\alpha}.$$
+
+We then have
+\begin{align*}
+\mathcal{F}\{\phi(x)\}(k)&=\mathrm{i}A\frac{\mathrm{d}}{\mathrm{d}k}\left(\mathcal{F}\left\{\mathrm{e}^{-x^2/a^2}\right\}(k)\right)\\
+&=\mathrm{i}A\frac{\mathrm{d}}{\mathrm{d}k}\left(\frac{a}{\sqrt{2}}\mathrm{e}^{-a^2k^2/4}\right)\\
+&=\mathrm{i}A\frac{a}{\sqrt{2}}\mathrm{e}^{-a^2k^2/4}\left(-\frac{a^2k}{2}\right),
+\end{align*}
+
+so by plugging $A$ from part (a) in, we get
+\begin{align*}
+\mathcal{F}\{\phi(x)\}(k)&=-\mathrm{i}\frac{2^{5/4}}{a^{3/2}\pi^{1/4}}\frac{a}{\sqrt{2}}\frac{a^2}{2}\cdot k\mathrm{e}^{-a^2k^2/4}\\
+&=-\mathrm{i}\frac{a^{3/2}}{\left(2\pi\right)^{1/4}}k\mathrm{e}^{-a^2k^2/4}\\
+&=-\mathrm{i}\frac{a^{3/2}}{\hbar\left(2\pi\right)^{1/4}}p\mathrm{e}^{-a^2p^2/4\hbar^2},
+\end{align*}
+
+which gives the final answer
+$$\boxed{\tilde{\phi}(p)=-\mathrm{i}\frac{\left(a/\hbar\right)^{3/2}}{\left(2\pi\right)^{1/4}}p\mathrm{e}^{-a^2p^2/4\hbar^2}}.$$
+
+\item Again recall the Fourier transform relation between $\phi(x)$ and $\tilde{\phi}(p)$ given as
+$$\tilde{\phi}(p)=\frac{1}{\sqrt{2\pi\hbar}}\int^\infty_{-\infty}\phi(x)\mathrm{e}^{-\mathrm{i}xp/\hbar}\mathrm{d}x.$$
+
+Therefore, we have
+$$\tilde{\phi}(-p)=\frac{1}{\sqrt{2\pi\hbar}}\int^\infty_{-\infty}\phi(x)\mathrm{e}^{\mathrm{i}xp/\hbar}\mathrm{d}x,$$
+
+so if we substitute $x=-u$ into the integral and use the identity $\phi(x)=\phi(-x)$ given, we get
+\begin{align*}
+\tilde{\phi}(-p)&=\frac{1}{\sqrt{2\pi\hbar}}\int^{-\infty}_\infty\phi(-u)\mathrm{e}^{-\mathrm{i}up/\hbar}(-\mathrm{d}u)\\
+&=\frac{1}{\sqrt{2\pi\hbar}}\int^\infty_{-\infty}\phi(u)\mathrm{e}^{-\mathrm{i}up/\hbar}\mathrm{d}u\\
+&=\tilde{\phi}(p),
+\end{align*}
+
+which implies that $\boxed{\tilde{\phi}(p)\text{ is also even}}$.
+
+\item We are now given the condition $\phi(x)=\left[\phi(-x)\right]^*$ where $a^*$ denotes the complex conjugate of $a$.
+
+Recall again that
+$$\tilde{\phi}(p)=\frac{1}{\sqrt{2\pi\hbar}}\int^\infty_{-\infty}\phi(x)\mathrm{e}^{-\mathrm{i}xp/\hbar}\mathrm{d}x.$$
+
+The complex conjugate of $\tilde{\phi}(p)$ is given by
+\begin{align*}
+\left[\tilde{\phi}(p)\right]^*&=\left[\frac{1}{\sqrt{2\pi\hbar}}\int^\infty_{-\infty}\phi(x)\mathrm{e}^{-\mathrm{i}xp/\hbar}\mathrm{d}x\right]^*\\
+&=\frac{1}{\sqrt{2\pi\hbar}}\int^\infty_{-\infty}\left[\phi(x)\mathrm{e}^{-\mathrm{i}xp/\hbar}\right]^*\mathrm{d}x\\
+&=\frac{1}{\sqrt{2\pi\hbar}}\int^\infty_{-\infty}\left[\phi(x)\right]^*\mathrm{e}^{\mathrm{i}xp/\hbar}\mathrm{d}x,
+\end{align*}
+
+where we have used the identity $\left(e^z\right)^*=e^{z^*}$.
+
+We can then substitute $x=-u$ into the integral, giving
+\begin{align*}
+\left[\tilde{\phi}(p)\right]^*&=\frac{1}{\sqrt{2\pi\hbar}}\int^{-\infty}_\infty\left[\phi(-u)\right]^*\mathrm{e}^{-\mathrm{i}up/\hbar}(-\mathrm{d}u)\\
+&=\frac{1}{\sqrt{2\pi\hbar}}\int^\infty_{-\infty}\phi(u)\mathrm{e}^{-\mathrm{i}up/\hbar}\mathrm{d}u,
+\end{align*}
+
+which is precisely the definition of $\tilde{\phi}(p)$.
+
+This implies that the complex conjugate of $\tilde{\phi}(p)$ equals to itself, i.e., $\boxed{\tilde{\phi}(p)\text{ is real}}$.
+\end{enumerate}
+\section*{Question 2}
+\begin{enumerate}[label=(\alph*)]
+\item The rotation operator $\hat{R}$ is given by $\hat{R}=\ket{3}\bra{1}+\ket{1}\bra{2}+\ket{2}\bra{3}$, so its Hermitian conjugate $\hat{R}^\dagger$ is $\hat{R}^\dagger=\ket{1}\bra{3}+\ket{2}\bra{1}+\ket{3}\bra{2}$.
+
+By using the basic fact that $\braket{a|b}=1$ when $a=b$ and $0$ otherwise, we can then verify that
+\begin{align*}
+\hat{R}^\dagger\hat{R}&=(\ket{3}\bra{1}+\ket{1}\bra{2}+\ket{2}\bra{3})\cdot(\ket{1}\bra{3}+\ket{2}\bra{1}+\ket{3}\bra{2})\\
+&=\ket{3}\braket{1|1}\bra{3}+\ket{3}\braket{1|2}\bra{1}+\ket{3}\braket{1|3}\bra{2}+\\
+&\hspace{1.17em}\ket{1}\braket{2|1}\bra{3}+\ket{1}\braket{2|2}\bra{1}+\ket{1}\braket{2|3}\bra{2}+\\
+&\hspace{1.17em}\ket{2}\braket{3|1}\bra{3}+\ket{2}\braket{3|2}\bra{1}+\ket{2}\braket{3|3}\bra{2}\\
+&=\ket{3}\bra{3}+\ket{1}\bra{1}+\ket{2}\bra{2}=I.
+\end{align*}
+Similarly, the reflection operator $\hat{\sigma}=\ket{1}\bra{2}+\ket{2}\bra{1}+\ket{3}\bra{3}$ has Hermitian conjugate $\hat{\sigma}^\dagger=\ket{2}\bra{1}+\ket{1}\bra{2}+\ket{3}\bra{3}$ and satisfies
+\begin{align*}
+\hat{\sigma}^\dagger\hat{\sigma}&=(\ket{1}\bra{2}+\ket{2}\bra{1}+\ket{3}\bra{3})(\ket{2}\bra{1}+\ket{1}\bra{2}+\ket{3}\bra{3})\\
+&=\ket{1}\braket{2|2}\bra{1}+\ket{1}\braket{2|1}\bra{2}+\ket{1}\braket{2|3}\bra{3}+\\
+&\hspace{1.17em}\ket{2}\braket{1|2}\bra{1}+\ket{2}\braket{1|1}\bra{2}+\ket{2}\braket{1|3}\bra{3}+\\
+&\hspace{1.17em}\ket{3}\braket{3|2}\bra{1}+\ket{3}\braket{3|1}\bra{2}+\ket{3}\braket{3|3}\bra{3}\\
+&=\ket{1}\bra{1}+\ket{2}\bra{2}+\ket{3}\bra{3}=I.
+\end{align*}
+We have therefore shown that $\boxed{\hat{R}, \hat{\sigma}\text{ are unitary}}$.
+
+To prove commutativity with the Hamiltonian $\hat{\mathcal{H}}$ given, recall that
+$$\hat{\mathcal{H}}=-w[\ket{1}\bra{2}+\ket{2}\bra{3}+\ket{3}\bra{1}+\text{h.c.}].$$
+
+Note that we have
+\begin{align*}
+\hat{R}\ket{1}&=(\ket{3}\bra{1}+\ket{1}\bra{2}+\ket{2}\bra{3})\ket{1}=\ket{3},\\
+\hat{R}\ket{2}&=(\ket{3}\bra{1}+\ket{1}\bra{2}+\ket{2}\bra{3})\ket{2}=\ket{1},\\
+\hat{R}\ket{3}&=(\ket{3}\bra{1}+\ket{1}\bra{2}+\ket{2}\bra{3})\ket{3}=\ket{2},
+\end{align*}
+so $\hat{R}$ is essentially a cyclic permutation that maps $\{1,2,3\}$ to $\{3,1,2\}$, leaving $\hat{\mathcal{H}}$ unchanged.
+
+Intuitively, if we think of $\hat{\mathcal{H}}$ as describing a particle that can jump between vertices of an equilateral triangle, as given in the problem, then $\hat{R}$ is a $120^\circ$ rotation.
+
+Similarly, we can also write
+\begin{align*}
+\hat{\sigma}\ket{1}&=(\ket{1}\bra{2}+\ket{2}\bra{1}+\ket{3}\bra{3})\ket{1}=\ket{2},\\
+\hat{\sigma}\ket{2}&=(\ket{1}\bra{2}+\ket{2}\bra{1}+\ket{3}\bra{3})\ket{2}=\ket{1},\\
+\hat{\sigma}\ket{3}&=(\ket{1}\bra{2}+\ket{2}\bra{1}+\ket{3}\bra{3})\ket{3}=\ket{3},
+\end{align*}
+so $\hat{\sigma}$ only swaps $1$ and $2$, which again preserves the symmetry of $\hat{\mathcal{H}}$.
+
+Intuitively, $\hat{\sigma}$ is a reflection with the axis being the median from the vertex with label 3.
+
+We have now proven that $\boxed{\hat{R}, \hat{\sigma}\text{ commutes with } \hat{\mathcal{H}}}$.
+
+From the geometric picture given, and by looking at the structure of the Hamiltonian, we could find another two distinct unitary
+symmetry operators, which are basically the other two reflections,
+\begin{align*}
+\hat{\sigma}_1&=\ket{2}\bra{3}+\ket{3}\bra{2}+\ket{1}\bra{1},\\
+\hat{\sigma}_2&=\ket{1}\bra{3}+\ket{3}\bra{1}+\ket{2}\bra{2},
+\end{align*}
+in addition to the (trivial) identity operator.
+
+\textit{(In fact, in the language of group theory, these symmetries form a dihedral group of order $6$, $D_6$. This group has $6$ elements: one identity; two $120^\circ$ rotations, clockwise and anticlockwise (corresponding to $\hat{R}$ and $\hat{R}^\dagger$); and three reflections. The fact that $D_6$ is isomorphic to the symmetric group of order 3, $S_3$, tells us about the symmetry of the Hamiltonian in an elegant way.)}
+
+\item From part (a), we can write $\hat{R}$ and $\hat{\sigma}$ in matrix form with respect to the given basis $\{\ket{1},\ket{2},\ket{3}\}$ as permutation matrices,
+$$\hat{R}=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix},\quad\hat{\sigma}=\begin{pmatrix}0&1&0\\1&0&0\\0&0&1\end{pmatrix}.$$
+
+To find the eigenvalues of $\hat{R}$, we compute
+\begin{align*}
+\det\left(\hat{R}-\lambda I\right)&=\begin{vmatrix}-\lambda&1&0\\0&-\lambda&1\\1&0&-\lambda\end{vmatrix}\\
+&=-\lambda\begin{vmatrix}-\lambda&1\\0&-\lambda\end{vmatrix}-\begin{vmatrix}0&1\\1&-\lambda\end{vmatrix}\\
+&=-\lambda^3+1,
+\end{align*}
+whose roots are the third roots of unity $\boxed{1,\omega,\omega^2}$ where $\omega=\mathrm{e}^{2\pi\mathrm{i}/3}$. These are the eigenvalues required.
+
+The corresponding eigenvectors $v_i$ for $i=1,2,3$ must satisfy $\hat{R}v_i=\lambda v_i$, and so by letting $v_i=\begin{pmatrix}a\\b\\c\end{pmatrix}$, we get $\hat{R}v_i=\begin{pmatrix}c\\a\\b\end{pmatrix}$ and $\lambda v_i=\begin{pmatrix}\lambda a\\\lambda b\\\lambda c\end{pmatrix}$, and we have \begin{equation*}\left\{\begin{aligned}&c=\lambda a,\\&a=\lambda b,\\&b=\lambda c.\end{aligned}\right.\end{equation*}
+
+For $\lambda=1$, one possible solution is $(a,b,c)=(1,1,1)$. For $\lambda=\omega$, one possible solution is $(a,b,c)=\left(1,\omega,\omega^2\right)$. For $\lambda=\omega^2$, one possible solution is $(a,b,c)=\left(1,\omega^2,\omega\right)$.
+
+The eigenstates of $\hat{R}$ can therefore be expressed as
+\begin{align*}
+\ket{\phi_1}&=\ket{1}+\ket{2}+\ket{3},\\
+\ket{\phi_2}&=\ket{1}+\omega\ket{2}+\omega^2\ket{3},\\
+\ket{\phi_3}&=\ket{1}+\omega^2\ket{2}+\omega\ket{3},
+\end{align*}
+
+so an eigenbasis is given by $\boxed{\left\{\ket{\phi_1},\ket{\phi_2},\ket{\phi_3}\right\}}$.
+
+Now we return to the Hamiltonian given,
+$$\hat{\mathcal{H}}=-w[\ket{1}\bra{2}+\ket{2}\bra{3}+\ket{3}\bra{1}+\text{h.c.}].$$
+
+We observe that this can alternatively be written as $\hat{\mathcal{H}}=-w\left(\hat{R}+\hat{R}^\dagger\right)=-w\left(\hat{R}+\hat{R}^2\right).$
+
+Therefore, we have
+\begin{align*}
+\hat{\mathcal{H}}\ket{\phi_i}&=-w\left(\hat{R}+\hat{R}^2\right)\ket{\phi_i}\\
+&=-w\left(\lambda+\lambda^2\right)\ket{\phi_i}.
+\end{align*}
+
+Since $\lambda+\lambda^2$ can take values of $1+1^2=2, \omega+\omega^2=-1$ and $\omega^2+\left(\omega^2\right)^2=-1$, the three eigenvalues of $\hat{\mathcal{H}}$ are given by $\boxed{-2w, w, w}$ under the same eigenbasis.
+
+We then return our attention to $\hat{\sigma}=\begin{pmatrix}0&1&0\\1&0&0\\0&0&1\end{pmatrix}$. This matrix has eigenvalues $\mu$ such that
+\begin{align*}
+\det\left(\hat{\sigma}-\mu I\right)&=\begin{vmatrix}-\mu&1&0\\1&-\mu&0\\0&0&1-\mu\end{vmatrix}\\
+&=-\mu\begin{vmatrix}-\mu&0\\0&1-\mu\end{vmatrix}-\begin{vmatrix}1&0\\0&1-\mu\end{vmatrix}\\
+&=\mu^2(1-\mu)-(1-\mu)\\
+&=-(1-\mu)^2(1+\mu),
+\end{align*}
+which has roots $\mu=1,1,-1$. These correspond to eigenvectors $u_i=\begin{pmatrix}a\\b\\c\end{pmatrix}$, so $\hat{\sigma}u_i=\begin{pmatrix}b\\a\\c\end{pmatrix}$ and $\mu u_i=\begin{pmatrix}\mu a\\\mu b\\\mu c\end{pmatrix}$, and we have \begin{equation*}\left\{\begin{aligned}&b=\mu a,\\&a=\mu b,\\&c=\mu c.\end{aligned}\right.\end{equation*}
+
+For $\mu=1$, we have $a=b$ and $c$ is arbitrary. For $\mu=-1$, we need $a=-b$ and $c=0$. Therefore, the eigenstates of $\hat{\sigma}$ takes the form of $\ket{\psi_1}=\ket{1}-\ket{2}$ and $\ket{\psi_{2,3}}=a(\ket{1}+\ket{2})+b\ket{3}$, where $a$ and $b$ are constants.
+
+We now compute
+\begin{align*}
+\hat{\mathcal{H}}\ket{\psi_{2,3}}&=-w[\ket{1}\bra{2}+\ket{2}\bra{3}+\ket{3}\bra{1}+\text{h.c.}][a(\ket{1}+\ket{2})+b\ket{3}]\\
+&=-w(a\ket{1}\braket{2|1}+a\ket{1}\braket{2|2}+b\ket{1}\braket{2|3}+a\ket{2}\braket{3|1}+a\ket{2}\braket{3|2}+b\ket{2}\braket{3|3}+\\
+&\hspace{2.48em}a\ket{3}\braket{1|1}+a\ket{3}\braket{1|2}+b\ket{3}\braket{1|3}+a\ket{2}\braket{1|1}+a\ket{2}\braket{1|2}+b\ket{2}\braket{1|3}+\\
+&\hspace{2.48em}a\ket{3}\braket{2|1}+a\ket{3}\braket{2|2}+b\ket{3}\braket{2|3}+a\ket{1}\braket{3|1}+a\ket{1}\braket{3|2}+b\ket{1}\braket{3|3}\\
+&=-w((a+b)\ket{1}+(a+b)\ket{2}+2a\ket{3}).
+\end{align*}
+
+Within the same eigenbasis, we have $\hat{\mathcal{H}}\ket{\psi_{2,3}}=\lambda\ket{\psi_{2,3}}$. By comparison, we get $\lambda a=-w(a+b)$ and $\lambda b=-2aw$. Recall that the three eigenvalues of $\hat{\mathcal{H}}$ are given by $-2w, w, w$. For $\lambda =-2w$, the solutions are $b=a$; for $\lambda=w$, the solutions are $b=-2a$.
+
+The eigenstates of $\hat{\sigma}$ can therefore be expressed as
+\begin{align*}
+\ket{\psi_1}&=\ket{1}-\ket{2},\\
+\ket{\psi_2}&=\ket{1}+\ket{2}+\ket{3},\\
+\ket{\psi_2}&=\ket{1}+\ket{2}-2\ket{3},
+\end{align*}
+
+so an eigenbasis is given by $\boxed{\left\{\ket{\psi_1},\ket{\psi_2},\ket{\psi_3}\right\}}$.
+
+\item We have already calculated that $$\hat{R}=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix},\quad\hat{\sigma}=\begin{pmatrix}0&1&0\\1&0&0\\0&0&1\end{pmatrix},$$
+
+so we could compute
+$$\hat{R}\hat{\sigma}=\begin{pmatrix}1&0&0\\0&0&1\\0&1&0\end{pmatrix},\quad\hat{\sigma}\hat{R}=\begin{pmatrix}0&0&1\\0&1&0\\1&0&0\end{pmatrix},$$
+
+and therefore
+$$\left[\hat{R},\hat{\sigma}\right]=\hat{R}\hat{\sigma}-\hat{\sigma}\hat{R}=\begin{pmatrix}1&0&0\\0&0&1\\0&1&0\end{pmatrix}-\begin{pmatrix}0&0&1\\0&1&0\\1&0&0\end{pmatrix}=\boxed{\begin{pmatrix}1&0&-1\\0&-1&1\\-1&1&0\end{pmatrix}}.$$
+
+Note that $\ket{\phi}=\ket{1}+\ket{2}+\ket{3}$ is a common eigenstate for both $\hat{R}$,$\hat{\mathcal{H}}$ and $\hat{\sigma}$,$\hat{\mathcal{H}}$. We have
+
+$$\begin{pmatrix}1&0&-1\\0&-1&1\\-1&1&0\end{pmatrix}\begin{pmatrix}1\\1\\1\end{pmatrix}=\begin{pmatrix}0\\0\\0\end{pmatrix},$$
+
+So we have $\boxed{\left[\hat{R},\hat{\sigma}\right]\ket{\phi}=0}$. This is consistent with Section 3.2 of the notes: while $\left[\hat{R},\hat{\sigma}\right]\neq0$, we do have $\left[\hat{R},\hat{\sigma}\right]\ket{\phi}=0$ for the non-degenerate eigenstate $\ket{\phi}$, verifying the relation between symmetry and degeneracy.
+\end{enumerate}
+
+\section*{Question 3}
+\begin{enumerate}[label=(\alph*)]
+\item We start with the 1d harmonic oscillator Hamiltonian $$\hat{\mathcal{H}}=\hbar\omega\left(\hat{a}^\dagger\hat{a}+\frac{1}{2}\right),$$
+
+where the ladder operators $\hat{a}^\dagger$ and $\hat{a}$ satisfy $\left[\hat{a},\hat{a}^\dagger\right]=1$.
+
+Therefore, we have $$\left[\hat{a},\hat{\mathcal{H}}\right]=\hbar\omega\left[\hat{a},\hat{a}^\dagger\hat{a}\right]=\hbar\omega\left(\left[\hat{a},\hat{a}^\dagger\right]\hat{a}+\hat{a}^\dagger\left[\hat{a},\hat{a}\right]\right)=\hbar\omega\hat{a}.$$
+
+In the Heisenburg picture, the equation of motion for the ladder operator $\hat{a}_\mathrm{H}$ is given by
+$$\mathrm{i}\hbar\frac{\mathrm{d}}{\mathrm{d}t}\hat{a}_\mathrm{H}(t)=\hat{\mathcal{U}}^\dagger\left[\hat{a},\hat{\mathcal{H}}\right]\hat{\mathcal{U}}=\hbar\omega\hat{\mathcal{U}}^\dagger\hat{a}\hat{\mathcal{U}}=\hbar\omega\hat{a}_\mathrm{H}(t),\quad\hat{a}_\mathrm{H}(0)=\hat{a},$$
+
+which can be solved to give $\hat{a}_\mathrm{H}(t)=\mathrm{e}^{-\mathrm{i}\omega t}\hat{a}$. Thus, we also have $\hat{a}^\dagger_\mathrm{H}(t)=\mathrm{e}^{\mathrm{i}\omega t}\hat{a}^\dagger$.
+
+Recall that we have $$\hat{a}\ket{\phi_0}=0,\quad\hat{a}\ket{\phi_1}=\ket{\phi_0},\quad\hat{a}^\dagger\ket{\phi_0}=\ket{\phi_1},\quad\hat{a}^\dagger\ket{\phi_1}=\sqrt{2}\ket{\phi_2},$$
+
+where $\ket{\phi_0}$ and $\ket{\phi_1}$ are the ground and first excited states of the Hamiltonian.
+
+Therefore, we have
+$$\bra{\phi_0}\hat{a}\ket{\phi_0}=\bra{\phi_1}\hat{a}\ket{\phi_1}=\bra{\phi_1}\hat{a}\ket{\phi_0}=0,\quad\bra{\phi_0}\hat{a}\ket{\phi_1}=\braket{\phi_0|\phi_0}=1,$$
+$$\bra{\phi_0}\hat{a}^\dagger\ket{\phi_0}=\bra{\phi_1}\hat{a}^\dagger\ket{\phi_1}=\bra{\phi_0}\hat{a}^\dagger\ket{\phi_1}=0,\quad\bra{\phi_1}\hat{a}^\dagger\ket{\phi_0}=\braket{\phi_1|\phi_1}=1.$$
+
+Since the initial state is given as $\ket{\psi(0)}=\left(\ket{\phi_0}+\ket{\phi_1}\right)/\sqrt{2}$, the expectation value of $\hat{a}$ and $\hat{a}^\dagger$ at time $t$ can be found as
+\begin{align*}
+\braket{\hat{a}}(t)&=\bra{\psi(0)}\hat{a}_\mathrm{H}(t)\ket{\psi(0)}=\mathrm{e}^{-\mathrm{i}\omega t}\bra{\psi(0)}\hat{a}\ket{\psi(0)}=\frac{\mathrm{e}^{-\mathrm{i}\omega t}}{2}\bra{\left(\ket{\phi_0}+\ket{\phi_1}\right)}\hat{a}\ket{\left(\ket{\phi_0}+\ket{\phi_1}\right)}\\
+&=\frac{\mathrm{e}^{-\mathrm{i}\omega t}}{2}\left(\bra{\phi_0}\hat{a}\ket{\phi_0}+\bra{\phi_1}\hat{a}\ket{\phi_1}+\bra{\phi_0}\hat{a}\ket{\phi_1}+\bra{\phi_1}\hat{a}\ket{\phi_0}\right)\\&=\frac{\mathrm{e}^{-\mathrm{i}\omega t}}{2}\left(0+0+1+0\right)=\frac{\mathrm{e}^{-\mathrm{i}\omega t}}{2},\\
+\braket{\hat{a}^\dagger}(t)&=\bra{\psi(0)}\hat{a}^\dagger_\mathrm{H}(t)\ket{\psi(0)}=\mathrm{e}^{\mathrm{i}\omega t}\bra{\psi(0)}\hat{a}^\dagger\ket{\psi(0)}=\frac{\mathrm{e}^{\mathrm{i}\omega t}}{2}\bra{\left(\ket{\phi_0}+\ket{\phi_1}\right)}\hat{a}^\dagger\ket{\left(\ket{\phi_0}+\ket{\phi_1}\right)}\\
+&=\frac{\mathrm{e}^{\mathrm{i}\omega t}}{2}\left(\bra{\phi_0}\hat{a}^\dagger\ket{\phi_0}+\bra{\phi_1}\hat{a}^\dagger\ket{\phi_1}+\bra{\phi_0}\hat{a}^\dagger\ket{\phi_1}+\bra{\phi_1}\hat{a}^\dagger\ket{\phi_0}\right)\\&=\frac{\mathrm{e}^{\mathrm{i}\omega t}}{2}\left(0+0+0+1\right)=\frac{\mathrm{e}^{\mathrm{i}\omega t}}{2}.
+\end{align*}
+
+Recall that the position operator $\hat{x}$ and the momentum operator $\hat{p}$ can be represented as
+$$\hat{x}=\sqrt{\frac{\hbar}{2m\omega}}(\hat{a}+\hat{a}^\dagger),\quad\hat{p}=-\mathrm{i}\sqrt{\frac{m\hbar\omega}{2}}(\hat{a}-\hat{a}^\dagger).$$
+
+By linearity of expectation, we could therefore determine the expectation of $\hat{x}$ as
+$$\braket{\hat{x}}(t)=\sqrt{\frac{\hbar}{2m\omega}}\left(\braket{\hat{a}}(t)+\braket{\hat{a}^\dagger}(t)\right)=\sqrt{\frac{\hbar}{2m\omega}}\left(\frac{\mathrm{e}^{-\mathrm{i}\omega t}}{2}+\frac{\mathrm{e}^{\mathrm{i}\omega t}}{2}\right)=\boxed{\sqrt{\frac{\hbar}{2m\omega}}\cos{\omega t}},$$
+
+where we have used the identities $\mathrm{e}^{\mathrm{i}\omega t}=\cos\omega t+\mathrm{i}\sin\omega t$ and $\mathrm{e}^{-\mathrm{i}\omega t}=\cos\omega t-\mathrm{i}\sin\omega t$.
+
+\item Similarly, we have $$\braket{\hat{p}}(t)=-\mathrm{i}\sqrt{\frac{m\hbar\omega}{2}}\left(\braket{\hat{a}}(t)-\braket{\hat{a}^\dagger}(t)\right)=-\mathrm{i}\sqrt{\frac{m\hbar\omega}{2}}\left(\frac{\mathrm{e}^{-\mathrm{i}\omega t}}{2}-\frac{\mathrm{e}^{\mathrm{i}\omega t}}{2}\right)=-\sqrt{\frac{m\hbar\omega}{2}}\sin{\omega t}.$$
+
+To determine the variance, we also need to calculate the expectation of $\hat{x}^2$ and $\hat{p}^2$.
+
+We have
+\begin{align*}
+\hat{x}^2&=\frac{\hbar}{2m\omega}\left(\hat{a}+\hat{a}^\dagger\right)^2=\frac{\hbar}{2m\omega}\left(\hat{a}^2+\hat{a}\hat{a}^\dagger+\hat{a}^\dagger\hat{a}+\hat{a}^{\dagger 2}\right),\\
+\hat{p}^2&=-\frac{m\hbar\omega}{2}\left(\hat{a}-\hat{a}^\dagger
+\right)^2=-\frac{m\hbar\omega}{2}\left(\hat{a}^2-\hat{a}\hat{a}^\dagger-\hat{a}^\dagger\hat{a}+\hat{a}^{\dagger 2}\right).
+\end{align*}
+
+Note that, by definition, we have
+$$\hat{a}^2\ket{\phi_0}=0,\quad\hat{a}^2\ket{\phi_1}=\hat{a}\ket{\phi_0}=0,\quad\hat{a}^{\dagger 2}\ket{\phi_0}=\hat{a}^\dagger\ket{\phi_1}=\ket{\phi_2},\quad\hat{a}^{\dagger 2}\ket{\phi_1}=\sqrt{2}\hat{a}^\dagger\ket{\phi_2}=\sqrt{6}\ket{\phi_3},$$
+
+so we must have $\braket{\hat{a}^2}(t)=0$ since both states result in $0$ and $\braket{\hat{a}^{\dagger 2}}(t)=0$ for any time $t$ since both states are outside of (orthogonal to) the original states.
+
+For the number operator $\hat{a}^\dagger\hat{a}$, we have
+$$\hat{a}^\dagger\hat{a}\ket{\phi_0}=0,\quad\hat{a}^\dagger\hat{a}\ket{\phi_1}=\ket{\phi_1},\quad\left(\hat{a}^\dagger\hat{a}\right)_\mathrm{H}=\hat{a}^\dagger_\mathrm{H}\hat{a}_\mathrm{H}(t)=\mathrm{e}^{\mathrm{i}\omega t}\hat{a}^\dagger\mathrm{e}^{-\mathrm{i}\omega t}\hat{a}=\hat{a}^\dagger\hat{a},$$
+
+so its expectation is
+\begin{align*}
+\braket{\hat{a}^\dagger\hat{a}}(t)&=\bra{\psi(0)}\left(\hat{a}^\dagger\hat{a}\right)_\mathrm{H}\ket{\psi(0)}=\bra{\psi(0)}\hat{a}^\dagger\hat{a}\ket{\psi(0)}=\frac{1}{2}\bra{\left(\ket{\phi_0}+\ket{\phi_1}\right)}\hat{a}^\dagger\hat{a}\ket{\left(\ket{\phi_0}+\ket{\phi_1}\right)}\\
+&=\frac{1}{2}\left(\bra{\phi_0}\hat{a}^\dagger\hat{a}\ket{\phi_0}+\bra{\phi_1}\hat{a}^\dagger\hat{a}\ket{\phi_1}+\bra{\phi_0}\hat{a}^\dagger\hat{a}\ket{\phi_1}+\bra{\phi_1}\hat{a}^\dagger\hat{a}\ket{\phi_0}\right)\\&=\frac{1}{2}\left(0+1+0+0\right)=\frac{1}{2}.
+\end{align*}
+
+By the identity $\left[\hat{a},\hat{a}^\dagger\right]=\hat{a}\hat{a}^\dagger-\hat{a}^\dagger\hat{a}=1$, we have
+$$\braket{\hat{a}\hat{a}^\dagger}(t)=1+\braket{\hat{a}^\dagger\hat{a}}(t)=1+\frac{1}{2}=\frac{3}{2}.$$
+
+Finally, we are able to compute 
+\begin{align*}
+\braket{\hat{x}^2}(t)&=\frac{\hbar}{2m\omega}\left(\braket{\hat{a}^2}(t)+\braket{\hat{a}\hat{a}^\dagger}(t)+\braket{\hat{a}^\dagger\hat{a}}(t)+\braket{\hat{a}^{\dagger 2}}(t)\right)=\frac{\hbar}{2m\omega}\left(0+\frac{3}{2}+\frac{1}{2}+0\right)=\frac{\hbar}{m\omega},\\
+\braket{\hat{p}^2}(t)&=-\frac{m\hbar\omega}{2}\left(\braket{\hat{a}^2}(t)-\braket{\hat{a}\hat{a}^\dagger}(t)-\braket{\hat{a}^\dagger\hat{a}}(t)+\braket{\hat{a}^{\dagger 2}}(t)\right)=-\frac{m\hbar\omega}{2}\left(0-\frac{3}{2}-\frac{1}{2}+0\right)=m\hbar\omega.
+\end{align*}
+
+The variance the position and momentum at time $t$ are, respectively,
+\begin{align*}
+\sigma_x^2(t)&=\braket{\hat{x}^2}(t)-\left(\braket{\hat{x}}(t)\right)^2=\frac{\hbar}{m\omega}-\left(\sqrt{\frac{\hbar}{2m\omega}}\cos{\omega t}\right)^2=\boxed{\frac{\hbar}{m\omega}\left(1-\frac{1}{2}\cos^2{\omega t}\right)},\\
+\sigma_p^2(t)&=\braket{\hat{p}^2}(t)-\left(\braket{\hat{p}}(t)\right)^2=m\hbar\omega-\left(-\sqrt{\frac{m\hbar\omega}{2}}\sin{\omega t}\right)^2=\boxed{m\hbar\omega\left(1-\frac{1}{2}\sin^2{\omega t}\right)}.
+\end{align*}
+
+The product between these variances is
+\begin{align*}
+\sigma_x^2(t)\sigma_p^2(t)&=\frac{\hbar}{m\omega}\left(1-\frac{1}{2}\cos^2{\omega t}\right)\cdot m\hbar\omega\left(1-\frac{1}{2}\sin^2{\omega t}\right)\\&=\frac{\hbar^2}{4}\left(2-\cos^2{\omega t}\right)\left(2-\sin^2{\omega t}\right),
+\end{align*}
+
+and because $\cos^2{\omega t},\sin^2{\omega t}\leq1$ for $t\in\mathbb{R}$, we have
+\begin{align*}
+\sigma_x^2(t)\sigma_p^2(t)&\geq\frac{\hbar^2}{4}\left(2-1\right)\left(2-1\right)=\frac{\hbar^2}{4},
+\end{align*}
+
+which is indeed $\boxed{\text{consistent with the Heisenberg uncertainty principle}}$.
+
+In fact, for this case, we can calculate the lower bound of the variance product $\sigma_x^2(t)\sigma_p^2(t)$ by using $\cos^2 x+\sin^2 x=1$ where $x=\omega t$, so that
+\begin{align*}
+\left(2-\cos^2x\right)\left(2-\sin^2x\right)&=(2-\cos^2x)(1+\cos^2x)\\
+&=2+\cos^2x-\cos^4x=\frac{9}{4}-\left(\cos^2x-\frac{1}{2}\right)^2,
+\end{align*}
+
+which is minimised when $\cos^2x=0$ or $\cos^2x=1$ since $0\leq\cos^2x\leq1$, with minimum $9/4-1/4=2$.
+
+This corresponds to the cases where $x=k\pi$ or $x=k\pi+\pi/2$ where $k\in\mathbb{Z}$, i.e., $$t=\frac{k\pi}{\omega}\text{ or }\frac{k\pi+\pi/2}{\omega}.$$
+
+At these times, the variance product is minimised at $\boxed{\left(\sigma_x^2(t)\sigma_p^2(t)\right)_{\min}=\hbar^2/2}$.
+\end{enumerate}
+\end{document}

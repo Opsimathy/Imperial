@@ -1,3 +1,3 @@
-# Imperial Mathematics
+# Imperial
 
-Some notes and stuff during my undergraduate studies in BSc Mathematics at Imperial College London.
+Everything during my undergraduate studies in BSc Mathematics at Imperial College London.

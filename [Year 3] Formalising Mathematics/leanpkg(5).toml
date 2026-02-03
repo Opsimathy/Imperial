@@ -1,8 +1,0 @@
-[package]
-name = "coursework2"
-version = "0.1"
-lean_version = "leanprover-community/lean:3.40.0"
-path = "src"
-
-[dependencies]
-mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "5371338f4af6b3f7362e8c8ffbcab8d1e928ab91"}

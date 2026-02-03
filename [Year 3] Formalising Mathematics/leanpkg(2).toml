@@ -1,8 +1,0 @@
-[package]
-name = "formalising-math-3"
-version = "0.1"
-lean_version = "leanprover-community/lean:3.41.0"
-path = "src"
-
-[dependencies]
-mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "a50de33ff91efe519a77d658f52603da9a426c93"}

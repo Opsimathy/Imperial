@@ -1,0 +1,123 @@
+---
+title: "Applications of the probability integral transform"
+author: " "
+date: " "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This tutorial is designed for independent study, to illustrate practical aspects of our work. You will find accompanying data files on Blackboard.
+
+# Hypothesis testing
+
+The aim of hypothesis testing is to determine the strength of the evidence in a dataset against a *null hypothesis*. Let's look at an example of how these ideas are used in practice. The paper below studies a new experimental technique for delivering anti-cancer drugs by embedding them in nanoparticles. (You may need to log in via Shibboleth.) You don't need to read the paper - we're just going to use data from one figure.
+
+https://stm.sciencemag.org/content/12/530/eaax0876
+
+The details of the experiment are involved, as you would expect, but any work of this kind involves careful statistical work. Often, sample sizes are small, so we worry about whether observed differences might be artefacts of chance, rather than the effects of the treatment.
+
+Let's look at an example, from Fig 4C of the paper. We see a comparison of three different experimental conditions. The y-axis is the change in body weight of mice assigned to the different groups. The height of the solid bar represents the mean value for each group. (Is this the best way of representing the information? What might you do instead?) The figure text tells us that the error bar shows the **standard error of the mean**.
+
+*Side remark:* recall that if $X_1,X_2,\ldots X_n$ are independent and identically distributed with standard deviation $\sigma$, the standard error of the mean, i.e. the standard deviation of the random variable $\bar{X} = \frac{1}{n}\sum_{i=1}^n$, is $\frac{\sigma}{\sqrt{n}}.$ 
+ 
+The right-most group is very clearly different from the other two. Let's instead look at the other two groups. The data is available in the supplementary material for the paper, and it has been extracted into the file quorum.xlsx. Let's load it in.
+
+```{r}
+library(readxl)
+quorum <- read_excel("quorum.xlsx")
+```
+
+First, we display the data in a boxplot
+
+```{r}
+boxplot(quorum)
+```
+
+We can see that the distributions of the two groups overlap substantially, so it is not surprising that a formal test shows no evidence for a difference between the two groups.
+
+We'll do a two-sample t-test to verify this 
+
+```{r}
+t.test(quorum[,1],quorum[,2],var.equal = TRUE)
+```
+
+As we expected, the comparison is not significant. Noting the p-value is around $0.4$, one might ask whether this means, in some senes, that the difference is *very insignificant*. To see what's wrong with this, let's think about what we would expect to see if we carry out a t-test when the null hypothesis is in fact true.
+
+**Exercise** What is the distribution of the p-value of the t-test under the null hypothesis? To answer this, simulate a large number of pairs of datasets, each with $n=5$ as in the example above, and apply the t-test as we did above. Use normally distributed random variables, with the same mean for each group so that the null hypothesis is true. Extract the p-value for each test, and make a histogram. Can you explain the result? You might like to look over the discussion of the probability integral transform.
+
+```{r}
+n_sim<-100000 # number of simulations
+n_samp<-5 # sample size
+pval<-vector()
+for(i in 1:n_sim){
+  t_fake<-t.test(rnorm(n_samp),rnorm(n_samp),var.equal=TRUE)
+  pval[i]<-t_fake$p.value
+  }
+```
+
+Note that a p-value is a measure of the *strength of the evidence*  against the null hypothesis. It is not, directly, a measure of the *extent* of the difference between the two groups. Given enough data, we should be able to detect even tiny differences between two groups. Of course, for groups that are very different, smaller samples are enough.
+
+**Exercise** Verify by simulation that, with large enough samples, the two-sample t-test reliably rejects the null hypothesis of equal means even when the difference in means is 1/1000. Suggested steps are given below
+
+1. simulate many normally distributed data sets: one group of size $n$ with mean $0$ and the other group of size $n$ with mean $\delta \in \{ 1,0.1, 0.01,0.001 \}.
+2. Estimate the power of the test at $5\%$ significance, i.e find the proportion of the simulations with p-value smaller than $5\%$.
+3. Make a plot to show how the power of the test varies with $n$.
+4. Can you calculate the power of the test exactly?
+
+```
+n_sim<-100000
+pval<-vector()
+for(i in 1:n_sim){
+  t_fake<-t.test(rnorm(5),rnorm(5),var.equal=TRUE)
+  pval[i]<-t_fake$p.value
+  }
+```
+
+## Extreme value theory with weather data.
+
+
+In this example, we'll look at the maximum wind speed recorded in Dayton, Ohio on each day between 1965 and 1981.
+
+First, we'll read in the data.
+
+```{r}
+library(readr)
+ohio <- read_table2("DaytonOH_maxWindSpeed.txt", 
+    col_names = FALSE)
+```
+
+**Extreme value theory** can be used to describe the distribution of the maximum or minimum of a collection of random variables, and for a large random sample, this distribution is asymptotically independent of the underlying distribution. (This isn't quite true - there is a family of extreme value distributions, but we'll just stick with one member of the family.) For the data given here, the **Gumbel distribution** gives the appropriate extreme value distribution. Its cumulative distribution function is
+
+\[  F(x) = \exp(-\exp(-x)) \qquad x\in \mathbf{R}. \]
+
+
+1. Inspect the data to understand any quirks of the format. The first two columns contain the year and month of observation. Try plotting the monthly mean - does anything need fixing?
+2. Look at a histogram of the entire data. Vary the number of breaks in the histogram to get a better picture of the data.
+3. Use the Probability Inverse Transform to draw samples from the Gumbel distribution.
+4. Compare the data with samples from a Gumbel distribution using a Q-Q plot. (See the QQ plot tutorial on Blackboard.)
+5. What distribution would you suggest as an approximation to the distribution of the  **monthly mean** maximum windspeed? Check this using a QQ plot. (You may wish to look at the first page of Chapter 5 of the notes).
+6. What distribution would you suggest for the monthly **maximum** wind speed. Again, check this with a QQ plot.
+
+```{r}
+wind<-read.table("DaytonOH_maxWindSpeed.txt", as.is=T, fill=T)
+obs<-wind[,3:33]
+all.obs<-unlist(wind[,3:33])
+n.obs<-length(all.obs)
+x <- -log(-log(runif(n.obs))) # inverse transform sample
+qqplot(scale(x), scale(all.obs))
+abline(0,1,col=2)
+
+monthly.max<-apply(obs, 1, max, na.rm=T)
+monthly.mean<-apply(obs, 1, mean, na.rm=T)
+qqnorm(scale(monthly.mean)) # approx normal by CLT
+
+qqplot(scale(x),scale(monthly.max)) # approx gumbel by EVT
+abline(0,1,col=2)
+```
+
+			
+			
+

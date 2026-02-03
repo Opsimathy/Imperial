@@ -1,0 +1,156 @@
+---
+title: "Properties of Markov Chains"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library("markovchain")
+library("diagram") #to plot the transition matrix
+library("expm") #to compute powers of matrices
+```
+
+In this tutorial, we will consider properties of markov chains such as first passage times, mean recurrent times and stationary distributions. 
+
+We begin by defining a markov chain in the usual way. The chain consists of 6 states.
+
+```{r}
+mcTest1 <- new("markovchain", states = c("1", "2", "3", "4","5","6"),
+                 transitionMatrix = matrix(data = c(0.2, 0.8, 0,0,0,0,
+                                                    0.9, 0.1, 0,0,0,0,
+                                                    0,0,0.5,0.5,0,0,
+                                                    0,0,0.5,0,0.5,0,
+                                                    0,0,0,0,0,1,
+                                                    0,0,0,0,0,1), byrow = TRUE, nrow = 6), name = "Test 1")
+```
+
+Can you draw the transition diagram?
+
+Check your answers using the *plotmat* function. Notice that the transition matrix must be transposed in this function.
+
+```{r}
+#obtain transition matrix of Markov Chain
+P <- as(mcTest1, "matrix")
+
+#plot the transition diagram
+plotmat(t(P), box.col = "lightgray",relsize=0.6,dtext = -0.8,curve=0.3,arr.pos=0.5,arr.col = "lightgray", self.cex=1,arr.type="simple", arr.length = 0.3,self.shifty=c(0.12,-0.12,0.12,0,0,0.12))
+
+```
+
+Can you identify the communicating classes? Which ones are closed? Identify the states that are transient, positive recurrent and null recurrent. 
+
+Remember that for finite states spaces, at least one state must be recurrent and all recurrent states are positive recurrent. Does your answer to the previous question agree with this? Check your solution using the *summary* function.
+
+Recall that we define the first passage time of a state $j$ as the first time the chain visits state $j$
+\[T_j=\inf\{n\geq 1: X_n=j\}.\]
+The function *firstPassage* computes
+\[f_{ij}(n) = \mathbb{P}(T_j=n \mid X_0=i)=\mathbb{P}(X_n=j, X_{n-1} \neq j, \dots, X_1 \neq j \mid X_0=i).\]
+For example, the following command returns $f_{1j}(n)$ where the columns represent different states $j$ and the rows represent different values of $n$. In other words, the entry in the second row and third column if $f_{13}(2)$, the probability of hitting state 3 for the first time in step 2 given that the chain starts in state 1.
+```{r}
+firstPassage(object = mcTest1, state = "1", n = 10)#Computing f_1i(n) for n=10 and i\in\{1, \dots, 6\}
+```
+
+Why does the chain never seem to pass through states 3-6? What will $f_{6j}(n)$ look like? Check your answer.
+
+The mean recurrence time was defined as the expected amount of time it takes to return to a state $i$
+\[\mu_i=\mathbb{E}(T_i \mid X_0=i).\]
+The following function returns the mean recurrence times
+
+```{r}
+meanRecurrenceTime(mcTest1) 
+```
+
+
+Why are only three mean recurrence times returned? Can you write down the mean recurrence times for states 3,4 and 5. Is it possible for a recurrent state to have an infinite mean recurrent time? 
+
+Consider the mean recurrence time for state 1. We can test these values by simulating various Markov chains that begin in state 1. For each chain, we count the number of steps it takes to return to step 1 using the variable returnTime. Let's do this for one chain first.
+
+```{r}
+set.seed(2020)
+x0=1 # initial starting point
+returnTime=1 #counts the number of steps before we return to state x0
+xVec=c(x0) #records states of chain
+
+#Simulate the chain
+x=sample(1:6,size=1,prob=P[x0,]) #first sample from the chain
+xVec=c(xVec, x)
+while(x!=x0){
+  x<-sample(1:6,size=1,prob=P[x,]) #new sample from the chain
+  xVec=c(xVec, x)
+  returnTime=returnTime+1 #update the counter
+}
+xVec
+returnTime
+```
+
+In this chain, we started in state 1, went to state 2, and then returned to state 1. So, the return time was 2 steps. Let's iterate this for lots of random chains. The vector returnTimeVec will store the returnTime for each chain.  The average of these values over all iterations, given by meanReturnTime, should be close to the exact mean recurrence time given by R. Check this is true.
+
+```{r}
+set.seed(2020)
+x0=1 # initial starting point
+iterations=10000 #number of simulated markov chains
+returnTimeVec=1:iterations #computes mean recurrence time
+
+
+#Simulate Markov Chains until they return to state x0
+for (j in 1:iterations){
+  returnTime=1 #counts the number of steps before we return to state x0
+  x=sample(1:6,size=1,prob=P[x0,]) #first sample from the chain
+  while(x!=x0){
+    x<-sample(1:6,size=1,prob=P[x,]) #new sample from the chain
+    returnTime=returnTime+1 #update the counter
+  }
+  returnTimeVec[j]=returnTime
+}
+
+meanReturnTime=mean(returnTimeVec) #estimate of mean recurrence time
+
+meanReturnTime
+```
+
+We could also look at an estimate of the distribution of the return times by plotting a histogram. 
+
+```{r}
+hist(returnTimeVec)
+```
+
+It is very common for the markov chain to return to state 1 after two steps. Other statistical properties of this sample can be found using *summary*. For example, the largest number of steps needed to return to state 1 in this sample was 7. 
+
+```{r}
+summary(returnTimeVec)
+```
+
+Now let's consider the probability of being in each state after n steps of the markov chain, given that we start in state 1. What would the initial distribution be? How would you compute the probabilities of being in each state after the second step? Recall that we defined $P$ to be our transition matrix.
+
+```{r}
+pi<-c(1,0,0,0,0,0) #assign an initial distribution
+pi%*%P # proabilities of being in each state after the second step
+```
+There is a probability of 0.8 of leaving state 1 in the first step, this explains why the Markov chain took usually more than one step to return to state 1. What is the distribution like after 100 steps?
+
+```{r}
+pi%*%(P%^%100)
+```
+
+Now there are relatively equal chances of being in state 1 and in state 2. Why is there never any chance we enter states 3-6?
+
+What happens after 10000 steps? 
+
+```{r}
+pi%*%(P%^%10000)
+```
+
+The probabilities seem relatively constant! Does this also happen if we start in state 2?  
+
+Compare this to the stationary distributions. You can obtain the stationary distributions of a chain as follows.
+
+```{r}
+steadyStates(mcTest1)
+```
+
+Make sure you understand the output of this function. How many stationary distributions are there? What are they?  Can you check that these distributions satisfy the defining properties of stationary distributions?
+
+Compare the stationary distributions to the probabilities obtained just before. Are they similar?  

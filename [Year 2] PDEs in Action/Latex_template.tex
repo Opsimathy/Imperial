@@ -1,0 +1,167 @@
+% --------------------------------------------------
+% --- Preamble for the reference PDF ---
+% --------------------------------------------------
+\documentclass[11pt]{article}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} 
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{ifthen}
+\usepackage{helvet}
+
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand\thesubsection{\Roman{subsection} --}
+\renewcommand\labelitemi{$\square$}
+\parindent 0pt
+
+%----------------------------------------------------------------------------------------
+%	DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TO BE CHANGED FOR EACH STUDENT
+\newcommand{\ModuleTitle}{Partial Differential Equations in Action}
+\newcommand{\ModuleCode}{MATH50008}
+\newcommand{\AuthorCID}{11111100110} 
+\newcommand{\Date}{\today}
+\newcommand{\Assignment}{Coursework 1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% headerline definition
+\newcommand{\headerline}[6]{%
+\par\medskip\noindent
+\makebox[\textwidth][s]{\rlap{\large{{\bf #1}}}\hfill\llap{\large{{\bf #2}}}} \par
+\vspace{0.5cm}
+\makebox[\textwidth][s]{\rlap{\large{{\bf CID:} #3}}\hfill} \par
+\makebox[\textwidth][s]{\rlap{\large{{\bf Date:} #4}}\hfill} \par
+\vspace{0.5cm}
+\makebox[\textwidth][c]{\large{{\bf #5}}}
+\par\medskip}
+
+% Useful mathematical notation definitions
+\def\R{\mathbb{R}}
+\def\0v{\mathbf{0}}
+\def\uv{\mathbf{u}}
+\def\vv{\mathbf{v}}
+\def\wv{\mathbf{w}}
+\def\rv{\mathbf{r}}
+\def\pv{\mathbf{p}}
+\def\av{\mathbf{a}}
+\def\bv{\mathbf{b}}
+\def\cv{\mathbf{c}}
+\def\xv{\mathbf{x}}
+
+\def\uvx{\hat{\bm{x}}}
+\def\uvy{\hat{\bm{y}}}
+\def\uvz{\hat{\bm{z}}}
+\def\uvr{\hat{\bm{r}}}
+\def\uvt{\hat{\bm{\theta}}}
+\def\uvp{\hat{\bm{\phi}}}
+\def\uvi{\hat{\mathbf{i}}}
+\def\uvj{\hat{\mathbf{j}}}
+\def\uvk{\hat{\mathbf{k}}}
+\def\uvu{\hat{\mathbf{u}}}
+\def\uvv{\hat{\mathbf{v}}}
+\newcommand{\suv}[1]{\hat{\mathbf{e}}_{#1}}
+\newcommand{\uuv}[1]{\mathbf{u}_{#1}}
+\DeclareMathOperator{\sech}{sech}
+
+\def\p{\partial}
+\def\ux{\frac{\partial u}{\partial x}}
+\def\uy{\frac{\partial u}{\partial y}}
+\def\ut{\frac{\partial u}{\partial t}}
+\def\uxx{\frac{\partial^2 u}{\partial x^2}}
+\def\uyy{\frac{\partial^2 u}{\partial x^2}}
+\def\uxy{\frac{\partial^2 u}{\partial x \partial y}}
+
+\newcommand\underrel[3][]{\mathrel{\mathop{#3}\limits_{%
+      \ifx c#1\relax\mathclap{#2}\else#2\fi}}}
+
+%----------------------------------------------------------------------------------------
+%	HYPERREFERENCES
+%----------------------------------------------------------------------------------------
+\PassOptionsToPackage{pdftex,hyperfootnotes=false,pdfpagelabels}{hyperref}
+\usepackage{hyperref}
+\pdfcompresslevel=9
+\pdfadjustspacing=1
+
+\hypersetup{
+% Uncomment the line below to remove all links (to references, figures, tables, etc)
+colorlinks=true, linktocpage=true, pdfstartpage=3, pdfstartview=FitV,
+% Uncomment the line below if you want to have black links (e.g. for printing black and white)
+%colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=3, pdfstartview=FitV, 
+breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,
+plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,
+hypertexnames=true, pdfhighlight=/O, urlcolor=MidnightBlue, linkcolor=NavyBlue, citecolor=MidnightBlue,
+}   
+%----------------------------------------------------------------------------------------
+
+% -----------------------------------
+% --- Start of the main text ---
+% -----------------------------------
+\begin{document}
+
+% -----------------
+% --- Header ---
+% -----------------
+\begin{minipage}{0.3\textwidth}
+\includegraphics[width=0.85\textwidth]{Imperial_logo.pdf}
+\end{minipage}
+\begin{minipage}{0.7\textwidth}
+\centering
+{\sc Department of Mathematics} \\
+{\sc Imperial College London} \\
+Academic Year 2023-2024
+\end{minipage}
+\vspace{1em}
+
+% --------------------------------------------
+% --- Change the header line here!
+\headerline{\ModuleTitle}{\ModuleCode}{\AuthorCID}{\Date}{Student Answers to \Assignment}
+% ---------------------------------------------
+
+% --------------------------------------------
+% Start of questions
+% --------------------------------------------
+\begin{enumerate}
+
+% -----------------------------
+\item If you want your equation to be numbered you can use the following environment 
+\begin{equation}
+u(x,t) = f(x,t)
+\end{equation}
+but if you prefer them not to be numbered just use the starred version of the environment
+\begin{equation*}
+u(x,t) = f(x,t)
+\end{equation*}
+
+If you need to go back to text inside the equation environment, use $\verb!\mbox{}!$ as follows
+\begin{equation*}
+\frac{du}{dt} = 0 \quad \mbox{on the characteristic defined by} \quad \frac{dx}{dt} = f(x)
+\end{equation*}
+
+For equations with multiple lines, the $\verb!align!$ environment is particularly useful.
+
+% -----------------------------
+\item \begin{enumerate}
+\item 
+\item 
+\end{enumerate}
+% -----------------------------
+\item \begin{itemize}
+\item 
+\item 
+\end{itemize}
+
+\end{enumerate}
+% --------------------------------------------
+% End of questions
+% --------------------------------------------
+
+\end{document}

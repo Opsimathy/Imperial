@@ -1,0 +1,88 @@
+---
+title: "Data Wrangling"
+author: " "
+date: " "
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Data never arrive in the right format for analysis, and often need to be restructured as the first step in a workflow. In this tutorial, adapted from Hadley Wickham's R for Data Science, we work with a dataset that contains all flights out of New York City in 2013. As always, begin by looking at the help page for the dataset. For this, we need the package 'nycflights13'.
+
+```{r}
+library(nycflights13)
+?flights
+flights
+```
+
+The data are stored as a Tibble - this is a nice format for working with large datasets.
+
+We'll see how to do some simple data wrangling using the $\verb!dplyr!$ package. First we load it.
+
+```{r}
+library(dplyr)
+```
+
+## Filtering
+Fist let's extract all flights on January 1st.
+
+```{r}
+(jan1 <- filter(flights, month == 1, day == 1))
+```
+
+Note that the extra pair of brackets printed the result as well as storing it to the variable $\verb!jan1!$.
+
+More general logical operations are possible. You should be able to guess what the following code does.
+
+```{r}
+filter(flights, month == 11 | month == 12)
+```
+
+For larger subsets, the following code is more attractive:
+
+```{r}
+nov_dec <- filter(flights, month %in% c(4,6,11, 12))
+```
+
+## Arranging
+
+We often want to sort data in a more natural order. This is achieved as follows.
+
+```{r}
+arrange(flights, year, month, day)
+```
+
+The ordering of arguments means that successive columns are used to break ties in earlier columns.
+
+## Summaries
+We often need to summarize complex datasets. Consider the following very simple example.
+```{r}
+summarize(flights, delay = mean(dep_delay, na.rm = TRUE))
+```
+
+This command is more useful when paired with $\verb!group_by!$, e.g.
+
+```{r}
+by_day <- group_by(flights, year, month, day)
+dep_delay_days<-summarize(by_day, delay = mean(dep_delay, na.rm = TRUE))
+```
+
+## The pipe
+
+Often we wish to make a pipeline of successive manipulations. This can be achieved with the pipe $\verb!>!$. You should pronounce this symbol as "and then".
+
+```{r}
+delays <- flights %>%
+group_by(dest) %>%
+summarize(
+count = n(),dist = mean(distance, na.rm = TRUE),
+delay = mean(arr_delay, na.rm = TRUE)
+) %>%
+filter(count > 20, dest != "HNL")
+```
+
+If time allows, explore the dataset using the tools we have just defined, making sensible graphics to illustrate your conclusions. One question you might look at is how average delay varies by distance, and by aircraft (identifiable by $\verb!tailnum!$).

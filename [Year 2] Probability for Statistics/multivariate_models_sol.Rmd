@@ -1,0 +1,157 @@
+---
+title: "Common multivariate probability models in statistics"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is a continuation of the tutorial 'Common probability models in statistics' to cover multivariate distributions.
+
+These solutions give an indication of the sort of thing you could do to tackle the problems. There are of course other approaches, and solutions to any assessed work should be more thorough.
+
+### 1. Multivariate Normal distribution
+
+The multivariate normal distribution is an extension of the one-dimensional normal distribution. We say a vector $X=(X_1, \dots, X_p)$ is multivariate normal if any linear combination $a_1X_1+ \dots +a_pX_p$ with $a_1, \dots, a_p\in \mathbb{R}$ is normally distributed. A multivariate normal distribution with mean $\mu \in \mathbb{R}^p$ and covariance matrix $\Sigma \in \mathbb{R}^{p \times p}$ has density function 
+
+\[f(x; \mu, \Sigma)=\frac{1}{(2\pi)^{-p/2}|\Sigma|^{-1/2}}\exp\left\{\frac{-1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right\},\]
+for all $x \in \mathbb{R}^p$.The covariance matrix $\Sigma$ is symmetric and positive definite. We denote the $p$-dimensional normal distribution by $N_p(\mu, \Sigma)$.
+
+a) Suppose $Z \sim N_p(0, I)$ where $I\in \mathbb{R}^{p\times p}$ is the identity matrix. Show that $AZ+\mu \sim N_p(\mu, AA^T)$. Hence, simulate a sample of size 100 from the two-dimensional normal distribution with $\mu=(1,1)^T$ and $\Sigma=AA^T$ with 
+\[A=\begin{pmatrix}
+1&0.5\\
+0.5&1\end{pmatrix},\]
+using the following 100 samples from $N_2(0,I)$. Verify the marginal distributions using Q-Q plots. 
+
+```{r}
+#sample from bi-variate standard normal distribution
+normSample=matrix(rnorm(200,0,1),2,100)
+
+# transform the sample
+A=matrix(c(1,0.5,0.5,1),ncol=2)
+tranSample= A%*%normSample + c(1,1)
+
+# verify the marginal distributions
+qqplot(qnorm(ppoints(200),mean=1,sd=1), tranSample[1,], main="Normal Q-Q Plot",
+       xlab="Theoretical Quantiles", ylab= "Sample Quantiles")
+abline(a=0,b=1,col=2)
+qqplot(qnorm(ppoints(200),mean=1,sd=1), tranSample[2,], main="Normal Q-Q Plot",
+       xlab="Theoretical Quantiles", ylab= "Sample Quantiles")
+abline(a=0,b=1,col=2)
+```
+From the QQ-plot the data seems to be from the same distribtuion.
+
+In fact, any symmetric, positive definite matrix  $\Sigma$ can be written as $\Sigma=AA^T$ for some matrix $A$, so we can generate samples from any multivariate normal distribution in this way.
+
+b) The following data describes the distance (in km) walked by hikers on Saturday $(X)$ and Sunday $(Y)$. Compute the sample covariance and correlation matrices between the distance walked by hikers on Saturday and Sunday. The sample covariance matrix is an unbiased estimate of the covariance matrix $\Sigma$. 
+
+```{r}
+X=c(25.3 ,25.4, 21.9, 26.9, 20.6, 27.1 ,23.1, 25.6,22.4, 21.9, 23.3 ,25.5, 25.1, 23.2 ,23.3 ,20.6, 24.7, 25.0, 25.8, 25.4, 22.8 ,24.6, 23.8, 29.4, 23.2, 21.8 ,25.5 ,24.2 ,27.9, 23.9 ,23.9, 29.9, 24.7, 24.9, 23.2 ,28.4 ,23.2, 24.4 ,22.7, 24.4,24.8, 20.5 ,22.7 ,24.0, 18.6, 23.5, 22.7 ,29.2,
+ 23.7, 24.5, 21.6, 26.8, 22.2, 25.2 ,22.8, 22.8,25.4, 24.1, 27.2, 22.4, 23.6, 26.6, 25.1, 25.7, 26.8 ,24.2, 26.4, 27.9, 24.9, 24.6, 26.6, 24.0, 22.5, 27.9, 25.6, 26.3, 25.3, 23.0, 21.5, 20.0,23.6, 27.6 ,24.0, 25.2, 21.9, 23.9, 27.3, 19.2, 25.6, 19.7, 26.6, 21.4, 24.0, 24.2, 24.6, 22.8,20.8, 22.9, 22.3, 22.6)
+
+Y=c(20.1, 18.9, 18.8, 22.1, 15.6 ,22.1, 18.4, 20.7, 18.2 ,19.6 ,18.1 ,19.1, 20.0 ,20.1, 20.2, 16.0,22.1, 18.6, 21.2 ,22.2, 17.7, 20.1, 18.3, 25.1, 19.9, 17.7, 22.1, 19.9, 23.4, 21.7, 21.2, 23.6
+, 18.8 ,23.1, 21.1, 23.7 ,20.5, 20.3, 17.6, 20.6,19.7, 18.3 ,19.5, 17.3, 14.7 ,21.5, 16.6, 24.6, 21.8, 20.1, 16.8, 22.8, 18.0, 23.0, 20.9 ,18.1, 19.8, 16.6, 22.0 ,18.3 ,19.5 ,23.2, 20.4 ,21.3, 21.1, 21.6, 21.8, 22.7 ,21.3, 20.9, 22.9, 22.8, 21.5 ,23.9, 19.3, 22.4 ,19.5 ,17.6, 18.6 ,16.6,
+ 19.6, 22.2, 18.8 ,20.6 ,19.6 ,20.3 ,21.5 ,16.4, 22.4, 18.3, 21.3, 17.1, 21.2 ,19.4, 20.5, 18.7, 18.1, 19.6 ,17.0, 18.0)
+
+covhat = matrix(c(var(X),cov(X,Y),cov(X,Y),var(Y)),nrow=2)
+corhat = matrix(c(1,cor(X,Y),cor(X,Y),1), nrow=2)
+covhat
+corhat
+```
+
+c) Assume $X$ and $Y$ follow a multivariate normal distribution with mean $\mu \in \mathbb{R}^2$. Using the marginal distribution of $X$ and $Y$, obtain maximum likelihood estimates of the means $\mu_1=\mathbb{E}(X)$ and $\mu_2=\mathbb{E}(Y)$. Hence, obtain an estimate of the probability that a hiker walks more than 28km on Saturday.
+
+We know the mle of the mean is the sample mean and the mle of the variance is the sample variance.
+```{r}
+mu1=mean(X)
+mu2=mean(Y)
+
+pnorm(28,mean=mu1,sd=sqrt(covhat[1,1]))
+```
+
+d) Derive the distribution of the total distance walked by hikers over the weekend.
+
+We are interested in the distribution of a linear combination of $X$ and $Y$. We know this will be normal with mean $\mu=\mu_1+\mu_2$ and variance $\sigma^2 = \sigma^2_1 +\sigma^2_2 - 2\text{cov}(X,Y)$. We calculate these values:
+```{r}
+mu = mu1+mu2
+mu
+
+sigma2= covhat[1,1] + covhat[2,2]-2*covhat[1,2]
+sigma2
+```
+
+### 2. Multinomial and Dirichlet Distributions
+
+The multinomial distribution is an extension of the binomial distribution. It models the number of observations that land in $k$ distinct, non-overlapping categories. For example, suppose a 6-sided die is thrown $n$ times. The multinomial distribution could be used to describe the joint distribution of the number of times each number $\{1,2,3,4,5,6\}$ was thrown. 
+
+The multinomial distribution has a parameter $n \in \mathbb{N}$ representing the number of trials and  parameters $p_1, \dots, p_k$ representing the probabilities that an observation lands in each category. So, $p_i\geq 0$ for all $i$ and $p_1+\dots+p_k=1$. The mass function is given by 
+\[f(x_1, \dots, x_k ;n, p_1, \dots, p_k)=\frac{n!}{x_1!\dots x_k!}p_1^{x_1} \dots p_k^{x_k}\]
+for $x_i \in \{0,1,\dots, n\}$ and $\sum_{i=1}^n x_i=n$. The variables $x_i$ represent the number of observations in category $i$. 
+
+The leaves of an Indian creeper plant *Phrabitis nil* can be variegated or  unvariegated and faded or unfaded. In an experiment on 290 plants, 31 variegated faded leaves, 35 unvariagated faded leaves, 37 variegated unfaded leaves and 187 unvariegated unfaded leaves were observed. The data is summarised below. 
+
+```{r, echo=FALSE}
+counts=matrix(c(31,37,35,187),2,2)
+rownames(counts)=c('Faded','Unfaded')
+colnames(counts)=c('Variegated','Unvariegated')
+
+counts
+```
+
+a) A genetic theory assumes the following probabilities for each category. The parameter $p$ is unknown. Find the maximum likelihood estimator of $p$ based on a multinomial likelihood. You may choose to do this either by hand or numerically.
+```{r, echo=FALSE}
+probs=matrix(c('1/16+p','3/16-p','3/16-p','9/16+p'),2,2)
+rownames(probs)=c('Faded','Unfaded')
+colnames(probs)=c('Variegated','Unvariegated')
+
+probs
+```
+We can derive the log-likelihood in terms of $p$ as,
+$$
+\begin{align*}
+\ell(X;p)&=  \log(\frac{n!}{x_{1}!\dots x_{4}!}) +  \log((1/16 +p)^{x_{1}}(3/16-p)^{x_{2}}(3/16-p)^{x_{3}}(9/16+p)^{x_{4}}
+\\ &=\log(\frac{n!}{x_{1}!\dots x_{4}!}) +  x_{1} \log(1/16 +p) + x_{2} \log(3/16-p) + x_{3} \log(3/16-p) + x_{4} (9/16+p)
+\end{align*}
+$$
+Note that the first term here does not depend on $p$, so to find the mle we can just optimize the second term. We do so numerically, noting that all values of $p_k\in[0,1]$.
+```{r}
+negloglik<-function(p){
+  -31*log(1/(16)+p) - 35*log(3/(16)-p) - 37*log(3/(16)-p) - 187*log(9/(16)+p)
+}
+phat = optimize(negloglik, c(0,min(3/(16),1-9/(16))))$minimum
+```
+
+
+b) Comparing the expected number of observations in each category to the observed values, does the observed data appear to support this genetic theory?
+
+According to the multinomial distribution, the mean of each category should be $np_k$. We calculate
+```{r}
+n<-290
+matrix(c(n*(1/16+phat), n*(3/16-phat), n*(3/16-phat), n*(9/16+phat)),nrow=2)
+```
+These estimates are not too bad, but they are an overestimate of $x_1,x_2,x_3$ and underestimate of $x_4$. The overestimation of $x_1$ and underestimation of $x_4$ suggests there may not be enough flexibility in the model.
+
+The Dirichlet distribution is often used as a *conjugate prior* for a multinomial likelihood. As it is the multivarate extension to the Beta distribution, it is often used to model the joint distribution of various probabilities. The Dirichlet distribution has density
+\[f(p_1, \dots, p_k; k, \alpha_1, \dots, \alpha_k)=\frac{\Gamma\left(\sum_{i=1}^k \alpha_i\right)}{\prod_{i=1}^k \Gamma(\alpha_i)}\prod_{i=1}^k p_i^{\alpha_i-1}\]
+for $k \geq 2$, $\alpha_i>0$, $p_i\geq 0$ for all $i$ and $\sum_{i=1}^k p_i=1$.
+
+c) Denote the leaf data from part $a)$ as $X$ and now suppose $X\mid p \sim \text{Multinomial}(n, p)$. Compute the posterior distribution of $p\mid X$ based on the prior $p \sim \text{Dirichlet}(\alpha_1, \dots, \alpha_4)$. 
+
+By extending the derivations of the Beta posterior in the Univariate Distributions Tutorial, we can see that the posterior distribution of $p$ is $\text{Dirichlet}(\sum_{i=1}^n x_{i,1} + \alpha_1, \dots, \sum_{i=1}^n x_{i,4} + \alpha_4)$.
+
+
+d) Write down the posterior distribution when $\alpha_i=1$ for all $i$ and obtain estimates of $p_1, \dots, p_4$ using the expected posterior means. How do these compare to the maximum likelihood estimators assuming the genetic theory? You may use the fact that if $p=(p_1, \dots, p_4) \sim \text{Dirichlet}(\alpha_1, \dots, \alpha_4)$ then
+\[\mathbb{E}[p_i]=\frac{\alpha_i}{\sum_{j=1}^4 \alpha_j}.\]
+
+From part c), and the expression for a mean of Dirichlet distribution, we can estimate
+\[\hat p = (\frac{x_1 +1}{n+4},\frac{x_2 +1}{n+4},\frac{x_3 +1}{n+4},\frac{x_4 +1}{n+4}) \] 
+where $x_i$ is the number of observations of group $i$ and we have used $\sum_{j=1}^4 x_i=n$.
+With the given data,
+```{r}
+hatp<- 1/n *matrix(c(31,37,35,187),nrow=2)
+hatp
+
+hatp*n
+```
+This matches the data better. However, it could be overfitting, and may have other issues such as higher variance.

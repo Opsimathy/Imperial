@@ -1,0 +1,262 @@
+---
+title: "Probability for Statistics - Introduction to R"
+author: " "
+date: " "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introducing R
+This tutorial starts at the very beginning. It covers syntax and commonly used operations. If you're familiar with R from last year, you might want to look ahead to the later tutorials.
+
+# Getting started
+
+Many R users prefer to work within a graphical environment called _R Studio_, which is available on campus machines. We'll use RStudio in what follows, as it makes it easier to keep track of variables and code. All of the code in the remainder of the tutorial can be pasted directly into the R command line.
+
+# Some first steps
+Having loaded RStudio and familiarized yourself with the environment, you now need to learn some of the basics of R syntax. First we'll illustrate simple arithmetic operations in R. Type the following inputs into the console, and check that they do what you expect.
+
+```{r,eval=FALSE}
+4+5
+9-7
+4^2
+```
+
+The next thing to note is how to define an object in R. There are two equivalent ways of defining an object, illustrated below.
+
+```{r}
+x<-9
+x=9
+```
+Both do the same thing.
+
+Ordinarily we want to work with more data than just single numbers, and R uses vectors for this purpose. We can combine several numbers or objects into a vector as follows.
+
+```{r}
+x<-c(3,4,9)
+y<-c(x,7)
+```
+Note that when you define an object, it appears in the top right window in RStudio. You can see what is stored in an object just by typing its name on the command line and pressing Enter.
+
+You can pick out individual elements or subsets of a vector using square brackets, as follows.
+```{r}
+x[1]
+x[2:3]
+y[-1]
+x[-(1:2)]
+y[c(1,3)]
+```
+
+Note that a negative number specifies which elements to omit. The way R operates with vectors is very natural: try the following.
+
+```{r}
+a<-c(1,2,3)
+b<-c(4,5,6)
+a+b
+a/b
+a^2
+sqrt(a)
+max(a)
+a>2
+```
+
+Since R is a statistical language, there are many built-in routines for performing statistical calculations. This is a good way for us to introduce the general concept of functions in R. Functions are the main way that you will instruct R to perform calculations or other operations, such as making graphics.
+
+In the next tutorial, you will see how to write your own functions, but for now we will work with some common built-in functions. The code below lists some examples of built-in statistical functions. Note that inputs are passed to a function by enclosing them in round brackets. These functions calculate the mean, standard deviation and median of the vector x.
+
+```{r}
+mean(x)
+sd(x)
+median(x)
+```
+
+R provides comprehensive help with all built-in functions. You can access this by typing a question mark followed by the function's name, e.g. 
+
+```{r}
+?mean
+```
+
+This will bring up the help window for this function. You should see information about the syntax, any options that are available, as well as some examples. Options are passed to the function in the same way as inputs, with each entry separated by a comma, e.g. for the function `mean`, you can see in the help that adding the option `trim=0.1` would calculate a trimmed mean, removing the top and bottom most 10\% of the data before calculating the mean.
+
+When working with an unfamiliar function, the examples in the help file are often very useful. They contain working code, which can be adapted as needed. 
+
+To get used to reading R code, compare the code below with the output of the built-in functions. The first line puts the numbers from 1 to 20 into a vector called `x`, then stores their sum as `s.x`. It stores the length of `x` as `n` and then stores the mean of `x` in the object `x.mean`.
+```{r}
+x<-c(1:20)
+s.x<-sum(x)
+n<-length(x)
+x.mean<-s.x/n
+```
+
+As a continuation, the following lines of code calculate the standard deviation. The first line calculates the variance of `x` using the formula
+
+$$\frac{\sum_i (x_i-\bar{x})^2}{n-1},$$
+
+which gives an unbiased estimate of the  variance of the population from which the sample $X_1, X_2, \ldots X_n$ was drawn. The second line calculates the standard deviation by taking the square root of the variance.
+
+```{r}
+var.x<-sum((x-x.mean)^2)/(n-1)
+sd.x<-sqrt(var.x)
+```
+
+Remember that that adding a constant to each observation in a sample changes the mean by the same constant, and leaves the standard deviation unchanged (this should match your intuition of the mean as "where the data points are" and standard deviation of "how spread out the data points are"), and also that multiplying each observation by a constant multiplies both the mean and standard deviation by the same constant. In the next exercise, you will check this for the dataset `x<-c(14,12,1,23,5,7)`
+
+
+First, use the function `rep` to create a vector of the same length as the data vector `x`, all of whose entries are the same. As an example of the syntax, paste the command below.
+```{r}
+y<-rep(2,times=3)
+```
+
+Now multiply `x` by your constant vector and check that the mean and standard deviation behave as you expect.
+
+Finally, add your constant vector to the vector `x` and again check that the mean and standard deviation behave as you expect.
+
+## Importing Data
+
+R can handle data in a wide variety of formats. For the smallest datasets, you can enter the variables directly as vectors, as we saw above. Most commonly, you will have data in a file that needs to be read in to R. For data in a text file,  the simplest way to do this is with the command `read.table` or `read.csv`. We will try this below.
+
+1. Save the file `temp.csv` from blackboard.
+2. Select the _Files_ tab in the bottom right hand window of R Studio and navigate to the directory containing `temp.csv`.
+3. Select _More_ from the menu below _Files_ and then _Set as Working Directory_.
+4. Read in the data using the following command
+	
+```{r}
+temp<-read.csv('data_rintro.csv')
+```
+
+5. Use the commands `head` and `summary` to get a feel for the dataset, which represents average temperatures in New Haven over a period of years. We will return to this dataset later.
+	
+ *Note that within RStudio, richer point-and-click functionality exists for importing data. In the* **Environment** *tab,  look  for*  **Import Dataset** 
+ 
+## Graphics
+
+R can produce a wide variety of plots and graphics. In this section we will look at some common types of plot that arise when working with data, and how to tweak the output so that it looks presentable. 
+
+
+You can get a quick glimpse of R's capabilities by calling the graphics demo command
+```{r,, results='hide'}
+demo(graphics)
+```	
+	
+	
+Input a small height and weight dataset by pasting the two lines below.
+```{r}
+weight <- c(60, 72, 57, 90, 95, 72)
+height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)
+```
+
+To get a simple scatter plot illustrating these variables, use the plot command
+
+```{r}
+plot(height, weight)
+```
+
+R plots can be customised extensively. Try modifying the options (`cex`, `col` etc.) in the command below to get a feel for what each one does.
+
+```{r}
+plot(height, weight,pch=2,col="red",cex=2, main="scatter plot")
+```
+
+Add `xlab` and `ylab` options to the command above to change the labels on the two axes.
+
+Use the `hist` command to produce a histogram of the height data. 
+
+```{r}
+hist(height)
+```
+To get a nicer-looking histogram, you might want to specify the number of bins manually - to do this, put the option `breaks=k`, where `k` is the number of bins you would like.
+
+
+For looking at experimental data, the _box and whisker plot_, often just called a box plot, is a useful tool. It shows the first and third quantiles of a numerical dataset as the bottom and top of a box, and a line inside the box represents the median of the data. Whiskers at the top and bottom of the box show a multiple of the interquartile range - this is where "most" of the data should be. Any data points outside the whisker region are displayed as individual points. These individually displayed points may be outliers (depending on the situation).
+
+
+Produce a box plot for the height data using
+```{r}
+boxplot(height)
+```
+
+You can get more information on interpreting the box plot, and changing its features, using `?boxplot`.
+
+Suppose we know that the first three subjects in the height/weight dataset are female, and the second three are male. We can encode this as a binary factor:
+
+```{r}
+sex<-rep(c(0,1),each=3)
+```
+
+Recall the command  `rep` from an earlier example, but note that here we are using the option `each`. 
+
+We can easily produce separate box plots for the two sexes:
+```{r}
+boxplot(height~sex)
+```
+
+The notation `height~sex` might remind you of regression formulas, if you have seen these things before.
+
+For the temperature dataset you loaded earlier, create a plot of temperature against year:
+```{r}
+plot(temp)
+```
+
+Now smarten up the plot by changing the type and size of point used, and add x and y axis labels.
+
+Add in a `type ="l"` option to change to a line plot. See what happens if you use `"b"`, `"p"` or `"h"` in place of `"l"`.
+
+##  Some Statistics
+
+You are familiar with the _binomial distribution_, which is used to describe experiments with two outcomes, which we call success and failure. More precisely, the binomial distribution models the number of successes amongst a fixed number $n$ of identical, independent trials, each of which is a success with probability $p$ or a failure with probability $1-p$. Examples include the number of heads in $n$ flips of a coin or the number of sixes when rolling $n$ identical dice. We will use the binomial distribution as an example to see some of the possibilities for doing statistics with R, and also as a introduction to some statistical concepts. Most notably the _p value_, otherwise known as the _significance level_.
+
+Suppose we have observed 15 heads (successes) out of 40 flips of a coin (trials). We want to know whether we have evidence that the true probability $p$ of success for each trial is smaller than $0.5$. We might also say we want to know whether the difference between the observed probability and 0.5 is _statistically significant_. The significance level (often called the p value - but be careful, this isn't the same as the p we're using in this exercise for the probability of success!) is a measure of how likely our observed result would be, if the _null hypothesis_ of $p=0.5$ were true. Specifically, the significance level is the probability of obtaining as extreme a result as we did, if $0.5$ is the true success probability. The following exercises attempt to make this notoriously tricky concept a bit clearer. 
+
+First, simulate a large number of draws from the null distribution, i.e. many sets of 40 trials, where each trial is a success with probability $0.5$. Each dataset is then just a number between $0$ and $40$ - the number of successes.
+
+```{r}
+		n<-1e+6
+		x.empirical<-rbinom(size=40,n=n,p=0.5)
+```
+	
+Functions whose names begin with an `r` usually denote simulation, in this case simulation from a binomial distribution.
+	
+Look at your null distribution using a histogram. Put a vertical line at the value observed in the real data `x.test`
+	
+```{r}
+		x.test<-15
+		hist(x.empirical,main="Empirical null distribution")
+		abline(v=x.test,col="red",lty=2,lwd=2)
+```
+
+Does the observed value look plausible if the null distribution is indeed the true distribution?
+
+Check your intuition using a hypothesis test - this calculates the probability observing as extreme a value as the one you found. 
+```{r}
+		binom.test(x.test,n=40,alternative="less")
+```
+
+So R does the hypothesis test for us. But to reinforce our understanding of what the test is telling us, we can use our simulated data to estimate the significance level. Note that `<=` means "less than or equal to".
+
+```{r}
+		sig.empirical<-sum(x.empirical<=x.test)/n
+```
+Compare the empirical significance level with the exact one that R has calculated.
+
+# Working with Normally Distributed Data
+
+The normal distribution arises in any quantity that is the sum of many small independent effects, e.g. height, which is affected by many genes and environmental variables, or measurement errors in engineering. 
+
+
+Start by simulating some normally distributed data (R can simulate data very quickly). We'll simulate a sample of size 50 from a normal distribution with mean 176 and standard deviation 7 - these could be e.g. heights of 50 male subjects in cm.
+
+```{r}
+h<-rnorm(50,mean=176,sd=7)
+```
+
+Produce some simple summary information about the our simulated data set.
+
+```{r}
+summary(h)
+hist(h)
+```
+
+Compare the mean and standard deviation of the sample to the population mean and standard deviation used in the simulation. See what happens if you use a larger or a smaller sample size (be bold - R is happy with very large samples`).

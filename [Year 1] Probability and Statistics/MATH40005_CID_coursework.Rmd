@@ -1,0 +1,79 @@
+---
+title: "MATH40005 Coursework Spring 2023"
+author: "CID: 12345678"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+# This code block is optional
+knitr::opts_chunk$set(
+    comment = "#>", # this line starts each line of R output with '#>'
+    collapse = TRUE # this puts the R output in the same grey box
+)
+```
+
+
+# Part A (1 mark)
+
+Part A goes here.
+
+Here $x = 1$.
+
+```{r}
+# this is a block of R code
+x <- 1
+# this prints output to screen.
+print(x)
+```
+
+\clearpage
+
+# Part B (1 mark)
+
+Part B goes here.
+
+\clearpage
+
+
+# Part C (2 marks)
+
+Part C goes here.
+
+\clearpage
+
+# Part D (1 mark)
+
+Part D goes here.
+
+\clearpage
+
+
+# Part E (2 marks)
+
+Part E goes here.
+
+\clearpage
+
+
+# Part F (3 marks)
+
+Part F goes here.
+
+\clearpage
+
+# Part G (3 marks)
+
+Part G goes here.
+
+\clearpage
+
+# Part H (3 marks)
+
+Part H goes here.
+
+\clearpage
+
+# Part I (3 marks)
+
+Part I goes here.
+

@@ -1,0 +1,47 @@
+---
+title: "MATH40005 Problem Sheet 10 Question 3"
+subtitle: "Ronald A. Fisher, CID: 12345678"
+output: pdf_document
+---
+
+<!--
+This is a comment.
+To create the pdf in RStudio, click on the "Knit" icon.
+-->
+
+# Introduction 
+
+The probability density function of a normal distribution with mean $\mu$ and variance $\sigma^2$
+is 
+
+\begin{equation}
+f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} \exp \left( - \frac{(x - \mu)^2}{ 2\sigma^2}  \right)
+\end{equation}
+
+
+# A histogram
+
+
+<!--
+Below is a code chunk.
+Setting the out.width option specifies how large to make any plots.
+You can increase/decrease the size of the plot by changing the value 0.7
+-->
+
+```{r, out.width="0.7\\linewidth"}
+# set the mean and standard deviation for a normal distribution, 
+# choose your own parameter values
+mu <- 5
+sigma <- 1
+
+# generate observations followi ng a normal distribution with those parameter values
+set.seed(1)
+z <- rnorm(n=10000, mean=mu, sd=sigma)
+
+# plotting the data, with a histogram and overlaying a density
+hist(z, freq=FALSE)
+k <- 5
+x <- seq(from=mu-k*sigma, to=mu+k*sigma, by=0.01)
+y <- dnorm(x, mean=mu, sd=sigma)
+lines(x=x, y=y, type='l', lwd=2, col="blue")
+```

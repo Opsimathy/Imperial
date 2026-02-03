@@ -1,0 +1,91 @@
+---
+title: "markov chain simulation"
+author: " "
+date: " "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In this tutorial, we will introduce and explore the idea of a *Markov chain*.
+
+
+Here is an example transition matrix for a Markov chain on three states. The $(i,j)$ entry of the matrix gives the conditional probability of jumping to state $j$, starting in state $i$. Note that this means that each row must be a probability distribution. 
+
+$$
+\begin{pmatrix}
+  0 &\alpha & 1-\alpha \\
+  \alpha & 0 & 1-\alpha \\
+  \alpha & 1-\alpha & 0 \\
+\end{pmatrix}
+$$
+Let's define the matrix
+
+```{r}
+alpha = 0.99
+P = matrix(c(0,alpha,1-alpha,alpha,0,1-alpha,alpha,1-alpha,0),
+           nrow=3,
+           byrow=TRUE )
+```
+
+How can we simulate trajectories from this chain?
+
+We will use the R function *sample*. Check using the help that you are satisfied with how this function works. At its simplest, 
+
+```{r}
+sample(x=3,size=1)
+```
+
+produces a random sample of size 1 from the set $\{1,2,3\}$. By setting the seed, you should get the same random value each time.
+
+```{r}
+set.seed(432223335)
+sample(x=3,size=1)
+```
+
+To check that this is behaving as it should, let's take a larger sample from this distribution, and verify that the proportions are roughly correct. Note that by default, R samples *without* replacement, although for our samples of size 1 this made no difference.
+
+```{r}
+set.seed(432223335)
+big_samp<-sample(x=3,size=10000,replace=TRUE)
+hist(big_samp)
+```
+
+This should look roughly uniform; and it does.
+
+Suppose the chain is currently in state 2. We need to be able to choose a state at random, according to the probabilities specified in the second row of the transition matrix. We achieve this as follows.
+
+```{r}
+sample(x=3,size =1, prob=P[2,])
+```
+ 
+Again, let's check that taking a large sample produces the proportions we'd expect.
+
+```{r}
+big_samp<-sample(x=3,size=10000,prob = P[2,],replace=TRUE)
+hist(big_samp)
+```
+
+OK, so we can sample from the conditional distributions easily enough.
+
+This is now enough to simulate a trajectory - a realization of the random sequence.
+
+```{r}
+N<-100 # length of chain to be simulated
+x<-vector(length=100)
+x[1]<-sample(x=3,size=1)
+for(i in 2:N){
+  x[i]<-sample(x=3,
+               size=1,
+               prob=P[x[i-1],])
+}
+```
+
+We can visualize the trajectory by plotting
+
+```{r}
+plot(x,type="l",yaxt="n")
+axis(2,at=1:3)
+```

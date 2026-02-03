@@ -1,0 +1,4646 @@
+%PDF-1.3
+%âãÏÓ
+5 0 obj
+<< /Type /Encoding
+/Differences [ 0/Gamma/Delta/Theta/Lambda/Xi/Pi/Sigma/Upsilon
+/Phi/Psi/Omega/ff/fi/fl/ffi/ffl/dotlessi/dotlessj/grave/acute
+/caron/breve/macron/ring/cedilla/germandbls/ae/oe/oslash/AE/OE
+/Oslash/polishlcross/exclam/quotedblright/numbersign/dollar/percent
+/ampersand/quoteright/parenleft/parenright/asterisk/plus/comma
+/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight
+/nine/colon/semicolon/exclamdown/equal/questiondown/question
+/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft
+/quotedblleft/bracketright/circumflex/dotaccent/quoteleft/a/b
+/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/endash/emdash
+/hungarumlaut/tilde/dieresis 160/hardspace/Gamma/Delta/Theta
+/Lambda/Xi/Pi/Sigma/Upsilon/Phi/Psi 173/Omega/ff/fi/fl/ffi/ffl
+/dotlessi/dotlessj/grave/acute/caron/breve/macron/ring/cedilla
+/germandbls/ae/oe/oslash/AE/OE/Oslash/polishlcross/dieresis] >>
+endobj
+10 0 obj
+<< /Type /Encoding
+/Differences [ 0/minus/periodcentered/multiply/asteriskmath/divide
+/diamondmath/plusminus/minusplus/circleplus/circleminus/circlemultiply
+/circledivide/circledot/circlecopyrt/openbullet/bullet/equivasymptotic
+/equivalence/reflexsubset/reflexsuperset/lessequal/greaterequal
+/precedesequal/followsequal/similar/approxequal/propersubset
+/propersuperset/lessmuch/greatermuch/precedes/follows/arrowleft
+/arrowright/arrowup/arrowdown/arrowboth/arrownortheast/arrowsoutheast
+/similarequal/arrowdblleft/arrowdblright/arrowdblup/arrowdbldown
+/arrowdblboth/arrownorthwest/arrowsouthwest/proportional/prime
+/infinity/element/owner/triangle/triangleinv/negationslash/mapsto
+/universal/existential/logicalnot/emptyset/Rfractur/Ifractur
+/latticetop/perpendicular/aleph/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O
+/P/Q/R/S/T/U/V/W/X/Y/Z/union/intersection/unionmulti/logicaland
+/logicalor/turnstileleft/turnstileright/floorleft/floorright
+/ceilingleft/ceilingright/braceleft/braceright/angbracketleft
+/angbracketright/bar/bardbl/arrowbothv/arrowdblbothv/backslash
+/wreathproduct/radical/coproduct/nabla/integral/unionsq/intersectionsq
+/subsetsqequal/supersetsqequal/section/dagger/daggerdbl/paragraph
+/club/diamond/heart/spade 160/hardspace/minus/periodcentered
+/multiply/asteriskmath/divide/diamondmath/plusminus/minusplus
+/circleplus/circleminus 173/circlemultiply/circledivide/circledot
+/circlecopyrt/openbullet/bullet/equivasymptotic/equivalence/reflexsubset
+/reflexsuperset/lessequal/greaterequal/precedesequal/followsequal
+/similar/approxequal/propersubset/propersuperset/lessmuch/greatermuch
+/precedes/follows/arrowleft/spade] >>
+endobj
+12 0 obj
+<< /Type /Encoding
+/Differences [ 0/Gamma/Delta/Theta/Lambda/Xi/Pi/Sigma/Upsilon
+/Phi/Psi/Omega/alpha/beta/gamma/delta/epsilon1/zeta/eta/theta
+/iota/kappa/lambda/mu/nu/xi/pi/rho/sigma/tau/upsilon/phi/chi
+/psi/omega/epsilon/theta1/pi1/rho1/sigma1/phi1/arrowlefttophalf
+/arrowleftbothalf/arrowrighttophalf/arrowrightbothalf/arrowhookleft
+/arrowhookright/triangleright/triangleleft/zerooldstyle/oneoldstyle
+/twooldstyle/threeoldstyle/fouroldstyle/fiveoldstyle/sixoldstyle
+/sevenoldstyle/eightoldstyle/nineoldstyle/period/comma/less/slash
+/greater/star/partialdiff/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R
+/S/T/U/V/W/X/Y/Z/flat/natural/sharp/slurbelow/slurabove/lscript
+/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/dotlessi
+/dotlessj/weierstrass/vector/tie] >>
+endobj
+15 0 obj
+<< /Type /Encoding
+/Differences [ 0/parenleftbig/parenrightbig/bracketleftbig/bracketrightbig
+/floorleftbig/floorrightbig/ceilingleftbig/ceilingrightbig/braceleftbig
+/bracerightbig/angbracketleftbig/angbracketrightbig/vextendsingle
+/vextenddouble/slashbig/backslashbig/parenleftBig/parenrightBig
+/parenleftbigg/parenrightbigg/bracketleftbigg/bracketrightbigg
+/floorleftbigg/floorrightbigg/ceilingleftbigg/ceilingrightbigg
+/braceleftbigg/bracerightbigg/angbracketleftbigg/angbracketrightbigg
+/slashbigg/backslashbigg/parenleftBigg/parenrightBigg/bracketleftBigg
+/bracketrightBigg/floorleftBigg/floorrightBigg/ceilingleftBigg
+/ceilingrightBigg/braceleftBigg/bracerightBigg/angbracketleftBigg
+/angbracketrightBigg/slashBigg/backslashBigg/slashBig/backslashBig
+/parenlefttp/parenrighttp/bracketlefttp/bracketrighttp/bracketleftbt
+/bracketrightbt/bracketleftex/bracketrightex/bracelefttp/bracerighttp
+/braceleftbt/bracerightbt/braceleftmid/bracerightmid/braceex
+/arrowvertex/parenleftbt/parenrightbt/parenleftex/parenrightex
+/angbracketleftBig/angbracketrightBig/unionsqtext/unionsqdisplay
+/contintegraltext/contintegraldisplay/circledottext/circledotdisplay
+/circleplustext/circleplusdisplay/circlemultiplytext/circlemultiplydisplay
+/summationtext/producttext/integraltext/uniontext/intersectiontext
+/unionmultitext/logicalandtext/logicalortext/summationdisplay
+/productdisplay/integraldisplay/uniondisplay/intersectiondisplay
+/unionmultidisplay/logicalanddisplay/logicalordisplay/coproducttext
+/coproductdisplay/hatwide/hatwider/hatwidest/tildewide/tildewider
+/tildewidest/bracketleftBig/bracketrightBig/floorleftBig/floorrightBig
+/ceilingleftBig/ceilingrightBig/braceleftBig/bracerightBig/radicalbig
+/radicalBig/radicalbigg/radicalBigg/radicalbt/radicalvertex/radicaltp
+/arrowvertexdbl/arrowtp/arrowbt/bracehtipdownleft/bracehtipdownright
+/bracehtipupleft/bracehtipupright/arrowdbltp/arrowdblbt 160/hardspace
+/parenleftbig/parenrightbig/bracketleftbig/bracketrightbig/floorleftbig
+/floorrightbig/ceilingleftbig/ceilingrightbig/braceleftbig/bracerightbig
+ 173/angbracketleftbig/angbracketrightbig/vextendsingle/vextenddouble
+/slashbig/backslashbig/parenleftBig/parenrightBig/parenleftbigg
+/parenrightbigg/bracketleftbigg/bracketrightbigg/floorleftbigg
+/floorrightbigg/ceilingleftbigg/ceilingrightbigg/braceleftbigg
+/bracerightbigg/angbracketleftbigg/angbracketrightbigg/slashbigg
+/backslashbigg/parenleftBigg/arrowdblbt] >>
+endobj
+19 0 obj
+<<
+/Length 40770
+>>
+stream
+1 g
+0 0 m
+595 0 l
+595 842 l
+0 842 l
+h
+f
+BT
+/F0 1 Tf
+0 g
+9.9632 0 0 9.9632 0 0 Tm
+7.1128 80.524 Td
+[(A.)-333(G.)-333(W)83(alton)-11657(MA)83(TH50004)-333(Multiv)55(ariable)-333(Calculus)]TJ
+/F1 1 Tf
+45.024 0 Td
+[(1)]TJ
+/F2 1 Tf
+14.347 0 0 14.347 0 0 Tm
+16.48 53.489 Td
+[(Sheet)-375(0)-375(Solutions)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+7.1128 74.824 Td
+[(1.)-444(\(i\))]TJ
+/F3 1 Tf
+2.6111 0 Td
+[(A)]TJ
+/F4 1 Tf
+1.0916 0 Td
+[(\001)]TJ
+/F3 1 Tf
+0.49999 0 Td
+[(B)]TJ
+/F1 1 Tf
+1.0958 0 Td
+[(=)-277(\()]TJ
+/F3 1 Tf
+1.4444 0 Td
+[(i)]TJ
+/F1 1 Tf
+0.54166 0 Td
+[(+)-222(3)]TJ
+/F3 1 Tf
+1.5 0 Td
+[(j)]TJ
+/F4 1 Tf
+0.5736 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(2)]TJ
+/F3 1 Tf
+0.5 0 Td
+[(k)]TJ
+/F1 1 Tf
+0.60693 0 Td
+[(\))]TJ
+/F4 1 Tf
+0.6111 0 Td
+[(\001)]TJ
+/F1 1 Tf
+0.49999 0 Td
+[(\(4)]TJ
+/F3 1 Tf
+0.88889 0 Td
+[(i)]TJ
+/F4 1 Tf
+0.54166 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(2)]TJ
+/F3 1 Tf
+0.5 0 Td
+[(j)]TJ
+/F1 1 Tf
+0.5736 0 Td
+[(+)-222(4)]TJ
+/F3 1 Tf
+1.5 0 Td
+[(k)]TJ
+/F1 1 Tf
+0.60693 0 Td
+[(\))-277(=)-277(4)]TJ
+/F4 1 Tf
+2.4444 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(6)]TJ
+/F4 1 Tf
+0.72222 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(8)-277(=)]TJ
+/F4 1 Tf
+1.8333 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(10)]TJ
+/F5 1 Tf
+1 0 Td
+[(:)]TJ
+/F1 1 Tf
+1.1112 0 Td
+[(\(ii\))]TJ
+/F4 1 Tf
+1.6667 0 Td
+[(j)]TJ
+/F3 1 Tf
+0.27778 0 Td
+[(A)]TJ
+/F4 1 Tf
+0.86943 0 Td
+[(j)]TJ
+/F1 1 Tf
+0.55556 0 Td
+[(=)]TJ
+ET
+0.432 w
+402.98 754.02 m
+455.76 754.02 l
+S
+BT
+/F4 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+39.614 75.657 Td
+[(p)]TJ
+/F1 1 Tf
+0.83334 -0.83334 Td
+[(1)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+58.496 107.3 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+41.618 74.824 Td
+[(+)-222(3)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+61.597 107.3 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+43.789 74.824 Td
+[(+)-222(2)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+64.698 107.3 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+46.015 74.824 Td
+[(=)]TJ
+ET
+477.22 754.02 m
+487.22 754.02 l
+S
+BT
+/F4 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+47.071 75.651 Td
+[(p)]TJ
+/F1 1 Tf
+0.83333 -0.82722 Td
+[(14)]TJ
+/F5 1 Tf
+1 0 Td
+[(:)]TJ
+/F1 1 Tf
+-41.791 -2.4 Td
+[(\(iii\))]TJ
+/F3 1 Tf
+1.9444 0 Td
+[(A)]TJ
+/F4 1 Tf
+1.0916 0 Td
+[(\002)]TJ
+/F3 1 Tf
+0.99999 0 Td
+[(B)]TJ
+/F1 1 Tf
+1.0958 0 Td
+[(=)]TJ
+/F7 1 Tf
+1.0555 2.05 Td
+[(\014)]TJ
+0 -0.6 Td
+[(\014)]TJ
+0 -0.60001 Td
+[(\014)]TJ
+0 -0.60001 Td
+[(\014)]TJ
+0 -0.6 Td
+[(\014)]TJ
+0 -0.60001 Td
+[(\014)]TJ
+/F3 1 Tf
+0.92361 2.16 Td
+[(i)-1553(j)-1798(k)]TJ
+/F1 1 Tf
+-0.09028 -1.2 Td
+[(1)-1388(3)]TJ
+/F4 1 Tf
+3.7778 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(2)]TJ
+-4.5556 -1.2 Td
+[(4)]TJ
+/F4 1 Tf
+1.5 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(2)-1388(4)]TJ
+/F7 1 Tf
+3.2778 3.24 Td
+[(\014)]TJ
+0 -0.6 Td
+[(\014)]TJ
+0 -0.60001 Td
+[(\014)]TJ
+0 -0.60001 Td
+[(\014)]TJ
+0 -0.6 Td
+[(\014)]TJ
+0 -0.60001 Td
+[(\014)]TJ
+/F1 1 Tf
+0.6111 0.95001 Td
+[(=)-277(8)]TJ
+/F3 1 Tf
+1.5555 0 Td
+[(i)]TJ
+/F4 1 Tf
+0.54166 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(12)]TJ
+/F3 1 Tf
+1 0 Td
+[(j)]TJ
+/F4 1 Tf
+0.5736 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(14)]TJ
+/F3 1 Tf
+1 0 Td
+[(k)]TJ
+/F5 1 Tf
+0.60693 0 Td
+[(:)]TJ
+/F1 1 Tf
+-20.465 -2.4 Td
+[(\(iv\))-333(\(2)]TJ
+/F3 1 Tf
+2.8055 0 Td
+[(A)]TJ
+/F1 1 Tf
+1.0916 0 Td
+[(+)]TJ
+/F3 1 Tf
+0.99999 0 Td
+[(B)]TJ
+/F1 1 Tf
+0.81804 0 Td
+[(\))]TJ
+/F4 1 Tf
+0.6111 0 Td
+[(\001)]TJ
+/F1 1 Tf
+0.49999 0 Td
+[(\()]TJ
+/F3 1 Tf
+0.38888 0 Td
+[(A)]TJ
+/F4 1 Tf
+1.0916 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(2)]TJ
+/F3 1 Tf
+0.5 0 Td
+[(B)]TJ
+/F1 1 Tf
+0.81804 0 Td
+[(\))-277(=)-277(\(6)]TJ
+/F3 1 Tf
+2.6111 0 Td
+[(i)]TJ
+/F1 1 Tf
+0.54166 0 Td
+[(+)-222(4)]TJ
+/F3 1 Tf
+1.5 0 Td
+[(j)]TJ
+/F1 1 Tf
+0.35138 0 Td
+[(\))]TJ
+/F4 1 Tf
+0.6111 0 Td
+[(\001)]TJ
+/F1 1 Tf
+0.49999 0 Td
+[(\()]TJ
+/F4 1 Tf
+0.38888 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(7)]TJ
+/F3 1 Tf
+0.5 0 Td
+[(i)]TJ
+/F1 1 Tf
+0.54166 0 Td
+[(+)-222(7)]TJ
+/F3 1 Tf
+1.5 0 Td
+[(j)]TJ
+/F4 1 Tf
+0.5736 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(10)]TJ
+/F3 1 Tf
+1 0 Td
+[(k)]TJ
+/F1 1 Tf
+0.60694 0 Td
+[(\))-277(=)]TJ
+/F4 1 Tf
+1.7222 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(42)-222(+)-222(28)-277(=)]TJ
+/F4 1 Tf
+4.5555 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(14)]TJ
+/F5 1 Tf
+1 0 Td
+[(:)]TJ
+/F1 1 Tf
+-32.462 -1.8 Td
+[(2.)-563(Consider)-373(a)-373(parallelogram)-373(with)-373(sides)]TJ
+/F3 1 Tf
+17.51 0 Td
+[(B)]TJ
+/F1 1 Tf
+1.1912 0 Td
+[(and)]TJ
+/F3 1 Tf
+1.9843 0 Td
+[(C)]TJ
+/F1 1 Tf
+1.2037 0 Td
+[(and)-373(let)]TJ
+/F7 1 Tf
+3.5102 0.013893 Td
+[(b)]TJ
+/F3 1 Tf
+-0.041664 -0.013893 Td
+[(n)]TJ
+/F1 1 Tf
+1.0121 0 Td
+[(b)-27(e)-373(the)-373(unit)-373(normal)-373(to)-373(this)-373(parallelogram)-373(in)]TJ
+-26.37 -1.2 Td
+[(the)-333(direction)]TJ
+/F3 1 Tf
+5.8916 0 Td
+[(B)]TJ
+/F4 1 Tf
+1.0403 0 Td
+[(\002)]TJ
+/F3 1 Tf
+0.99999 0 Td
+[(C)]TJ
+/F5 1 Tf
+0.83055 0 Td
+[(;)]TJ
+/F1 1 Tf
+0.6111 0 Td
+[(so)-333(that)]TJ
+/F7 1 Tf
+3.4361 0.013885 Td
+[(b)]TJ
+/F3 1 Tf
+-0.041664 -0.013885 Td
+[(n)]TJ
+/F1 1 Tf
+0.91666 0 Td
+[(=)-277(\()]TJ
+/F3 1 Tf
+1.4444 0 Td
+[(B)]TJ
+/F4 1 Tf
+1.0403 0 Td
+[(\002)]TJ
+/F3 1 Tf
+0.99999 0 Td
+[(C)]TJ
+/F1 1 Tf
+0.83055 0 Td
+[(\))]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(=)]TJ
+/F4 1 Tf
+0.66666 0 Td
+[(j)]TJ
+/F3 1 Tf
+0.27778 0 Td
+[(B)]TJ
+/F4 1 Tf
+1.0403 0 Td
+[(\002)]TJ
+/F3 1 Tf
+0.99999 0 Td
+[(C)]TJ
+/F4 1 Tf
+0.83055 0 Td
+[(j)]TJ
+/F5 1 Tf
+0.44446 0 Td
+[(:)]TJ
+/F1 1 Tf
+-22.648 -1.2 Td
+[(The)-235(area)-235(of)-235(the)-235(parallelogram)-235(is)]TJ
+/F4 1 Tf
+13.786 0 Td
+[(j)]TJ
+/F3 1 Tf
+0.27778 0 Td
+[(B)]TJ
+/F4 1 Tf
+1.0403 0 Td
+[(\002)]TJ
+/F3 1 Tf
+0.99999 0 Td
+[(C)]TJ
+/F4 1 Tf
+0.83055 0 Td
+[(j)]TJ
+/F1 1 Tf
+0.51304 0 Td
+[(and)-235(it)-235(follo)27(ws)-235(that)-235(the)-235(v)27(olume)]TJ
+/F5 1 Tf
+12.972 0 Td
+[(V)]TJ
+/F1 1 Tf
+1.0408 0 Td
+[(of)-235(the)-235(parallelepip)-27(ed)-235(is)]TJ
+/F4 1 Tf
+9.8937 0 Td
+[(j)]TJ
+/F3 1 Tf
+0.27778 0 Td
+[(B)]TJ
+/F4 1 Tf
+1.0403 0 Td
+[(\002)]TJ
+/F3 1 Tf
+0.99998 0 Td
+[(C)]TJ
+/F4 1 Tf
+0.83056 0 Td
+[(j)]TJ
+/F5 1 Tf
+0.44445 0 Td
+[(h)]TJ
+/F1 1 Tf
+-44.948 -1.2 Td
+[(where)]TJ
+/F5 1 Tf
+2.8917 0 Td
+[(h)]TJ
+/F1 1 Tf
+0.85393 0 Td
+[(=)]TJ
+/F3 1 Tf
+1.0555 0 Td
+[(A)]TJ
+/F4 1 Tf
+1.0916 0 Td
+[(\001)]TJ
+/F7 1 Tf
+0.54165 0.013901 Td
+[(b)]TJ
+/F3 1 Tf
+-0.041663 -0.013901 Td
+[(n)]TJ
+/F1 1 Tf
+0.97222 0 Td
+[(\()]TJ
+/F5 1 Tf
+0.38888 0 Td
+[(>)]TJ
+/F1 1 Tf
+1.0555 0 Td
+[(0\))-333(is)-333(the)-333(p)-27(erp)-27(endicular)-333(heigh)27(t.)]TJ
+-8.8094 -1.2 Td
+[(Therefore)]TJ
+/F5 1 Tf
+4.5333 0 Td
+[(V)]TJ
+/F1 1 Tf
+1.0833 0 Td
+[(=)-277(\()]TJ
+/F3 1 Tf
+1.4444 0 Td
+[(A)]TJ
+/F4 1 Tf
+1.0916 0 Td
+[(\001)]TJ
+/F7 1 Tf
+0.54165 0.013885 Td
+[(b)]TJ
+/F3 1 Tf
+-0.041666 -0.013885 Td
+[(n)]TJ
+/F1 1 Tf
+0.63889 0 Td
+[(\))]TJ
+/F4 1 Tf
+0.55555 0 Td
+[(j)]TJ
+/F3 1 Tf
+0.27778 0 Td
+[(B)]TJ
+/F4 1 Tf
+1.0403 0 Td
+[(\002)]TJ
+/F3 1 Tf
+0.99999 0 Td
+[(C)]TJ
+/F4 1 Tf
+0.83055 0 Td
+[(j)]TJ
+/F1 1 Tf
+0.55557 0 Td
+[(=)]TJ
+/F3 1 Tf
+1.0555 0 Td
+[(A)]TJ
+/F4 1 Tf
+1.0916 0 Td
+[(\001)]TJ
+/F1 1 Tf
+0.49999 0 Td
+[(\()]TJ
+/F3 1 Tf
+0.38889 0 Td
+[(B)]TJ
+/F4 1 Tf
+1.0403 0 Td
+[(\002)]TJ
+/F3 1 Tf
+0.99999 0 Td
+[(C)]TJ
+/F1 1 Tf
+0.83055 0 Td
+[(\))-333(up)-27(on)-333(substituting)-333(for)]TJ
+/F7 1 Tf
+10.389 0.013885 Td
+[(b)]TJ
+/F3 1 Tf
+-0.041664 -0.013885 Td
+[(n)]TJ
+/F1 1 Tf
+0.97222 0 Td
+[(from)-333(ab)-27(o)27(v)27(e.)]TJ
+-30.778 -1.2 Td
+[(If)-333(the)-333(system)-333(is)-333(not)-333(righ)27(t-handed)-333(then)]TJ
+/F3 1 Tf
+17.019 0 Td
+[(A)]TJ
+/F4 1 Tf
+1.0916 0 Td
+[(\001)]TJ
+/F7 1 Tf
+0.54165 0.013889 Td
+[(b)]TJ
+/F3 1 Tf
+-0.041662 -0.013889 Td
+[(n)]TJ
+/F5 1 Tf
+0.91666 0 Td
+[(<)]TJ
+/F1 1 Tf
+1.0555 0 Td
+[(0)-333(and)-333(so)]TJ
+/F5 1 Tf
+4.0056 0 Td
+[(V)]TJ
+/F1 1 Tf
+1.0833 0 Td
+[(=)]TJ
+/F4 1 Tf
+1.0555 0 Td
+[(j)]TJ
+/F3 1 Tf
+0.27778 0 Td
+[(A)]TJ
+/F4 1 Tf
+1.0916 0 Td
+[(\001)]TJ
+/F1 1 Tf
+0.49999 0 Td
+[(\()]TJ
+/F3 1 Tf
+0.38889 0 Td
+[(B)]TJ
+/F4 1 Tf
+1.0403 0 Td
+[(\002)]TJ
+/F3 1 Tf
+0.99999 0 Td
+[(C)]TJ
+/F1 1 Tf
+0.83055 0 Td
+[(\))]TJ
+/F4 1 Tf
+0.38888 0 Td
+[(j)]TJ
+/F5 1 Tf
+0.4445 0 Td
+[(:)]TJ
+/F1 1 Tf
+-32.69 -1.8 Td
+[(3.)-444(\(i\))-333(Di\013eren)27(tiating,)]TJ
+/F5 1 Tf
+9.5444 0 Td
+[(@)-55(x=@)-55(u)]TJ
+/F1 1 Tf
+3.0946 0 Td
+[(=)-277(3)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(u)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+31.257 86.838 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+22.551 60.424 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(v)]TJ
+/F1 1 Tf
+0.85392 0 Td
+[(and)-333(so)]TJ
+/F5 1 Tf
+3.1722 0 Td
+[(@)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+40.233 86.838 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+28.612 60.424 Td
+[(x=@)-55(v)-35(@)-55(u)]TJ
+/F1 1 Tf
+3.6152 0 Td
+[(=)-277(\()]TJ
+/F5 1 Tf
+1.4444 0 Td
+[(@)-55(=@)-55(v)]TJ
+/F1 1 Tf
+2.1935 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(@)-55(x=@)-55(u)]TJ
+/F1 1 Tf
+2.8169 0 Td
+[(\))-277(=)-277(1)]TJ
+/F5 1 Tf
+2.2222 0 Td
+[(:)]TJ
+/F1 1 Tf
+-34.569 -1.2 Td
+[(W)83(e)-333(also)-333(ha)27(v)27(e)]TJ
+/F5 1 Tf
+6.0333 0 Td
+[(@)-55(x=@)-55(v)]TJ
+/F1 1 Tf
+3.0428 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(u)]TJ
+/F1 1 Tf
+0.79466 0 Td
+[(+)-222(3)]TJ
+/F5 1 Tf
+1.5 0 Td
+[(v)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+28.657 85.124 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+20.842 59.224 Td
+[(and)-333(so)]TJ
+/F5 1 Tf
+3.1722 0 Td
+[(@)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+35.143 85.124 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+25.049 59.224 Td
+[(x=@)-55(u@)-55(v)]TJ
+/F1 1 Tf
+3.6152 0 Td
+[(=)-277(1)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(:)]TJ
+/F1 1 Tf
+-23.107 -1.2 Td
+[(In)-333(a)-333(similar)-333(w)27(a)27(y)]TJ
+/F5 1 Tf
+7.3972 0 Td
+[(@)-55(y)-35(=@)-55(u)]TJ
+/F1 1 Tf
+3.0493 0 Td
+[(=)-277(2)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(u;)-166(@)-55(y)-35(=@)-55(v)]TJ
+/F1 1 Tf
+4.0143 0 Td
+[(=)]TJ
+/F4 1 Tf
+1.0555 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(v)]TJ
+/F1 1 Tf
+0.85392 0 Td
+[(and)-333(so)-333(\()]TJ
+/F5 1 Tf
+3.5611 0 Td
+[(@)-55(=@)-55(u)]TJ
+/F1 1 Tf
+2.2454 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(@)-55(y)-35(=@)-55(v)]TJ
+/F1 1 Tf
+2.7197 0 Td
+[(\))-277(=)-277(\()]TJ
+/F5 1 Tf
+2.1111 0 Td
+[(@)-55(=@)-55(v)]TJ
+/F1 1 Tf
+2.1935 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(@)-55(y)-35(=@)-55(u)]TJ
+/F1 1 Tf
+2.7715 0 Td
+[(\))-277(=)-277(0)]TJ
+/F5 1 Tf
+2.2222 0 Td
+[(:)]TJ
+/F1 1 Tf
+-38.583 -1.5 Td
+[(\(ii\))-333(Di\013eren)27(tiating)-333(implicitly)-333(wrt)]TJ
+/F5 1 Tf
+14.63 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.90485 0 Td
+[(w)27(e)-333(ha)27(v)27(e)-333(1)-277(=)-277(3)]TJ
+/F5 1 Tf
+6.1111 0 Td
+[(u)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+41.902 81.267 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+29.78 56.524 Td
+[(u)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+43.361 80.534 Td
+[(x)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+31.078 56.524 Td
+[(+)]TJ
+/F5 1 Tf
+0.99998 0 Td
+[(v)-35(u)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+47.388 80.534 Td
+[(x)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+33.897 56.524 Td
+[(+)]TJ
+/F5 1 Tf
+0.99998 0 Td
+[(uv)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+51.363 80.534 Td
+[(x)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+36.68 56.524 Td
+[(+)-222(3)]TJ
+/F5 1 Tf
+1.5 0 Td
+[(v)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+55.286 81.267 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+39.149 56.524 Td
+[(v)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+56.62 80.534 Td
+[(x)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+40.471 56.524 Td
+[(and)-333(0)-277(=)-277(2)]TJ
+/F5 1 Tf
+4.2778 0 Td
+[(uu)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+65.562 80.534 Td
+[(x)]TJ
+/F4 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+46.619 56.524 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(v)-35(v)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+70.177 80.534 Td
+[(x)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+49.628 56.524 Td
+[(:)]TJ
+/F1 1 Tf
+-42.515 -1.8 Td
+[(This)-333(can)-333(b)-27(e)-333(written)-333(in)-333(matrix)-333(form)-333(as)]TJ
+/F7 1 Tf
+16.992 1.41 Td
+[(\022)]TJ
+/F1 1 Tf
+1.2361 -0.80001 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(u)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+37.733 79.567 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+27.084 55.334 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(v)-1035(u)]TJ
+/F1 1 Tf
+2.3153 0 Td
+[(+)-222(3)]TJ
+/F5 1 Tf
+1.5 0 Td
+[(v)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+46.314 79.567 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+26.436 54.134 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(u)]TJ
+/F4 1 Tf
+3.4009 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(v)]TJ
+/F7 1 Tf
+1.7534 2 Td
+[(\023)-166(\022)]TJ
+/F5 1 Tf
+2.1389 -0.80001 Td
+[(u)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+51.542 78.834 Td
+[(x)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+35.551 54.134 Td
+[(v)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+51.48 77.12 Td
+[(x)]TJ
+/F7 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+37.083 56.134 Td
+[(\023)]TJ
+/F1 1 Tf
+1.0139 -1.41 Td
+[(=)]TJ
+/F7 1 Tf
+1.0555 1.41 Td
+[(\022)]TJ
+/F1 1 Tf
+1.2361 -0.80001 Td
+[(1)]TJ
+0 -1.2 Td
+[(0)]TJ
+/F7 1 Tf
+1 2 Td
+[(\023)]TJ
+/F5 1 Tf
+0.90278 -1.41 Td
+[(:)]TJ
+/F1 1 Tf
+-35.179 -2.7039 Td
+[(Letting)]TJ
+/F5 1 Tf
+3.5139 0 Td
+[(u)]TJ
+/F1 1 Tf
+0.85022 0 Td
+[(=)-277(1)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(;)-166(v)]TJ
+/F1 1 Tf
+1.2428 0 Td
+[(=)-277(0)-333(w)27(e)-333(ha)27(v)27(e)]TJ
+/F7 1 Tf
+5.6666 1.41 Td
+[(\022)]TJ
+/F5 1 Tf
+1.2361 -0.80001 Td
+[(u)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+31.072 74.971 Td
+[(x)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+21.222 51.43 Td
+[(v)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+31.009 73.257 Td
+[(x)]TJ
+/F7 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+22.754 53.43 Td
+[(\023)]TJ
+/F1 1 Tf
+1.0139 -1.41 Td
+[(=)]TJ
+/F7 1 Tf
+1.0555 1.41 Td
+[(\022)]TJ
+/F1 1 Tf
+1.2361 -0.80001 Td
+[(3)-1000(1)]TJ
+0 -1.2 Td
+[(2)-1000(0)]TJ
+/F7 1 Tf
+2.5 2 Td
+[(\023)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+41.851 76.032 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(1)]TJ
+/F7 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+30.536 53.43 Td
+[(\022)]TJ
+/F1 1 Tf
+1.2361 -0.80001 Td
+[(1)]TJ
+0 -1.2 Td
+[(0)]TJ
+/F7 1 Tf
+1 2 Td
+[(\023)]TJ
+/F1 1 Tf
+1.0139 -1.41 Td
+[(=)]TJ
+/F7 1 Tf
+1.0555 1.41 Td
+[(\022)]TJ
+/F1 1 Tf
+1.2361 -0.80001 Td
+[(0)-1388(1)]TJ
+/F5 1 Tf
+2.3889 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2)]TJ
+-2.8889 -1.2 Td
+[(1)]TJ
+/F4 1 Tf
+1.5 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2)]TJ
+/F7 1 Tf
+1 2 Td
+[(\023)-166(\022)]TJ
+/F1 1 Tf
+2.1389 -0.80001 Td
+[(1)]TJ
+0 -1.2 Td
+[(0)]TJ
+/F7 1 Tf
+1 2 Td
+[(\023)]TJ
+/F1 1 Tf
+1.0139 -1.41 Td
+[(=)]TJ
+/F7 1 Tf
+1.0555 1.41 Td
+[(\022)]TJ
+/F1 1 Tf
+1.2361 -0.80001 Td
+[(0)]TJ
+0 -1.2 Td
+[(1)]TJ
+/F7 1 Tf
+1 2 Td
+[(\023)]TJ
+/F1 1 Tf
+-40.687 -3.1545 Td
+[(and)-333(so)]TJ
+/F5 1 Tf
+3.1722 0 Td
+[(u)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+15.511 71.608 Td
+[(x)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+11.639 50.275 Td
+[(=)-277(0)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(;)-166(v)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+20.176 71.608 Td
+[(x)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+14.905 50.275 Td
+[(=)-277(1)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(:)]TJ
+/F1 1 Tf
+-9.3474 -1.7445 Td
+[(T)83(o)-334(get)]TJ
+/F5 1 Tf
+3.1412 0 Td
+[(u)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+15.466 69.116 Td
+[(y)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+11.642 48.531 Td
+[(and)]TJ
+/F5 1 Tf
+1.9456 0 Td
+[(v)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+20.103 69.116 Td
+[(y)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+14.887 48.531 Td
+[(w)27(e)-334(go)-334(bac)27(k)-334(and)-334(di\013eren)27(tiate)-334(implicitly)-334(wrt)]TJ
+/F5 1 Tf
+18.958 0 Td
+[(y)-35(:)]TJ
+/F1 1 Tf
+1.1384 0 Td
+[(This)-334(giv)27(es)]TJ
+/F7 1 Tf
+4.7356 1.41 Td
+[(\022)]TJ
+/F1 1 Tf
+1.2361 -0.80001 Td
+[(3)-1000(1)]TJ
+0 -1.2 Td
+[(2)-1000(0)]TJ
+/F7 1 Tf
+2.5 2 Td
+[(\023)-166(\022)]TJ
+/F5 1 Tf
+2.1389 -0.80001 Td
+[(u)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+65.952 69.987 Td
+[(y)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+45.638 47.941 Td
+[(v)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+65.889 68.273 Td
+[(y)]TJ
+/F7 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+47.147 49.941 Td
+[(\023)]TJ
+/F1 1 Tf
+1.0158 -1.41 Td
+[(=)]TJ
+/F7 1 Tf
+1.0574 1.41 Td
+[(\022)]TJ
+/F1 1 Tf
+1.2361 -0.80001 Td
+[(0)]TJ
+0 -1.2 Td
+[(1)]TJ
+/F7 1 Tf
+1 2 Td
+[(\023)]TJ
+/F5 1 Tf
+0.90278 -1.41 Td
+[(:)]TJ
+/F1 1 Tf
+-45.246 -1.8 Td
+[(After)-333(in)27(v)27(erting)-333(the)-333(matrix)-333(w)27(e)-333(\014nd)]TJ
+/F5 1 Tf
+15.258 0 Td
+[(u)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+32.776 66.544 Td
+[(y)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+23.702 46.731 Td
+[(=)-277(1)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(;)-166(v)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+38.838 66.544 Td
+[(y)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+27.945 46.731 Td
+[(=)]TJ
+/F4 1 Tf
+1.0555 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(:)]TJ
+/F1 1 Tf
+-24.166 -1.8 Td
+[(4.)-444(\(i\))-333(First)-333(\()]TJ
+/F5 1 Tf
+5.4388 0 Td
+[(@)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+18.769 64.706 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+13.587 44.931 Td
+[(=@)-55(x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+21.778 64.706 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+15.693 44.931 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(r)]TJ
+/F1 1 Tf
+0.47893 0 Td
+[(\))-277(=)-277(\()]TJ
+/F5 1 Tf
+2.1111 0 Td
+[(@)-55(=@)-55(x)]TJ
+/F1 1 Tf
+2.2444 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(@)-55(r)-27(=@)-55(x)]TJ
+/F1 1 Tf
+2.7234 0 Td
+[(\))-277(=)-277(\()]TJ
+/F5 1 Tf
+2.1111 0 Td
+[(@)-55(=@)-55(x)]TJ
+/F1 1 Tf
+2.2444 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(@)-55(=@)-55(x)]TJ
+/F1 1 Tf
+2.2444 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+47.905 64.706 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+34.204 44.931 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(y)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+51.044 64.706 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+36.401 44.931 Td
+[(+)]TJ
+/F5 1 Tf
+0.99998 0 Td
+[(z)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+54.158 64.706 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+38.359 44.931 Td
+[(\))]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+55.354 64.706 Td
+[(1)]TJ
+/F8 1 Tf
+0.56945 0 Td
+[(=)]TJ
+/F6 1 Tf
+0.58531 0 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+40.283 44.931 Td
+[(=)-277(\()]TJ
+/F5 1 Tf
+1.4444 0 Td
+[(@)-55(=@)-55(x)]TJ
+/F1 1 Tf
+2.2444 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(x=r)]TJ
+/F1 1 Tf
+1.5505 0 Td
+[(\))-277(=)]TJ
+-39.187 -1.2 Td
+[(\(1)]TJ
+/F5 1 Tf
+0.88889 0 Td
+[(=r)]TJ
+/F1 1 Tf
+0.97894 0 Td
+[(\))]TJ
+/F4 1 Tf
+0.6111 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(\()]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(x=r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+17.901 62.991 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+12.98 43.731 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(@)-55(r)-27(=@)-55(x)]TJ
+/F1 1 Tf
+2.7234 0 Td
+[(\))-277(=)-277(1)]TJ
+/F5 1 Tf
+2.2222 0 Td
+[(=r)]TJ
+/F4 1 Tf
+1.2012 0 Td
+[(\000)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+30.679 62.991 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+21.924 43.731 Td
+[(=r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+32.719 62.991 Td
+[(3)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+23.352 43.731 Td
+[(:)]TJ
+/F1 1 Tf
+-16.239 -1.2 Td
+[(Similarly:)-444(\()]TJ
+/F5 1 Tf
+5.0305 0 Td
+[(@)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+18.185 61.277 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+13.178 42.531 Td
+[(=@)-55(y)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+21.13 61.277 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+15.24 42.531 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(r)]TJ
+/F1 1 Tf
+0.47894 0 Td
+[(\))-277(=)-277(1)]TJ
+/F5 1 Tf
+2.2222 0 Td
+[(=r)]TJ
+/F4 1 Tf
+1.2012 0 Td
+[(\000)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(y)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+30.637 61.277 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+21.894 42.531 Td
+[(=r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+32.676 61.277 Td
+[(3)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+23.322 42.531 Td
+[(;)]TJ
+/F1 1 Tf
+0.44443 0 Td
+[(\()]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(@)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+35.345 61.277 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+25.19 42.531 Td
+[(=@)-55(z)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+38.265 61.277 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+27.234 42.531 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(r)]TJ
+/F1 1 Tf
+0.47894 0 Td
+[(\))-277(=)-277(1)]TJ
+/F5 1 Tf
+2.2222 0 Td
+[(=r)]TJ
+/F4 1 Tf
+1.2011 0 Td
+[(\000)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(z)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+47.748 61.277 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+33.872 42.531 Td
+[(=r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+49.787 61.277 Td
+[(3)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+35.3 42.531 Td
+[(:)]TJ
+/F1 1 Tf
+-28.187 -1.2 Td
+[(Hence)]TJ
+/F4 1 Tf
+2.9722 0 Td
+[(r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+15.598 59.563 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+11.367 41.331 Td
+[(\()]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(r)]TJ
+/F1 1 Tf
+0.47894 0 Td
+[(\))-277(=)-277(3)]TJ
+/F5 1 Tf
+2.2222 0 Td
+[(=r)]TJ
+/F4 1 Tf
+1.2012 0 Td
+[(\000)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+24.481 59.563 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+17.586 41.331 Td
+[(=r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+26.521 59.563 Td
+[(3)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+19.291 41.331 Td
+[(=)-277(2)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(=r)27(:)]TJ
+/F1 1 Tf
+-13.734 -1.5 Td
+[(\(ii\))-333(This)-333(time)-333(consider)-333(\()]TJ
+/F5 1 Tf
+10.514 0 Td
+[(@)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+26.019 57.42 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+18.662 39.831 Td
+[(=@)-55(x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+29.028 57.42 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+20.768 39.831 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(r)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+31.464 57.42 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(1)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+23.099 39.831 Td
+[(\))-277(=)-277(\()]TJ
+/F5 1 Tf
+2.1111 0 Td
+[(@)-55(=@)-55(x)]TJ
+/F1 1 Tf
+2.2444 0 Td
+[(\)\()]TJ
+/F4 1 Tf
+0.77777 0 Td
+[(\000)]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(r)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+42.126 57.42 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+30.562 39.831 Td
+[(@)-55(r)-27(=@)-55(x)]TJ
+/F1 1 Tf
+2.7234 0 Td
+[(\))-277(=)-277(\()]TJ
+/F5 1 Tf
+2.1111 0 Td
+[(@)-55(=@)-55(x)]TJ
+/F1 1 Tf
+2.2444 0 Td
+[(\)\()]TJ
+/F4 1 Tf
+0.77777 0 Td
+[(\000)]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(x=r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+58.21 57.42 Td
+[(3)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+41.196 39.831 Td
+[(\))-277(=)]TJ
+/F4 1 Tf
+-34.083 -1.2 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(1)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(=r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+13.702 55.705 Td
+[(3)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+10.263 38.631 Td
+[(+)-222(3)]TJ
+/F5 1 Tf
+1.5 0 Td
+[(xr)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+18.304 55.705 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(4)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+13.887 38.631 Td
+[(@)-55(r)-27(=@)-55(x)]TJ
+/F1 1 Tf
+3.0011 0 Td
+[(=)]TJ
+/F4 1 Tf
+1.0555 0 Td
+[(\000)]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(r)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+27.428 55.705 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(3)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+20.496 38.631 Td
+[(+)-222(3)]TJ
+/F5 1 Tf
+1.5 0 Td
+[(x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+32.239 55.705 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+23.016 38.631 Td
+[(r)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+33.564 55.705 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(5)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+24.568 38.631 Td
+[(:)]TJ
+/F1 1 Tf
+-17.456 -1.2 Td
+[(Again)-333(w)27(e)-333(can)-333(obtain)-333(similar)-333(expressions)-333(for)-333(the)]TJ
+/F5 1 Tf
+21.086 0 Td
+[(y)]TJ
+/F1 1 Tf
+0.85949 0 Td
+[(and)]TJ
+/F5 1 Tf
+1.9444 0 Td
+[(z)]TJ
+/F1 1 Tf
+0.84236 0 Td
+[(deriv)55(ativ)27(es.)]TJ
+-24.732 -1.2 Td
+[(Putting)-333(them)-333(together:)]TJ
+/F4 1 Tf
+10.572 0 Td
+[(r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+26.455 52.277 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+18.967 36.231 Td
+[(\(1)]TJ
+/F5 1 Tf
+0.88888 0 Td
+[(=r)]TJ
+/F1 1 Tf
+0.97894 0 Td
+[(\))-277(=)]TJ
+/F4 1 Tf
+1.7222 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(r)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+34.734 52.277 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(3)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+25.609 36.231 Td
+[(+)-222(3\()]TJ
+/F5 1 Tf
+1.8889 0 Td
+[(x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+40.1 52.277 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+28.741 36.231 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(y)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+43.238 52.277 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+30.938 36.231 Td
+[(+)]TJ
+/F5 1 Tf
+0.99998 0 Td
+[(z)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+46.352 52.277 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+32.895 36.231 Td
+[(\))]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(r)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+48.233 52.277 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(5)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+35.114 36.231 Td
+[(=)-277(0)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(:)]TJ
+/F1 1 Tf
+-29.557 -1.9595 Td
+[(5.)-444(\(i\))]TJ
+/F7 1 Tf
+2.2778 0.80556 Td
+[(R)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+14.367 49.757 Td
+[(2)]TJ
+/F8 1 Tf
+0.56944 0 Td
+[(\031)]TJ
+/F6 1 Tf
+-0.84722 -1.3056 Td
+[(0)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+11.165 34.272 Td
+[(sin)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+17.704 49.56 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+13.008 34.272 Td
+[(\022)-361(d\022)]TJ
+/F1 1 Tf
+2.126 0 Td
+[(=)-277(\(1)]TJ
+/F5 1 Tf
+1.9444 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\))]TJ
+/F7 1 Tf
+1.0555 0.80556 Td
+[(R)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+27.573 49.757 Td
+[(2)]TJ
+/F8 1 Tf
+0.56944 0 Td
+[(\031)]TJ
+/F6 1 Tf
+-0.84722 -1.3056 Td
+[(0)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+20.242 34.272 Td
+[(\(1)]TJ
+/F4 1 Tf
+1.1111 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(cos)-166(2)]TJ
+/F5 1 Tf
+2.0056 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.49721 0 Td
+[(\))]TJ
+/F5 1 Tf
+0.72221 0 Td
+[(d\022)]TJ
+/F1 1 Tf
+1.2955 0 Td
+[(=)-277(\(1)]TJ
+/F5 1 Tf
+1.9444 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\))-166([)]TJ
+/F5 1 Tf
+1.3333 0 Td
+[(\022)]TJ
+/F4 1 Tf
+0.71943 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(\(1)]TJ
+/F5 1 Tf
+0.88889 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\))-166(sin)-166(2)]TJ
+/F5 1 Tf
+2.95 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.49722 0 Td
+[(])]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+53.55 49.678 Td
+[(2)]TJ
+/F8 1 Tf
+0.56944 0 Td
+[(\031)]TJ
+/F6 1 Tf
+-0.56944 -1.1468 Td
+[(0)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+38.704 34.272 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(\031)-35(:)]TJ
+/F1 1 Tf
+-32.647 -1.2 Td
+[(\(ii\))-333(As)-333(ab)-27(o)27(v)27(e)-333(but)-333(write)-333(cos)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+26.887 47.763 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+19.436 33.072 Td
+[(\022)]TJ
+/F1 1 Tf
+0.77499 0 Td
+[(=)-277(\(1)]TJ
+/F5 1 Tf
+1.9444 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\)\(1)-222(+)-222(cos)-166(2)]TJ
+/F5 1 Tf
+5.0055 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.49722 0 Td
+[(\))]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(:)]TJ
+/F1 1 Tf
+0.6111 0 Td
+[(Again)-333(the)-333(answ)27(er)-333(is)-333(equal)-333(to)]TJ
+/F5 1 Tf
+12.819 0 Td
+[(\031)-35(:)]TJ
+/F1 1 Tf
+-34.865 -1.3594 Td
+[(\(iii\))-333(Letting)]TJ
+/F5 1 Tf
+5.4583 0 Td
+[(u)]TJ
+/F1 1 Tf
+0.85022 0 Td
+[(=)-277(cos)]TJ
+/F5 1 Tf
+2.5611 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.83055 0 Td
+[(the)-333(in)27(tegral)-333(b)-27(ecomes)]TJ
+/F4 1 Tf
+9.3416 0 Td
+[(\000)]TJ
+/F7 1 Tf
+0.94444 0.80556 Td
+[(R)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+39.665 46.101 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(1)]TJ
+-1.1706 -1.3056 Td
+[(1)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+29.006 31.712 Td
+[(u)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+42.255 45.821 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+30.027 31.712 Td
+[(du)]TJ
+/F1 1 Tf
+1.3707 0 Td
+[(=)-277(2)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(:)]TJ
+/F1 1 Tf
+-26.84 -1.2 Td
+[(\(iv\))-333(W)83(rite)-333(cos)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+18.784 44.107 Td
+[(4)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+13.764 30.512 Td
+[(\022)]TJ
+/F1 1 Tf
+0.77499 0 Td
+[(=)-277(\(1)]TJ
+/F5 1 Tf
+1.9444 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\))]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+25.532 44.107 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+18.321 30.512 Td
+[(\(1)-222(+)-222(cos)-166(2)]TJ
+/F5 1 Tf
+4.1166 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.49722 0 Td
+[(\))]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+33.32 44.107 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+24.05 30.512 Td
+[(=)-277(1)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(4)-222(+)-222(\(1)]TJ
+/F5 1 Tf
+2.6111 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\))-166(cos)-166(2)]TJ
+/F5 1 Tf
+3.0611 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.71944 0 Td
+[(+)-222(\(1)]TJ
+/F5 1 Tf
+1.8889 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(4\)\(1)]TJ
+/F5 1 Tf
+1.7778 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\)\(1)-222(+)-222(cos)-166(4)]TJ
+/F5 1 Tf
+5.0055 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.49721 0 Td
+[(\))-277(=)]TJ
+-36.054 -1.2 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(8)-222(+)-222(\(1)]TJ
+/F5 1 Tf
+2.6111 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\))-166(cos)-166(2)]TJ
+/F5 1 Tf
+3.0611 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.71943 0 Td
+[(+)-222(\(1)]TJ
+/F5 1 Tf
+1.8889 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(8\))-166(cos)-166(4)]TJ
+/F5 1 Tf
+3.0611 0 Td
+[(\022)-27(:)]TJ
+/F1 1 Tf
+-13.342 -1.2 Td
+[(After)-333(in)27(tegrating,)-333(the)-333(trigonometric)-333(functions)-333(v)55(anish,)-333(lea)27(ving)-333(an)-333(answ)27(er)-333(of)-333(3)]TJ
+/F5 1 Tf
+33.336 0 Td
+[(\031)-35(=)]TJ
+/F1 1 Tf
+1.1059 0 Td
+[(4)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(:)]TJ
+/F1 1 Tf
+-34.942 -1.2 Td
+[(\(v\))-333(W)83(rite)-333(sin)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+18.228 39.047 Td
+[(4)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+13.375 26.912 Td
+[(\022)]TJ
+/F1 1 Tf
+0.77499 0 Td
+[(=)-277(\(1)]TJ
+/F5 1 Tf
+1.9444 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\))]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+24.976 38.964 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+17.932 26.912 Td
+[(\(1)]TJ
+/F4 1 Tf
+1.1111 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(cos)-166(2)]TJ
+/F5 1 Tf
+2.0056 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.49722 0 Td
+[(\))]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+32.764 38.964 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+23.717 26.912 Td
+[(and)-333(pro)-27(ceed)-333(as)-333(ab)-27(o)27(v)27(e.)-444(The)-333(answ)27(er)-333(is)-333(3)]TJ
+/F5 1 Tf
+16.967 0 Td
+[(\031)-35(=)]TJ
+/F1 1 Tf
+1.1059 0 Td
+[(4)-333(once)-333(more.)]TJ
+-34.677 -1.8 Td
+[(6.)-444(In)-333(p)-27(olar)-333(co)-27(ordinates)-333(a)-333(small)-333(elemen)27(t)-333(of)-333(area)]TJ
+/F5 1 Tf
+20.825 0 Td
+[(dxdy)]TJ
+/F1 1 Tf
+2.472 0 Td
+[(can)-333(b)-27(e)-333(represen)27(ted)-333(b)27(y)-333(\()]TJ
+/F5 1 Tf
+10.289 0 Td
+[(r)-27(d\022)]TJ
+/F1 1 Tf
+1.4966 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(dr)]TJ
+/F1 1 Tf
+0.99941 0 Td
+[(\))]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(:)]TJ
+/F1 1 Tf
+-37.248 -1.2 Td
+[(So,)-333(with)]TJ
+/F5 1 Tf
+3.9444 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.84929 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(r)]TJ
+/F1 1 Tf
+0.6456 0 Td
+[(cos)]TJ
+/F5 1 Tf
+1.5056 0 Td
+[(\022)-27(;)-166(y)]TJ
+/F1 1 Tf
+1.7456 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(r)]TJ
+/F1 1 Tf
+0.6456 0 Td
+[(sin)]TJ
+/F5 1 Tf
+1.3944 0 Td
+[(\022)]TJ
+/F1 1 Tf
+0.83055 0 Td
+[(w)27(e)-333(can)-333(write)-333(the)-333(in)27(tegral)-333(as)]TJ
+/F5 1 Tf
+-13.672 -1.3039 Td
+[(I)]TJ
+/F1 1 Tf
+0.79582 0 Td
+[(=)]TJ
+/F7 1 Tf
+1.0555 0.80556 Td
+[(R)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+13.758 33.095 Td
+[(2)]TJ
+/F8 1 Tf
+0.56944 0 Td
+[(\031)]TJ
+/F6 1 Tf
+-0.84722 -1.3056 Td
+[(0)]TJ
+/F7 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+10.739 23.414 Td
+[(R)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+16.294 33.095 Td
+[(a)]TJ
+/F6 1 Tf
+-0.27778 -1.3056 Td
+[(0)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+11.889 22.608 Td
+[(\()]TJ
+/F5 1 Tf
+0.38888 0 Td
+[(r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+18.224 32.816 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+13.372 22.608 Td
+[(cos)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+21.016 32.816 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+15.326 22.608 Td
+[(\022)]TJ
+/F4 1 Tf
+0.56284 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.8434 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+25.302 32.816 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+18.327 22.608 Td
+[(sin)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+27.935 32.898 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+20.17 22.608 Td
+[(\022)]TJ
+/F1 1 Tf
+0.49722 0 Td
+[(\))]TJ
+/F5 1 Tf
+0.72221 0 Td
+[(r)-361(dr)-361(d\022)]TJ
+/F1 1 Tf
+3.4405 0 Td
+[(=)-277(\()]TJ
+/F7 1 Tf
+1.4444 0.80556 Td
+[(R)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+38.487 33.095 Td
+[(a)]TJ
+/F6 1 Tf
+-0.27777 -1.3056 Td
+[(0)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+27.591 22.608 Td
+[(r)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+40.1 32.816 Td
+[(3)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+28.519 22.608 Td
+[(dr)]TJ
+/F1 1 Tf
+0.99941 0 Td
+[(\)\()]TJ
+/F7 1 Tf
+0.77777 0.80556 Td
+[(R)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+44.233 33.095 Td
+[(2)]TJ
+/F8 1 Tf
+0.56944 0 Td
+[(\031)]TJ
+/F6 1 Tf
+-0.84722 -1.3056 Td
+[(0)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+32.071 22.608 Td
+[(cos)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+47.728 32.816 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+34.025 22.608 Td
+[(\022)]TJ
+/F4 1 Tf
+0.56284 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.8434 0 Td
+[(2)-166(sin)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+53.322 32.898 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+37.941 22.608 Td
+[(\022)-361(d\022)]TJ
+/F1 1 Tf
+1.8482 0 Td
+[(\))-277(=)-277(\()]TJ
+/F5 1 Tf
+2.1111 0 Td
+[(a)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+60.613 32.816 Td
+[(4)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+42.877 22.608 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(4\)\()]TJ
+/F5 1 Tf
+1.2778 0 Td
+[(\031)]TJ
+/F4 1 Tf
+0.67152 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.8434 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(\031)]TJ
+/F1 1 Tf
+0.6059 0 Td
+[(\))-277(=)]TJ
+/F4 1 Tf
+1.7222 0 Td
+[(\000)]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(\031)-35(a)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+72.729 32.816 Td
+[(4)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+51.359 22.608 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(4)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(:)]TJ
+/F1 1 Tf
+-45.246 -1.8 Td
+[(7.)-444(\(i\))-333(The)-333(in)27(tegrating)-333(factor)-333(is)-333(exp\()]TJ
+/F4 1 Tf
+15.539 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(3)]TJ
+/F7 1 Tf
+0.66666 0.80556 Td
+[(R)]TJ
+/F1 1 Tf
+0.66667 -0.80556 Td
+[(\()]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.79374 0 Td
+[(+)-222(1\))]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+39.763 30.244 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(1)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+28.908 20.808 Td
+[(dx)]TJ
+/F1 1 Tf
+1.092 0 Td
+[(\))-277(=)-277(\()]TJ
+/F5 1 Tf
+2.1111 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.79373 0 Td
+[(+)-222(1\))]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+49.705 30.244 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89286 0 Td
+[(3)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+35.867 20.808 Td
+[(:)]TJ
+/F1 1 Tf
+-28.754 -1.2 Td
+[(Multiplying)-271(the)-271(ODE)-271(b)27(y)-271(this)-271(quan)27(tit)27(y)-271(w)27(e)-271(get)-271(\(\()]TJ
+/F5 1 Tf
+20.483 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.6702 0 Td
+[(+)-98(1\))]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+42.902 28.53 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(3)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+31.105 19.608 Td
+[(y)]TJ
+/F1 1 Tf
+0.52616 0 Td
+[(\))]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+45.743 28.53 Td
+[(0)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+32.579 19.608 Td
+[(=)-277(\()]TJ
+/F5 1 Tf
+1.4444 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.6702 0 Td
+[(+)-98(1\))-271(and)-271(hence)-271(\()]TJ
+/F5 1 Tf
+7.0245 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.6702 0 Td
+[(+)-98(1\))]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+63.076 28.53 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(3)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+45.227 19.608 Td
+[(y)]TJ
+/F1 1 Tf
+0.80393 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+68.083 28.53 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+48.107 19.608 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2)-98(+)]TJ
+/F5 1 Tf
+1.4751 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.6702 0 Td
+[(+)]TJ
+/F5 1 Tf
+0.87645 0 Td
+[(C)-15(:)]TJ
+/F1 1 Tf
+-44.516 -1.2 Td
+[(The)-333(solution)-333(is)-333(therefore)]TJ
+/F5 1 Tf
+11.044 0 Td
+[(y)]TJ
+/F1 1 Tf
+0.80393 0 Td
+[(=)-277(\()]TJ
+/F5 1 Tf
+1.4444 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.79374 0 Td
+[(+)-222(1\))]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+32.983 26.816 Td
+[(3)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+23.537 18.408 Td
+[(\()]TJ
+/F5 1 Tf
+0.38888 0 Td
+[(x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+34.996 26.816 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+24.946 18.408 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2)-222(+)]TJ
+/F5 1 Tf
+1.7222 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.79373 0 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(C)]TJ
+/F1 1 Tf
+0.78625 0 Td
+[(\))]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(:)]TJ
+/F1 1 Tf
+-23.024 -1.5 Td
+[(\(ii\))-333(The)-333(homogeneous)-333(solution)-333(is)]TJ
+/F5 1 Tf
+14.628 0 Td
+[(y)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+31.758 23.94 Td
+[(H)-76(S)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+23.796 16.908 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(A)]TJ
+/F1 1 Tf
+0.91666 0 Td
+[(cos)]TJ
+/F5 1 Tf
+1.5056 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.79374 0 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(B)]TJ
+/F1 1 Tf
+0.97533 0 Td
+[(sin)]TJ
+/F5 1 Tf
+1.3944 0 Td
+[(x:)]TJ
+/F1 1 Tf
+-24.325 -1.2 Td
+[(F)83(or)-333(the)-333(particular)-333(solution)-333(w)27(e)-333(try)]TJ
+/F5 1 Tf
+15.03 0 Td
+[(y)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+32.334 22.226 Td
+[(P)-153(S)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+24.107 15.708 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(\026)]TJ
+/F1 1 Tf
+0.7692 0 Td
+[(cos)-166(2)]TJ
+/F5 1 Tf
+2.0056 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.79374 0 Td
+[(+)]TJ
+/F5 1 Tf
+0.99998 0 Td
+[(\025)]TJ
+/F1 1 Tf
+0.75 0 Td
+[(sin)-166(2)]TJ
+/F5 1 Tf
+1.8944 0 Td
+[(x:)]TJ
+/F1 1 Tf
+-25.263 -1.2 Td
+[(Then)]TJ
+/F5 1 Tf
+2.6111 0 Td
+[(y)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+14.643 21.244 Td
+[(00)]TJ
+/F8 1 Tf
+-0.051254 -0.91189 Td
+[(P)-153(S)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+11.632 14.508 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(y)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+18.747 20.512 Td
+[(P)-153(S)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+14.597 14.508 Td
+[(=)]TJ
+/F4 1 Tf
+1.0555 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(\026)]TJ
+/F1 1 Tf
+0.7692 0 Td
+[(cos)-166(2)]TJ
+/F5 1 Tf
+2.0056 0 Td
+[(x)]TJ
+/F4 1 Tf
+0.79374 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99998 0 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(\025)]TJ
+/F1 1 Tf
+0.74999 0 Td
+[(sin)-166(2)]TJ
+/F5 1 Tf
+1.8944 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.84929 0 Td
+[(=)-277(cos)-166(2)]TJ
+/F5 1 Tf
+3.0611 0 Td
+[(x:)]TJ
+/F1 1 Tf
+1.1826 0 Td
+[(Th)27(us)-333(w)27(e)-333(need)]TJ
+/F5 1 Tf
+6.3389 0 Td
+[(\026)]TJ
+/F1 1 Tf
+0.88031 0 Td
+[(=)]TJ
+/F4 1 Tf
+1.0555 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(1)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(;)-166(\025)]TJ
+/F1 1 Tf
+1.3055 0 Td
+[(=)-277(0)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(:)]TJ
+/F1 1 Tf
+-36.037 -1.2 Td
+[(The)-333(general)-333(solution)-333(is)-333(therefore)]TJ
+/F5 1 Tf
+14.492 0 Td
+[(y)]TJ
+/F1 1 Tf
+0.80393 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(A)]TJ
+/F1 1 Tf
+0.91666 0 Td
+[(cos)]TJ
+/F5 1 Tf
+1.5056 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.79374 0 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(B)]TJ
+/F1 1 Tf
+0.97534 0 Td
+[(sin)]TJ
+/F5 1 Tf
+1.3944 0 Td
+[(x)]TJ
+/F4 1 Tf
+0.79373 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(\(1)]TJ
+/F5 1 Tf
+0.88888 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(3\))-166(cos)-166(2)]TJ
+/F5 1 Tf
+3.0611 0 Td
+[(x:)]TJ
+/F1 1 Tf
+-29.18 -1.5 Td
+[(\(iii\))-333(The)-333(homogeneous)-333(solution)-333(is)-333(as)-333(in)-333(\(ii\).)]TJ
+0 -1.2 Td
+[(The)-333(RHS)-333(is)-333(no)27(w)-333(con)27(tained)-333(in)-333(that)-333(solution)-333(so)-333(w)27(e)-333(need)-333(to)-333(mo)-27(dify)]TJ
+/F5 1 Tf
+28.78 0 Td
+[(y)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+51.976 14.94 Td
+[(P)-153(S)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+37.58 10.608 Td
+[(:)]TJ
+ET
+
+endstream
+endobj
+21 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources <<
+/Font 20 0 R
+/ProcSet 2 0 R
+>>
+/Contents 19 0 R
+>>
+endobj
+20 0 obj
+<<
+/F9 18 0 R
+/F8 17 0 R
+/F7 16 0 R
+/F6 14 0 R
+/F5 13 0 R
+/F4 11 0 R
+/F3 9 0 R
+/F2 8 0 R
+/F1 7 0 R
+/F0 6 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 8350
+>>
+stream
+1 g
+0 0 m
+595 0 l
+595 842 l
+0 842 l
+h
+f
+BT
+/F0 1 Tf
+0 g
+9.9632 0 0 9.9632 0 0 Tm
+7.1128 80.524 Td
+[(A.)-333(G.)-333(W)83(alton)-11657(MA)83(TH50004)-333(Multiv)55(ariable)-333(Calculus)]TJ
+/F1 1 Tf
+45.024 0 Td
+[(2)]TJ
+-45.024 -3.5 Td
+[(W)83(e)-242(try)]TJ
+/F5 1 Tf
+3.1813 0 Td
+[(y)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+15.406 109.82 Td
+[(P)-153(S)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+12.258 77.024 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(C)-71(x)]TJ
+/F1 1 Tf
+1.5244 0 Td
+[(cos)]TJ
+/F5 1 Tf
+1.5056 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.61122 0 Td
+[(+)]TJ
+/F5 1 Tf
+0.81747 0 Td
+[(D)-27(x)]TJ
+/F1 1 Tf
+1.5939 0 Td
+[(sin)]TJ
+/F5 1 Tf
+1.3944 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.81359 0 Td
+[(and)-242(\014nd)-242(after)-242(some)-242(algebra)-242(that)]TJ
+/F5 1 Tf
+13.936 0 Td
+[(y)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+51.48 110.55 Td
+[(00)]TJ
+/F8 1 Tf
+-0.051258 -0.91189 Td
+[(P)-153(S)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+37.236 77.024 Td
+[(+)]TJ
+/F5 1 Tf
+0.81747 0 Td
+[(y)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+55.063 109.82 Td
+[(P)-153(S)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+40.018 77.024 Td
+[(=)-277(2)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(D)]TJ
+/F1 1 Tf
+1.0224 0 Td
+[(cos)]TJ
+/F5 1 Tf
+1.5056 0 Td
+[(x)]TJ
+/F4 1 Tf
+0.61122 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.81748 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(C)]TJ
+/F1 1 Tf
+0.95292 0 Td
+[(sin)]TJ
+/F5 1 Tf
+1.3944 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.84929 0 Td
+[(=)-277(cos)]TJ
+/F5 1 Tf
+2.5611 0 Td
+[(x:)]TJ
+/F1 1 Tf
+-44.675 -1.2 Td
+[(W)83(e)-333(therefore)-333(require)]TJ
+/F5 1 Tf
+9.2888 0 Td
+[(D)]TJ
+/F1 1 Tf
+1.1335 0 Td
+[(=)-277(1)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(;)-166(C)]TJ
+/F1 1 Tf
+1.5085 0 Td
+[(=)-277(0)-333(and)-333(the)-333(solution)-333(is)]TJ
+/F5 1 Tf
+10.344 0 Td
+[(y)]TJ
+/F1 1 Tf
+0.80393 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(A)]TJ
+/F1 1 Tf
+0.91666 0 Td
+[(cos)]TJ
+/F5 1 Tf
+1.5056 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.79374 0 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(B)]TJ
+/F1 1 Tf
+0.97533 0 Td
+[(sin)]TJ
+/F5 1 Tf
+1.3944 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.79373 0 Td
+[(+)-222(\(1)]TJ
+/F5 1 Tf
+1.8889 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\))]TJ
+/F5 1 Tf
+0.88888 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.73818 0 Td
+[(sin)]TJ
+/F5 1 Tf
+1.3944 0 Td
+[(x:)]TJ
+/F1 1 Tf
+-39.48 -1.8 Td
+[(8.)-984(Using)-513(the)-513(substitution)]TJ
+/F5 1 Tf
+12.402 0 Td
+[(x)]TJ
+/F1 1 Tf
+1.1492 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.3555 0 Td
+[(e)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+32.121 106.27 Td
+[(t)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+23.35 74.024 Td
+[(w)27(e)-513(see)-513(that)]TJ
+/F5 1 Tf
+5.7954 0 Td
+[(dy)-35(=dt)]TJ
+/F1 1 Tf
+3.0059 0 Td
+[(=)-577(\()]TJ
+/F5 1 Tf
+1.7444 0 Td
+[(dy)-35(=dx)]TJ
+/F1 1 Tf
+2.6386 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(dx=dt)]TJ
+/F1 1 Tf
+2.4736 0 Td
+[(\))-577(=)]TJ
+/F5 1 Tf
+2.3221 0 Td
+[(xdy)-35(=dx)]TJ
+/F1 1 Tf
+3.7234 0 Td
+[(and)]TJ
+/F5 1 Tf
+2.1244 0 Td
+[(d)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+69.252 106.27 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+48.925 74.024 Td
+[(y)-35(=dt)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+72.618 106.27 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+51.859 74.024 Td
+[(=)]TJ
+/F5 1 Tf
+-44.746 -1.2 Td
+[(x)]TJ
+/F1 1 Tf
+0.57152 0 Td
+[(\()]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(d=dx)]TJ
+/F1 1 Tf
+2.1125 0 Td
+[(\)\()]TJ
+/F5 1 Tf
+0.77777 0 Td
+[(xdy)-35(=dx)]TJ
+/F1 1 Tf
+3.2101 0 Td
+[(\))-277(=)]TJ
+/F5 1 Tf
+1.7222 0 Td
+[(x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+23.525 104.55 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+16.916 72.824 Td
+[(d)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+24.909 104.55 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+17.885 72.824 Td
+[(y)-35(=dx)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+28.576 104.55 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+20.674 72.824 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(xdy)-35(=dx:)]TJ
+/F1 1 Tf
+-14.561 -1.2 Td
+[(Our)-333(ODE)-333(b)-27(ecomes)]TJ
+/F5 1 Tf
+8.5916 0 Td
+[(d)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+23.178 102.84 Td
+[(2)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+16.673 71.624 Td
+[(y)-35(=dt)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+26.545 102.84 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+19.252 71.624 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(dy)-35(=dt)]TJ
+/F4 1 Tf
+2.6504 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(y)]TJ
+/F1 1 Tf
+0.80393 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(e)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+38.182 102.84 Td
+[(\000)]TJ
+/F8 1 Tf
+0.89285 0 Td
+[(t)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+27.705 71.624 Td
+[(:)]TJ
+/F1 1 Tf
+0.61111 0 Td
+[(This)-333(ma)27(y)-333(no)27(w)-333(b)-27(e)-333(solv)27(ed)-333(in)-333(the)-333(standard)-333(w)27(a)27(y)-333(to)-333(yield)]TJ
+/F5 1 Tf
+-21.203 -1.2 Td
+[(y)]TJ
+/F1 1 Tf
+0.80393 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(Ae)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+14.554 101.12 Td
+[(\000)]TJ
+/F6 1 Tf
+0.89285 0 Td
+[(2)]TJ
+/F8 1 Tf
+0.56944 0 Td
+[(t)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+11.786 70.424 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(B)-50(e)]TJ
+/F8 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+20.086 101.12 Td
+[(t)]TJ
+/F4 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+14.634 70.424 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(\(1)]TJ
+/F5 1 Tf
+0.88888 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(2\))]TJ
+/F5 1 Tf
+0.88889 0 Td
+[(e)]TJ
+/F9 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+26.254 101.12 Td
+[(\000)]TJ
+/F8 1 Tf
+0.89285 0 Td
+[(t)]TJ
+/F5 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+19.355 70.424 Td
+[(:)]TJ
+/F1 1 Tf
+0.61111 0 Td
+[(W)83(riting)-333(bac)27(k)-333(in)-333(terms)-333(of)]TJ
+/F5 1 Tf
+11.094 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.90485 0 Td
+[(w)27(e)-333(ha)27(v)27(e)]TJ
+/F5 1 Tf
+3.7778 0 Td
+[(y)]TJ
+/F1 1 Tf
+0.80393 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(A=x)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+56.32 101.12 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+40.095 70.424 Td
+[(+)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(B)-50(x)]TJ
+/F4 1 Tf
+1.6024 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.99999 0 Td
+[(1)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(=)]TJ
+/F1 1 Tf
+0.5 0 Td
+[(\(2)]TJ
+/F5 1 Tf
+0.88889 0 Td
+[(x)]TJ
+/F1 1 Tf
+0.57152 0 Td
+[(\))]TJ
+/F5 1 Tf
+0.38889 0 Td
+[(:)]TJ
+/F1 1 Tf
+-39.434 -1.8 Td
+[(9.)-444(If)-333(w)27(e)-333(let)]TJ
+/F5 1 Tf
+5.1388 0 Td
+[(\014)]TJ
+/F6 1 Tf
+6.9743 0 0 6.9743 0 0 Tm
+18.386 98.552 Td
+[(2)]TJ
+/F1 1 Tf
+9.9632 0 0 9.9632 0 0 Tm
+13.596 68.624 Td
+[(=)-277(1)]TJ
+/F4 1 Tf
+1.7778 0 Td
+[(\000)]TJ
+/F5 1 Tf
+0.99999 0 Td
+[(\025)]TJ
+/F1 1 Tf
+0.91666 0 Td
+[(then)-333(the)-333(general)-333(solution)-333(of)-333(the)-333(ODE)-333(is)]TJ
+/F5 1 Tf
+17.653 0 Td
+[(y)]TJ
+/F1 1 Tf
+0.80393 0 Td
+[(=)]TJ
+/F5 1 Tf
+1.0555 0 Td
+[(A)]TJ
+/F1 1 Tf
+0.91666 0 Td
+[(cos)]TJ
+/F5 1 Tf
+1.5055 0 Td
+[(\014)-52(x)]TJ
+/F1 1 Tf
+1.4121 0 Td
+[(+)]TJ
+/F5 1 Tf
+0.99998 0 Td
+[(B)]TJ
+/F1 1 Tf
+0.97534 0 Td
+[(sin)]TJ
+/F5 1 Tf
+1.3944 0 Td
+[(\014)-52(x:)]TJ
+/F1 1 Tf
+-36.894 -1.2 Td
+[(Applying)-268(the)-268(b)-27(oundary)-268(conditions)]TJ
+/F5 1 Tf
+15.083 0 Td
+[(y)]TJ
+/F1 1 Tf
+0.52616 0 Td
+[(\(0\))-277(=)]TJ
+/F5 1 Tf
+2.6111 0 Td
+[(A)]TJ
+/F1 1 Tf
+1.0278 0 Td
+[(=)-277(0)]TJ
+/F5 1 Tf
+1.5555 0 Td
+[(;)-166(y)]TJ
+/F1 1 Tf
+0.97059 0 Td
+[(\()]TJ
+/F5 1 Tf
+0.38888 0 Td
+[(\031)]TJ
+/F1 1 Tf
+0.6059 0 Td
+[(\))-277(=)]TJ
+/F5 1 Tf
+1.7222 0 Td
+[(B)]TJ
+/F1 1 Tf
+0.97534 0 Td
+[(sin\()]TJ
+/F5 1 Tf
+1.6167 0 Td
+[(\014)-52(\031)]TJ
+/F1 1 Tf
+1.2243 0 Td
+[(\))-277(=)-277(0)]TJ
+/F5 1 Tf
+2.2222 0 Td
+[(:)]TJ
+/F1 1 Tf
+0.54637 0 Td
+[(Th)27(us)-268(w)27(e)-268(need)]TJ
+/F5 1 Tf
+6.1446 0 Td
+[(\014)]TJ
+/F1 1 Tf
+0.89616 0 Td
+[(=)]TJ
+/F4 1 Tf
+1.0555 0 Td
+[(\006)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(1)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(;)]TJ
+/F4 1 Tf
+0.44444 0 Td
+[(\006)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(2)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(:)]TJ
+/F4 1 Tf
+0.37051 0 Td
+[(\006)]TJ
+/F1 1 Tf
+0.87052 0 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(;)-166(:)-166(:)-166(:)]TJ
+/F1 1 Tf
+-43.913 -1.2 Td
+[(The)-333(p)-27(ossible)-333(v)55(alues)-333(of)]TJ
+/F5 1 Tf
+9.9333 0 Td
+[(\025)]TJ
+/F1 1 Tf
+0.91666 0 Td
+[(are)-333(therefore)-333(0)]TJ
+/F5 1 Tf
+6.3694 0 Td
+[(;)]TJ
+/F4 1 Tf
+0.44443 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(3)]TJ
+/F5 1 Tf
+0.5 0 Td
+[(;)]TJ
+/F4 1 Tf
+0.44443 0 Td
+[(\000)]TJ
+/F1 1 Tf
+0.77777 0 Td
+[(8)-333(etc.)]TJ
+ET
+
+endstream
+endobj
+24 0 obj
+<<
+/Type /Page
+/Parent 4 0 R
+/Resources <<
+/Font 23 0 R
+/ProcSet 2 0 R
+>>
+/Contents 22 0 R
+>>
+endobj
+23 0 obj
+<<
+/F9 18 0 R
+/F8 17 0 R
+/F6 14 0 R
+/F5 13 0 R
+/F4 11 0 R
+/F1 7 0 R
+/F0 6 0 R
+>>
+endobj
+25 0 obj
+<<
+/Length 1711
+>>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (BaKoMa)
+/Ordering (Attend)
+/Supplement 0
+>> def
+/CMapName /CMap12 def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+106 beginbfchar
+<00> <0393>
+<01> <0394>
+<02> <0398>
+<03> <039b>
+<04> <039e>
+<05> <03a0>
+<06> <03a3>
+<07> <03a5>
+<08> <03a6>
+<09> <03a8>
+<0a> <03a9>
+<0b> <03b1>
+<0c> <03b2>
+<0d> <03b3>
+<0e> <03b4>
+<10> <03b6>
+<11> <03b7>
+<12> <03b8>
+<13> <03b9>
+<14> <03ba>
+<15> <03bb>
+<16> <03bc>
+<17> <03bd>
+<18> <03be>
+<19> <03c0>
+<1a> <03c1>
+<1b> <03c3>
+<1c> <03c4>
+<1d> <03c5>
+<1e> <03c6>
+<1f> <03c7>
+<20> <03c8>
+<21> <03c9>
+<22> <03b5>
+<23> <03d1>
+<26> <03c2>
+<27> <03d5>
+<30> <f730>
+<31> <f731>
+<32> <f732>
+<33> <f733>
+<34> <f734>
+<35> <f735>
+<36> <f736>
+<37> <f737>
+<38> <f738>
+<39> <f739>
+<3a> <002e>
+<3b> <002c>
+<3c> <003c>
+<3d> <002f>
+<3e> <003e>
+<40> <2202>
+<41> <0041>
+<42> <0042>
+<43> <0043>
+<44> <0044>
+<45> <0045>
+<46> <0046>
+<47> <0047>
+<48> <0048>
+<49> <0049>
+<4a> <004a>
+<4b> <004b>
+<4c> <004c>
+<4d> <004d>
+<4e> <004e>
+<4f> <004f>
+<50> <0050>
+<51> <0051>
+<52> <0052>
+<53> <0053>
+<54> <0054>
+<55> <0055>
+<56> <0056>
+<57> <0057>
+<58> <0058>
+<59> <0059>
+<5a> <005a>
+<61> <0061>
+<62> <0062>
+<63> <0063>
+<64> <0064>
+<65> <0065>
+<66> <0066>
+<67> <0067>
+<68> <0068>
+<69> <0069>
+<6a> <006a>
+<6b> <006b>
+<6c> <006c>
+<6d> <006d>
+<6e> <006e>
+<6f> <006f>
+<70> <0070>
+<71> <0071>
+<72> <0072>
+<73> <0073>
+<74> <0074>
+<75> <0075>
+<76> <0076>
+<77> <0077>
+<78> <0078>
+<79> <0079>
+<7a> <007a>
+<7b> <0131>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+
+endstream
+endobj
+26 0 obj
+<<
+/Length 1320
+>>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (BaKoMa)
+/Ordering (Attend)
+/Supplement 0
+>> def
+/CMapName /CMap10 def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+76 beginbfchar
+<00> <2212>
+<01> <2219>
+<02> <00d7>
+<04> <00f7>
+<06> <00b1>
+<0e> <25e6>
+<0f> <2022>
+<11> <2261>
+<14> <2264>
+<15> <2265>
+<19> <2248>
+<20> <2190>
+<21> <2192>
+<22> <2191>
+<23> <2193>
+<24> <2194>
+<31> <221e>
+<3a> <00ac>
+<41> <0041>
+<42> <0042>
+<43> <0043>
+<44> <0044>
+<45> <0045>
+<46> <0046>
+<47> <0047>
+<48> <0048>
+<49> <0049>
+<4a> <004a>
+<4b> <004b>
+<4c> <004c>
+<4d> <004d>
+<4e> <004e>
+<4f> <004f>
+<50> <0050>
+<51> <0051>
+<52> <0052>
+<53> <0053>
+<54> <0054>
+<55> <0055>
+<56> <0056>
+<57> <0057>
+<58> <0058>
+<59> <0059>
+<5a> <005a>
+<5b> <222a>
+<5c> <2229>
+<5e> <2227>
+<5f> <2228>
+<66> <007b>
+<67> <007d>
+<6a> <007c>
+<6e> <005c>
+<70> <221a>
+<73> <222b>
+<78> <00a7>
+<79> <2020>
+<7a> <2021>
+<7b> <00b6>
+<7c> <2663>
+<7d> <2666>
+<7e> <2665>
+<7f> <2660>
+<a0> <0020>
+<a1> <2212>
+<a2> <2219>
+<a3> <00d7>
+<a5> <00f7>
+<a7> <00b1>
+<b1> <25e6>
+<b2> <2022>
+<b4> <2261>
+<b7> <2264>
+<b8> <2265>
+<bc> <2248>
+<c3> <2190>
+<c4> <2660>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+
+endstream
+endobj
+27 0 obj
+<<
+/Length 2455
+>>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (BaKoMa)
+/Ordering (Attend)
+/Supplement 0
+>> def
+/CMapName /CMap5 def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+159 beginbfchar
+<00> <0393>
+<01> <0394>
+<02> <0398>
+<03> <039b>
+<04> <039e>
+<05> <03a0>
+<06> <03a3>
+<07> <03a5>
+<08> <03a6>
+<09> <03a8>
+<0a> <03a9>
+<0b> <00660066>
+<0c> <00660069>
+<0d> <0066006c>
+<0e> <006600660069>
+<0f> <00660066006c>
+<10> <0131>
+<12> <0060>
+<13> <00b4>
+<14> <02c7>
+<15> <02d8>
+<16> <02c9>
+<17> <02da>
+<18> <00b8>
+<19> <00df>
+<1a> <00e6>
+<1b> <0153>
+<1c> <00f8>
+<1d> <00c6>
+<1e> <0152>
+<1f> <00d8>
+<21> <0021>
+<22> <201d>
+<23> <0023>
+<24> <0024>
+<25> <0025>
+<26> <0026>
+<27> <2019>
+<28> <0028>
+<29> <0029>
+<2a> <002a>
+<2b> <002b>
+<2c> <002c>
+<2d> <002d>
+<2e> <002e>
+<2f> <002f>
+<30> <0030>
+<31> <0031>
+<32> <0032>
+<33> <0033>
+<34> <0034>
+<35> <0035>
+<36> <0036>
+<37> <0037>
+<38> <0038>
+<39> <0039>
+<3a> <003a>
+<3b> <003b>
+<3c> <00a1>
+<3d> <003d>
+<3e> <00bf>
+<3f> <003f>
+<40> <0040>
+<41> <0041>
+<42> <0042>
+<43> <0043>
+<44> <0044>
+<45> <0045>
+<46> <0046>
+<47> <0047>
+<48> <0048>
+<49> <0049>
+<4a> <004a>
+<4b> <004b>
+<4c> <004c>
+<4d> <004d>
+<4e> <004e>
+<4f> <004f>
+<50> <0050>
+<51> <0051>
+<52> <0052>
+<53> <0053>
+<54> <0054>
+<55> <0055>
+<56> <0056>
+<57> <0057>
+<58> <0058>
+<59> <0059>
+<5a> <005a>
+<5b> <005b>
+<5c> <201c>
+<5d> <005d>
+<5e> <02c6>
+<5f> <02d9>
+<60> <2018>
+<61> <0061>
+<62> <0062>
+<63> <0063>
+<64> <0064>
+<65> <0065>
+<66> <0066>
+<67> <0067>
+<68> <0068>
+<69> <0069>
+<6a> <006a>
+<6b> <006b>
+<6c> <006c>
+<6d> <006d>
+<6e> <006e>
+<6f> <006f>
+<70> <0070>
+<71> <0071>
+<72> <0072>
+<73> <0073>
+<74> <0074>
+<75> <0075>
+<76> <0076>
+<77> <0077>
+<78> <0078>
+<79> <0079>
+<7a> <007a>
+<7b> <2013>
+<7c> <2014>
+<7d> <02dd>
+<7e> <02dc>
+<7f> <00a8>
+<a0> <0020>
+<a1> <0393>
+<a2> <0394>
+<a3> <0398>
+<a4> <039b>
+<a5> <039e>
+<a6> <03a0>
+<a7> <03a3>
+<a8> <03a5>
+<a9> <03a6>
+<aa> <03a8>
+<ad> <03a9>
+<ae> <00660066>
+<af> <00660069>
+<b0> <0066006c>
+<b1> <006600660069>
+<b2> <00660066006c>
+<b3> <0131>
+<b5> <0060>
+<b6> <00b4>
+<b7> <02c7>
+<b8> <02d8>
+<b9> <02c9>
+<ba> <02da>
+<bb> <00b8>
+<bc> <00df>
+<bd> <00e6>
+<be> <0153>
+<bf> <00f8>
+<c0> <00c6>
+<c1> <0152>
+<c2> <00d8>
+<c4> <00a8>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+
+endstream
+endobj
+28 0 obj
+<<
+/Length 234
+/Subtype /Type1C
+>>
+stream
+  BKZIGO+TeX-cmsy7 áOé™ÿWÿxoÌÑ°÷T prime    ¦‡ 2tú|ú÷u¼÷÷uù
+˜•”‹™‹˜”~ı
+~‰‚‹~‹}•‚˜‰÷İÄ¿©€ŠŒ‹Œ‹‹Œ÷UøD’”‹“¬m£lp‹xz‚rûüVŠ‰‹‹‹Š‹…‡‰wŸøCš÷ OŸû`•±–›¼«š
+7‘	¼
+¼END
+endstream
+endobj
+18 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F9
+/BaseFont /BKZIGO+TeX-cmsy7
+/Encoding 10 0 R
+/ToUnicode 26 0 R
+/FirstChar 0
+/LastChar 196
+/Widths [892 339 892 585 892 585 892 892 892 892 892 892 892 1138 585 585 892
+892 892 892 892 892 892 892 892 892 892 892 1138 1138 892 892 1138 1138 585 585
+1138 1138 1138 892 1138 1138 708 708 1138 1138 1138 892 329 1138 769 769 1015
+1015 0 0 646 646 769 585 831 831 892 892 708 917 753 620 889 616 818 688 978
+646 782 871 791 1342 935 905 809 935 981 702 647 717 719 1135 818 764 823 769
+769 769 769 769 708 708 523 523 523 523 585 585 462 462 339 585 585 708 585 339
+938 859 954 493 769 769 892 892 523 523 523 708 892 892 892 892 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 892 339 892 585 892 585 892
+892 892 892 0 0 892 892 892 1138 585 585 892 892 892 892 892 892 892 892 892
+892 892 892 1138 1138 892 892 1138 892 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /BKZIGO+TeX-cmsy7
+/FontBBox [-14 -999 1257 786]
+/FontFile3 28 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 786
+/Descent -999
+/StemV 49
+/StemH 49
+>>
+>>
+endobj
+29 0 obj
+<<
+/Length 1893
+/Subtype /Type1C
+>>
+stream
+  LPWPGQ+TeX-cmmi7 âÿâÿqÿuÊİ°; pi    ) 1 4 B U Y Z‡  
+  wH¶Q8šÑú|ú<‹³÷»³÷ ³Ú‹¸‹¹¸‹»‹º‡º‹Œ‘Œ‘›‹“†„s‹k‹y…‰Œ‹’‹ŒŒÎ÷Ÿ÷ßJû˜ˆ}…}‡v†j‹r‹‡Š…‰Š†‡{„‚’¸‹¹¸‹»‹º‡º‹Œ‘Œ‘›‹“†„s‹k‹y…‰Œ‹’‹ŒŒ÷ø°™—š ¬‹¤‹Œ‘Œ‘›‘†”„]‹^‡]‹\‹\\‹†Š†‰‰†‡{‹‚‘†’‰£‹ª‹‡‘‰Š‹„Š‡‹†‰†Oû„ûßÅ÷}™—š ¬‹¤‹Œ‘Œ‘›‘†”„]‹^‡]‹\‹\\‹†Š†‰‰†‡{‹‚‘†’‰£‹ª‹‡‘‰Š‹„Š‡‹†‰†ûü°ˆ}…}‡v†j‹r‹‡Š…‰Š†‡{„‚’ùk‹³÷¯÷Á³ùlôÜ‹¸‹¹¸‹»‹º‡º‹Œ‘‘›‹“…„s‹k‹y…‰Œ‹’‹ŒÆ÷÷G÷÷RÙ÷"÷û·-ü†Š†‰‰†‡{‹‚‘†’‰£‹ª‹‡‘‰Š‹„Š‡‹†‰†ûü°ˆ}…}‡v†j‹r‹‡Š…‰‰†‡{„‘‚’÷÷êÍ÷”®’‹®‹÷Ìà~9‹YwIgh__I€P‹û0ùRw³ù¯÷\Õ÷¥Õáw’‹ŒÆÍºTØ}Ğ‹÷÷÷÷‹ÖXÊBœû ¬^•e®‹»æõÌİîÇW&Š}Š|‰{…„‘›‹Â÷sŒ‹Š‹‘†‘…„‰‹ˆŠ‰‰OIf¾LN‹ûû#(û‹@ÀTÒz÷ j»€®d‹Y,%=11#ª÷ ‹Ÿ“¢‹˜‘†‘…{†‹†‡Š‡TûtŠ‰‹Œ‹‰……‘ù «ø«ÆŞ÷iÁ‹¼ª°°˜^ºt¸‹Ó‹¨é™ÃŒ‹‹‹†’…{†‹‡‡‰†‚fz3Y‹q…¥ ‹——–Ğ÷¦Œ‹‹|˜xu‹w{†vt­f¡b‹û!ûû*û0Æ?ê«Xu»·‹½¢Û¹¡À»ÍÌ‹¼‹¨b•_Vûgl_Y\R‹øD«ø³æÛæßOÀiÃİ‹Ì×§ÑŒŒ‹†’…{†‹‡‡Š‡uTYDI‹q†¥ ‹—Œ—–Ó÷³÷Œ‘Œ‘›‹“……û±÷,Œ‹‹{˜yu‹w{†vcû1û
+†Š†‰‰†‡{‹‚‘†’‰÷Eû¬‰‚Šƒ‹ù«k÷"÷;÷"k«½ğ÷ßğœô°¥‘Ÿ£‹¦H¢xšugsliœSÇv¹¹‹²ª£¯¡^½u»‹ß‹ÕÓÙŒ‹‹‹†’…{†‹‡‡‰†|NTKG‹fu¤¯‹Ÿ¸÷H–³­¼¹‹‹‡›€q…xs‹p$t|¡¯¤ª­”ÃN \^‹clsgu¸Y¡[‹8‹ACw=‡†„‘›‹Œ›ÈÂËÎ‹°¡rg‹x†w†y^ûHciZ]‹y‹w|–ø×û`«k÷/²«ø«àğ^Ù…×¨àûLÎrÀ÷‹÷ä§÷íø‹Œ‹{˜xu‹x{…vCû³q`baU‹$[x°¶‹Ñ°Ş¥Ì–—‹˜À[«Y>‹W7zI‹‰‹‹‹‰†„‘›‹Œ—»¯ØÆ‹z|‹z†z…{¤rLg;‹H3ÉdÜ²‹°œ¨¥Z~blbmd_hW‹q‹n’yŸH¨¢¤‹¨¢xšuftjiù0Ÿ÷òÒøÊ÷¢wœ~£‹š“ŸŸ¾µ÷7¨÷	÷yAy@‹>h”û»¤¤¡¤‹‘‰‘ˆnÂÉ‹É‹µ¶“µ÷¡Ÿ¡›~˜{ü%@‹OAgRŠ‰Š‰‹‰……‘›˜°×á‹Ïlû]"W&‡„‰„‹„øİØûv~–€™•‹’‘‘”øúL‹Œ‹˜€–~€‹„…†‚üşLŠˆŠ‰‹‡wŸøCš÷ OŸû`•«“”±–¼
+7‘	³
+±END
+endstream
+endobj
+17 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F8
+/BaseFont /LPWPGQ+TeX-cmmi7
+/Encoding 12 0 R
+/ToUnicode 25 0 R
+/FirstChar 0
+/LastChar 127
+/Widths [693 954 868 797 844 935 886 677 769 716 880 742 647 600 519 476 519
+588 544 422 668 677 694 572 519 668 592 661 526 632 686 713 755 719 539 689 949
+592 439 751 1138 1138 1138 1138 339 339 585 585 585 585 585 585 585 585 585 585
+585 585 339 339 892 585 892 585 610 859 863 819 934 838 724 889 935 506 632 959
+783 1089 904 868 727 899 860 701 674 778 674 1074 936 671 778 462 462 462 1138
+1138 478 619 502 510 594 542 557 557 668 404 472 607 361 1013 706 563 588 523
+530 539 431 675 571 826 647 579 545 398 441 730 585 339 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /LPWPGQ+TeX-cmmi7
+/FontBBox [-2 -218 1171 750]
+/FontFile3 29 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 750
+/Descent -218
+/StemV 38
+/StemH 40
+>>
+>>
+endobj
+30 0 obj
+<<
+/Length 651
+/Subtype /Type1C
+>>
+stream
+  QNRRFD+TeX-cmex10 âOâ•ŸTÿu÷÷°øõ !.<integraltexthatwidevextendsingleparenleftbiggparenrightbigg   ‡ˆ‰Š‹    ´ ÕdÈú|ølşë¥q÷ùİ÷q¥Ââøâœóş»¡›‹¡H¤xsrxxrœQÆjÀ÷‹´÷˜ç™÷ ™î—÷
+™÷İ”÷ ³¶”°•´Ÿ·½‹¡‹¢„œ|uˆ{y‹t$sx¤££”ÆP¬Vû‹bû~/}û }(û}ûˆ9‚û ‡c‡`‚fbw_Y‹u‹t’zšøÀ’øÃ÷£÷÷¢û™¥û°÷3û±û3™q÷á÷%¶÷%üí€’˜‹—‹’•–øî‰–„•‹~‹„‰€üîùt÷dâù*öËŠŠ¥‹ŠŠŒûÎ÷Ì1øP‹ø@‹ø@äøQ÷Ï÷ÌŒŒŒ‹‡‡q‰ˆŠŠûçû¿ûüb‹üI‹üH÷üb÷çû¿ùtøLâ¶öÉ¥Œ‹ŒŒŒ÷æ÷¿÷øb‹øH‹øIûøbûæ÷¿ŠŒˆŒŠ‹q†‡†‡‹‰ŒˆŒŠ÷ÎûÌåüP‹ü@‹ü@2üQûÏûÌŠŠŠˆ‹‰‡†u¡øCœ÷¡N¡ûa–³¬™Ä““
+7‘	â
+ÌEND
+endstream
+endobj
+16 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F7
+/BaseFont /QNRRFD+TeX-cmex10
+/Encoding 15 0 R
+/FirstChar 0
+/LastChar 196
+/Widths [458 458 416 416 472 472 472 472 583 583 472 472 333 555 577 577 597
+597 736 736 527 527 583 583 583 583 750 750 750 750 1044 1044 791 791 583 583
+638 638 638 638 805 805 805 805 1277 1277 811 811 875 875 666 666 666 666 666
+666 888 888 888 888 888 888 888 666 875 875 875 875 611 611 833 1111 472 555
+1111 1511 1111 1511 1111 1511 1055 944 472 833 833 833 833 833 1444 1277 555
+1111 1111 1111 1111 1111 944 1277 555 1000 1444 555 1000 1444 472 472 527 527
+527 527 666 666 1000 1000 1000 1000 1055 1055 1055 777 666 666 449 449 449 449
+777 777 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 458
+458 416 416 472 472 472 472 583 583 0 0 472 472 333 555 577 577 597 597 736 736
+527 527 583 583 583 583 750 750 750 750 1044 1044 791 777 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /QNRRFD+TeX-cmex10
+/FontBBox [-24 -2959 1454 751]
+/FontFile3 30 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 751
+/Descent -2959
+/StemV 65
+/StemH 87
+>>
+>>
+endobj
+31 0 obj
+<<
+/Length 858
+/Subtype /Type1C
+>>
+stream
+  UPUDCC+TeX-cmr7 ã/âQÿ"ÿuÃĞ°ùÄ               V ¦'Ã.Ùú|øÍw«ù «¾ê÷¨ê÷°w÷V²÷J÷0÷1f÷QûXûXfûQû1û0²ûJ÷V‹«û‹÷mõô‹÷T÷÷‹ûT"!‹ûmûøÍ‹³øœ³·Ÿ÷à÷‹Ç‹ÇÈ‹Ç‹Ç‡Ç‹³pû‹©øÚ‰’ˆ„yVX?~E‹c½‹½‘· ü™mû‹pcøÍ‹äø«³Ê÷÷{îÊ‹ø0©÷Ne†k„^~|…†û‹J‹/÷óáÕ÷Ò‹÷÷û
+Îû	%#Eûl£sªª¤£ªªr£lˆ£ÀÂ«Å‹åÊG2‹1ICOO€€€€ûFûB‰‰‰ˆ‹ˆnøÍw¯÷Ğ¯÷›«Á÷7ö÷Sî<÷’÷Ùª£¦ª«r¤kjrrkû÷aé÷÷Ó÷‹ê1Ë5œlÚ¥ÌÊ‹âìû³;9ûe(m¢tª©¢¢©¦v¦n¬±Ã˜»‹Ë³`MJb.?L‡†……††‘…ÖÂä¯;==h;2Q‹E™f»øÍ‹³÷³øLŸ÷ßã:Şğ²÷8÷¸-m:‹qc½‹¾¾‹½‹¾‡½‹³q9‹©é÷³Hû øR“„‘ƒw†‹…ˆˆ‡ûáüYc¶³÷”÷ñûñû”øÍw¯ø«÷ä˜ŸÊóY³÷îö÷÷Ê©¡¢©¨u¢mnttnû ìAñ÷÷å÷÷1ñûæX‹Z|dj÷Kªƒªˆ«‹Ú‹Ø­¿ÇŒ‹•‘……ˆXvVU‹U‹V—Y ˆ……†…ûßƒˆ’‰–¢‘Ò÷‹ì˜ûC,i1ûL‹M®qÅwŸøCš÷ OŸû`•«“”¼©Ÿ
+7‘	³
+ÚEND
+endstream
+endobj
+14 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F6
+/BaseFont /UPUDCC+TeX-cmr7
+/Encoding 5 0 R
+/ToUnicode 27 0 R
+/FirstChar 0
+/LastChar 196
+/Widths [706 938 876 781 753 843 815 876 815 876 815 677 646 646 970 970 323
+354 569 569 569 569 569 843 507 569 815 876 569 1013 1136 876 323 323 569 938
+569 938 876 323 446 446 569 876 323 384 323 569 569 569 569 569 569 569 569 569
+569 569 323 323 323 876 538 538 876 843 798 815 860 767 737 883 843 412 583 874
+706 1027 843 876 767 876 829 630 815 843 843 1150 843 843 692 323 569 323 569
+323 323 569 630 507 630 507 354 569 630 323 354 600 323 938 630 569 630 600 446
+452 446 630 600 815 600 600 507 569 1138 569 569 569 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 706 938 876 781 753 843 815 876 815
+876 0 0 815 677 646 646 970 970 323 354 569 569 569 569 569 843 507 569 815 876
+569 1013 1136 876 323 569 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /UPUDCC+TeX-cmr7
+/FontBBox [-32 -251 1122 750]
+/FontFile3 31 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 750
+/Descent -251
+/StemV 79
+/StemH 40
+>>
+>>
+endobj
+32 0 obj
+<<
+/Length 4514
+/Subtype /Type1C
+>>
+stream
+  VDSFCC+TeX-cmmi10 ãOâÿHÿuê÷,°x pipartialdiffbetathetalambda    " # $ % * 7 B E F I S U V W Y Z [ ˜‡     ˆ‰Š‹    ¾€®VùVË©f		ë
+¸¤Vê?a˜ç5Ü¹6¢ú|ù‚‹®÷T®·‹©‹¨©‹¯‹¯ˆ°‹˜‹Œ•—‘ˆ’„uk‘¦‹”•‘Û÷÷‹šû9†pR‹u‹‹Š{‰……„’¸‹¸¸‹²‹²ˆ³‹•‹Œ›‘‘ˆ’„{‹Z‹–‰ŠŠNù’„…~ƒ‹„†‡…ûùüî‹Š‰‹‹Šn^evU‹‹‰{Š…†ƒ‘÷–÷š÷U÷ØªûØûtù‹‹®÷Ç¥÷¬®øñìbêè½‹ø÷÷0å÷Û:ÇAèå›÷Î‹ôë'µ8ûú‹Š{‰……„’¢‹©‹‡“Š‰‹‚‹†Š‡Š†ûü¹ˆ€†€‡s„h‹q‹‹Š{‰……„’÷L¶‹’“’Ğ÷©÷WğÌ±VN&./&û#ƒq‹“Û÷ÙÈ÷Š”­•‹¬‹÷hÅ²`R(':,û,ù_u®ù%®½ê÷%÷m÷^÷÷÷wöº.+‹zŠyˆz†…Ï÷¢‡‘†…‰ˆŠŠ<5hÄMªI‹ûzûoûtûyû3÷û÷4÷(‹÷"÷®÷#Œ‹Š‹‡†ˆ‹‡ˆŠˆmûû
+ûû‹ûBŞ÷ùĞ‹®øù®ù^ä»‹÷ö÷j÷O÷s÷d÷6÷û%ûü‹Š{‰……„’¢‹©‹‡“Š‰‹‚‹†Š‡Š†ûü¹ˆ€†€‡s„h‹q‹‹Š{‰……„’÷O¶‹’“’÷ø¹”­•‹¬‹÷÷ÌB ‹ Yû6>=VWBi@‹û	ƒq‹“øL‹®øù®µ‹¹‹º¹‹º‹¹ˆ¹‹™‹Œ•—‘‰’ƒs‹k‹x‚‡‹”‹ŒŒ÷ø¹›“•›¡¬‹¤‹–‹Œ›Œ‘‘‰’„\‹]ˆ]‹\‹]\‹~‹Šˆ…„’¤‹ª‹Ÿ‡“‰‰‹‚‹‡Š‡Š†ûü¹‡{‚{‡v‡j‹r‹€‹Š{‰……„’øÛuŸù®÷p€Œ„‡’‹™’‹“‘øøãŒ‹ŒŒŒŒ§¶±¢¿‹•‹›Œ‘ˆ“…o‹oˆo‹g‹gg‹}‹‹ˆ…„’Ÿ«…q‹‚‡†„ûÈü€IøŸ¦Ã‹¡‹•‹Œ›‘ˆ“„^‹^ˆ^‹f‹gg‹}‹Š‰…„“¢‹¸‹’uÛıø¥€¥ø%¥±Õ÷B€¾‹¸®¬°”^²p·‹Ó‹Ÿï™Á‡‘†ˆ‹‡ˆŠˆ‚gy+[‹s†£‹šœœÑ÷«‹Œ‹œ}–{r‹~x…vz®k¤b‹ûû û:û:¹<åŒ¥\{¾²‹Âª÷¤½ ³´À½‹»‹£]’bŠˆUûm‹Š‹ŠŠŠpb\YU‹ø€¥ø%¥÷b¸±Õ÷B€¾‹¸®¬°”^²p·‹Ó‹Ÿï™Á‡‘†ˆ‹‡ˆŠˆ‚gy+[‹s†£‹šŒ‘™÷$øÓ“‡ƒû€‹Š{Š……„“š¼‹{Š‚‰‚‰‚Sûsz®j¤c‹ûû û:û:¹<åŒ¥\{¾²‹Âª÷¤½ ³´À½‹º‹¤^’bTûp‹Š‹‰ŠŠpb\YU‹øf€¥÷j¥÷5¥·Ø÷–°÷]€â‹ä²¾Ò‹‹’ƒ”„ˆ‹ˆŠ‰‰]J<e<‹NvÈ¾‹¬‘®”­ä÷P‹÷ÅT§Wû&ûûû%-Ã4ğP÷¡ÙÀŞæ‹®¯ud'û9‹CøÔ€¥ø%¥÷b¸÷ßÍ“ĞÀz™œ‹œ™ŸÏ÷¥®Ë½ÃÙ‹±–hk‹Ha sK†~ˆ~‹~[°h»Ö‹µåšÉŒ‹Š‹‡†ˆ‹‡ˆŠˆ€[k7O‹zˆšš‹Ÿ “¢Èµó‹ËÒ[°GQ‹Xnf_Ù÷Ì‹‹‰‰Š…‹‹ˆŠû€‹Š{Š……„’š¼‹{Š‚‰‚‰‚û%üÖŠˆ‹ˆ‹ˆøW€Ÿ÷Á÷q¥÷æê°Øœz™€›‹™Ò÷²¦¾µÄË‹™‹˜‡–‚nsnoPuœ} ®¡©¬°·d¤cV‹_kkb‚¸e§]‹D‹v'~U‡…—‹Œ”¯ë¼‹£sx‹|ˆz‡z@û¾Šˆ‹ˆ‹ˆ÷ı€¥ø®ÈĞÈÜU´eÀÛ‹Ãà¤ÎŒŒ‹‹‹‡†ˆ‹ˆˆ‰ˆwU^=I‹sˆ£‹šŒœœÓ÷µ÷•‹Œ›‘‘ˆ’„#³÷3‹Œ‹œ}–{w‹z}†ycû7û‹‰{Š……„’óCû³‰‚Š‹‚øĞ€¥ø%¥õĞÍõ÷=½a×»‹³§¨¯—c±s´‹Ó‹Ÿï™Á‡‘†ˆ‹‡ˆŠˆ‚gy+[‹s†£‹šœœÓ÷´Œ‹‹œ}–{x‹y}†yCû¶Š†Š†Š†scfdX‹]~´±‹Ô°á¤Î˜˜‹˜»d®\@‹a1{Mˆ‡†——»«ßÆ‹||‹w…v„xsJf9‹Eøy€¥ø%¥öĞÍ÷ì]ºøö÷6ÅdÜÖ‹½Ò¨ÆªÉ¯÷‹Ğ¨‚¶gqqqq‹}˜€˜|ô—{˜w‹i‹_m@xcr[dPN‹Xw²¹‹Ñ¯à¤Ì˜˜‹˜»d®\@‹a1{Mˆ‡†—‹Œ—»«ßÆ‹||‹w…v„xsLg9‹GøĞ€¥q÷÷Q÷q¥ªê÷ÄêœÙ¨¦ £‹§H¡z™vjsmkœYÀwµ¸‹°¯Ÿ°›]·p»‹Ü‹ÊÚÔŒ‹Š‹‡†ˆ‹‡ˆŠˆ}PXBH‹hyªª‹ ¢‘¡·÷E•³«Ãº‹œ‹ˆ™€p‡us‹o$uœ} ­¢©«”½WŸa^‹fgwfz¹`¦[‹9‹M<xBˆ‡†—‹ŒšÆ½ÔÏ‹®ll‹v…t†u^ûEclS\‹y‹y}–ø~ûa¥q÷/-è³¥ø%¥»ìdĞÍ»ßû#‹ŠŒ$ª¥¦©D¡zšvevii”QÃn¿÷‹íí¦óîø"Œ‹‹œ}–{x‹y}†y?ûÈrdgfY‹›^~´±‹Ó°â¤Î˜˜‹˜»d®\@‹a1{Mˆ‡†—‹Œ—»«ßÆ‹||‹w…v„xsJf9‹E=¼aØ¯‹­œ¥¤x:Yû%‹o‹m•|¥øeÔCŸÀ¥÷“¥ŒÔvŸt¼€—‹ŒŒ«ª±³‹¤‹šy›x€œyx¨‹Ü‹ÈÛÓŒ‹Š‹‡†ˆ‹‡‡Šˆ~XTiX‹t‹v’u’0v‘u’t‹„‹…‹ƒ‰õ÷	÷"àÜ÷ŒŒŒ‹ˆ†ˆ‹ˆ‰ŠŠ|qr_i‹s‹{z{yn‹N‹ZQ}Tˆ††—‹Œ”­¶—ª‹¢‹ „ …P¡„ „¢‹"ûû!6;û‰‰‹‰‹ˆ‡†øï€¥ø Ÿ§ûPz™€›‹™¾÷^¦u°„­‹¿‹¸ª«²•`±p·‹Ó‹Ÿï™Á‡‘†ˆ‹‡ˆŠˆ‚gy+[‹s†£‹šœœÓ÷´Œ‹‹œ}–{x‹y}†yCû¶‹ŠŠŠ‹Šo]a^Q‹Xw²¹‹¢£‘¤Æ÷~‹Œ‹œ}–{w‹z}†yû'üâŠ‰‹ˆ‹ˆøÎ€Ÿ÷üÉ÷âÀğœz™€œ‹˜—’šš¨¼÷V«÷÷v8v6‹5m+´¡¡¡‹Š‰sÂÇ‹Æ‹½’¾—¿÷Ÿ›™€–}ûÿE‹W>kUŠ‰Š‰‹‰††—‹Œ¤µ·²¿‹Ëlû\ûVûˆ†Š†‹…÷ªûVŸ÷B÷ß÷p¨ĞîûH…“ƒ’‹ŒŒÀ¿­Ğ‹Öµ|ËV`lssll£sªš‹™––Š‹HpL[]‰‰‰ˆ‹ˆ÷ª‹÷ß÷ßÂm¤r©©£¤©©s¤mmrrmøˆÂûz€”‚–“‹“’÷òúX‹Œ‹Œ‹–‚”€ƒ‹ƒ†‰„ûòşXŠŠ‹Š‹‰ùè÷}øÒû¤Š‹‹–””–‹‘ˆ“…ü«÷‘ø¨÷’’‹“–‚”€ˆ‹‰‹‰ŠüÏû¢ƒ‡†„‹ƒ‹…ƒ’ˆùŞw€”‚–‹‹ŒøÏ÷£’’‹“‹‘ˆ“…üÒ÷¤ˆŒ‰‹ˆ‹€‚‚€‹…ƒ’ˆøªû‘ü§ûƒˆ†„‹ƒø§u«ø<¥÷w¨³Ü±ê÷O÷=Øú³÷0!İCó÷k÷÷¿÷I÷D÷û$X‹YyggttlY‹iu} ©¥¥©¡zšv‰‹ˆŠ‰‹©¼¿¦Ä‹î´34‹WT}U‹ˆŠ‰‹‰~Î^¼C‹û.ûû,û,Üe‹»©÷¡·ªÉÆ¼Ó‹ÔÕ«LHû:ûMûHb²ĞøÊûVŸ÷3¥÷ú¥•¥÷Œ¥ønØoÍü¦ûV—Ó÷³¢CÎaÔ‹÷ ÷÷!÷‹ÀvÁ^ªúÅ°¹Í‹Ò×RÀ@û"‹ûû$kûû.üş‡…÷•÷a6OÈßŒœœœÂ÷q¨÷ë÷÷‹¸¢ia‹Qo4\fx’ww‹rJ‹hpÅ‹ ¢‹¢ “t v“m‹n$KûPû¸ø—‘ª‹™‹“‹“Š’‰‹Œ‹ŒŠ€‡€‰‹{‹x‹|øi€¥÷Ï®÷Î¥³Ğ÷ªÒ÷5€Œì‹Ş÷±Ø¸æ¬÷‹òØt÷'Š+‹8ûd>^0lû‹%Š>¡ûî¥XˆÛ°‹Ê›ÏœÎ÷`x?Hûƒ*‹~÷òÖÎ÷ƒí‹¾;f‹L{G{IûaøÛ~Ÿù)¥¾œzš~›˜‹–“””÷†÷°çû”‘z™v†Á‹ˆˆ}š…¢„û_øËx¾O–[‹ƒ‹…†Šƒ…„’°‹™c–nîûªû­û¨ƒ„†‹€u¡øCœ÷¡N¡ûa–¥”¨–Â
+7‘	®
+¨END
+endstream
+endobj
+13 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F5
+/BaseFont /VDSFCC+TeX-cmmi10
+/Encoding 12 0 R
+/ToUnicode 25 0 R
+/FirstChar 0
+/LastChar 127
+/Widths [615 833 762 694 742 831 779 583 666 612 772 639 565 517 444 405 437
+496 469 353 576 583 602 493 437 570 517 571 437 540 595 625 651 622 466 591 828
+517 362 654 1000 1000 1000 1000 277 277 500 500 500 500 500 500 500 500 500 500
+500 500 277 277 777 500 777 500 530 750 758 714 827 738 643 786 831 439 554 849
+680 970 803 762 642 790 759 613 584 682 583 944 828 580 682 388 388 388 1000
+1000 416 528 429 432 520 465 489 476 576 344 411 520 298 878 600 484 503 446
+451 468 361 572 484 715 571 490 465 322 384 636 500 277 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /VDSFCC+TeX-cmmi10
+/FontBBox [-34 -219 1048 750]
+/FontFile3 32 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 750
+/Descent -219
+/StemV 29
+/StemH 35
+>>
+>>
+endobj
+33 0 obj
+<<
+/Length 674
+/Subtype /Type1C
+>>
+stream
+  KNYVCA+TeX-cmsy10 âé™ÿ#ÿwŸÕä°ù radicalnabla    ] r œ ¨ ¦‡ˆ    * N ´/T»ú|÷ª÷³÷û|•ƒ•••“•úX•“ƒşX÷ª÷W÷ß÷ß÷m¤r©©¤¤©©r¤mmrrmù‹³÷¥³÷¹Ÿø³Õ‹ù
+•“•••ƒ•û»÷¥÷»•“•••ƒ•û»÷»•€“‚ƒû»û»€ƒ“–÷»û¥û»€ƒ“–ù÷'¨€”‚–‘‹÷c÷b÷bûb‡ˆ‘‹–””–‹‰ˆûd÷c÷d÷d‘‹–‚”€…‹†ˆ‡ˆûbûcûc÷c‡†…‹€‚‚€‹‡…ˆ÷dûdûdûcˆ‡‰†‹†ù÷z³ñ÷zøÒ•“•••ƒ•üÒ€ƒ“–ùÕ÷óşNˆˆ‹–‘‹’øeúXŒ‹‹–‚”€…‹ƒ‡ˆ†ü=şûGø‰‡‡‹ˆ‹‰Š‰‰û1ˆ‰Šˆ‹ˆ„’„’‹ŒÆ¸÷[üJùÕøôÖøu„’‡“‹™“‹’’÷ìùJŒŒ‹Œ‹Œ‡‡ıh‡‡ˆ†‹ŠŒŠ‹Š÷ìıJÁâû¡ø³ø®û¡ü³u¡øCœ÷¡N¡ûa–¨–¨–¼
+7‘	³
+³END
+endstream
+endobj
+11 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F4
+/BaseFont /KNYVCA+TeX-cmsy10
+/Encoding 10 0 R
+/ToUnicode 26 0 R
+/FirstChar 0
+/LastChar 196
+/Widths [777 277 777 500 777 500 777 777 777 777 777 777 777 1000 500 500 777
+777 777 777 777 777 777 777 777 777 777 777 1000 1000 777 777 1000 1000 500 500
+1000 1000 1000 777 1000 1000 611 611 1000 1000 1000 777 274 1000 666 666 888
+888 0 0 555 555 666 500 722 722 777 777 611 798 656 526 771 527 718 594 844 544
+677 761 689 1200 820 796 695 816 847 605 544 625 612 987 713 668 724 666 666
+666 666 666 611 611 444 444 444 444 500 500 388 388 277 500 500 611 500 277 833
+750 833 416 666 666 777 777 444 444 444 611 777 777 777 777 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 777 277 777 500 777 500 777 777
+777 777 0 0 777 777 777 1000 500 500 777 777 777 777 777 777 777 777 777 777
+777 777 1000 1000 777 777 1000 777 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /KNYVCA+TeX-cmsy10
+/FontBBox [-28 -999 1123 779]
+/FontFile3 33 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 779
+/Descent -999
+/StemV 40
+/StemH 40
+>>
+>>
+endobj
+34 0 obj
+<<
+/Length 1014
+/Subtype /Type1C
+>>
+stream
+  BUCOKT+TeX-cmbx10 æâPÿdÿuÅÔ²ú^      " # $ J K L O    …—ñgömú|ùù‹¾÷¾øKŸ´‹±‹²²‹¹‹¹ˆ¸‹¾v‹uŒvx„ŒÀ÷÷œÃû.XÇ‹ÈÈ‹Á‹ÁˆÀ‹¾)û•ù	‡–€’‹u‹€„‡€û‘ı „‚;‹|‹X÷÷ƒ÷÷¥÷û¥ûrùÆ‹¾÷²³÷–¾÷'÷÷¹÷&û÷+ø²‹øa„÷÷¼÷‹÷ ¿,•øÚ™æº‹ç÷û%´û üAX÷ üÜû X÷‡¾÷²÷^ôŞ®>B;VS:ûN‹÷Ú÷–÷NxÑ°RI9QV:û.ùÓ€¾øò¾Ë÷1ø‚¾Ë÷ëû€÷Pû
+÷n÷ ÷0å÷0‹“‡ƒqƒ‰ˆˆ‰„ûû <ûû]B÷÷P÷NÒ÷	÷]÷	‹á(˜ûƒˆ“‰«’“÷Œ‰’ˆ„‡Š‰Šˆ‰CKU·H£E‹ûnûPû
+û€÷Ó‹¾÷çÈß÷4×÷4û÷è¸‹µ‹´µ‹²‹³ˆ²‹¾Mø$ûF‚W¥³ŒoûÌFX0ªøû_¯g··¯¯··g¯__gg_÷óû]÷4û3³øºÈß÷4O÷³÷4û÷zO!BßuÆáïÂìøˆûP‚W¤¾Œoü,_{DS~‹~š—’‹ˆ¯o¨gfongœ÷=ùe_¯g··¯¯··g¯__gg_øó‹¾÷ê¾÷RÈò÷­‹´‹´´‹³‹´ˆ´‹¾F÷Àµ÷û0ƒq‹…X¶‹µ¶‹­‹­ˆ®‹¾z‹a‹€”ûB÷m÷ö˜”À‹‹¾r‹sˆs‹a‹aa‹X©‰…ûJû#øYûI‚W¤·ŒoüÀFXù‹¾÷çÈb³÷÷
+÷\÷
+¸¶‹µ‹¶¶‹¶‹¶ˆµ‹¾F÷fÛÌĞİÀ‹Hdû‘FXµ‹¶¶‹¶‹¶ˆµ‹¾F÷”÷P­'D‹IdjLĞòûD‚W¤·ŒoûÌFX€–øP”÷}™S–û\‘³–•÷‘§
+‡‘	¾
+÷END
+endstream
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /BUCOKT+TeX-cmbx10
+/Encoding 5 0 R
+/ToUnicode 27 0 R
+/FirstChar 0
+/LastChar 196
+/Widths [691 958 894 805 766 899 830 894 830 894 830 670 638 638 958 958 319
+351 574 574 574 574 574 869 511 597 830 894 574 1041 1169 894 319 349 602 958
+574 958 894 319 447 447 574 894 319 383 319 574 574 574 574 574 574 574 574 574
+574 574 319 319 349 894 543 543 894 869 818 830 881 755 723 904 899 436 594 901
+691 1091 899 863 786 863 862 638 799 884 869 1188 869 869 702 319 602 319 574
+319 319 559 638 511 638 527 351 574 638 319 351 606 319 958 638 574 638 606 473
+453 447 638 606 830 606 606 511 574 1149 574 574 574 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 691 958 894 805 766 899 830 894 830
+894 0 0 830 670 638 638 958 958 319 351 574 574 574 574 574 869 511 597 830 894
+574 1041 1169 894 319 574 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /BUCOKT+TeX-cmbx10
+/FontBBox [-60 -250 1164 750]
+/FontFile3 34 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 750
+/Descent -250
+/StemV 112
+/StemH 51
+>>
+>>
+endobj
+35 0 obj
+<<
+/Length 1329
+/Subtype /Type1C
+>>
+stream
+  JAOVSN+TeX-cmbx12 åâPÿ9ÿuÆİ²      4 F I J M O P T U V     »*”ã|Ì|Ç$—ú|ùºøÿ·Éé-¹÷üéØÉ‰††‘•‹½ÁÃ_×}Ñ‹÷åß÷‹ïBã* û!ªèY–^³‹ÁÒÆ¯Í÷	‹ÔE˜ûŒ…†‘‹¤‘÷o††€‰‹‡‰‰‰YT\µNœM‹û*Cû‹+Ö<çw÷!lÂ¶[‹R@V^Cû
+û	º÷††r…†††ûpø•…³÷O¬÷6°ª÷÷zëª÷tû)÷:÷ Ú‹â°¦ÜŒ‹Š‹’…“ƒy†‹…‡‰†xRRkR‹ûpßò÷Ì””“÷CÚûû%5û#÷©Ø£àèã¤2Bûzù‹ºø°÷QÃ÷ ÷ ÷a÷²‹µ‹µµ‹´‹µ‰µ‹ºF÷jÚÈÔİÄ‹Haû•F\÷ºF÷˜÷ S®'H‹KelP÷éûEƒ\¤·‹oüÈF\÷Í‹º÷ğÃë÷(Ø÷(û÷ èµ‹÷ƒºMø(ûB‚\¥³‹oûÔF\0®ùc­i³³­­³³i­cciic÷Í‹ºøäÃ÷÷ µ‹÷ŠºFùûE‚\¤·‹oüÈF\ù‹º÷ğÃe°÷ ÷÷\÷¸²‹¤‹¥¥‹Å‹Å‰Å‹ºF÷jÚÈÔİÄ‹Haû•F\÷ºF÷˜÷ S®'C‹LakLĞõû@‚\¤·‹oûÔF\øÇ…³ø°ª÷÷÷ª÷oû'÷=÷÷÷Ù÷'÷( áû"û# 5û(÷ûMû‰óèç‘è÷÷‘./.‰#ûøP…°ø¬°Ò÷s¹aÒğ°…†‘•Œ‹ŒŒŒ¸«¬s³´‹èìâ­÷‹×F¿F™9™l‘\›‹±ÃĞ‘µpÆÀpJ…†‘¤‘÷††€‰‹ŠŠ‰Šixnšik‹2+sû ‹CÑ`Êİ|ˆ¯„ºu‹`KL€Y>‹^»zÓ‰ˆ†‹r…†††û$øJ…³÷ÿºî÷÷¹î÷	,ØoİÍ½ÆËÇ]Qi{XaZ‚¹²÷ª÷#ºû#÷S]5`û%fÙû¬ù…°ø Ã÷ ÷÷\÷÷ ÷ûîáÁ‹¿ª¦º=÷E‘¹r_Œ§øûJ‚\¤·‹oûeJ[MG>„—Ô÷ãûJ‚\¤·‹oûøÇ°øæ°·÷÷u÷÷­÷]®÷9÷:÷9k÷@û`ûakû@û9û:®û9÷^)÷ |µ‹÷‹Ü‹Õ‹ôš²›³²¥¶‹µ‹²q›cšd‹"‹A‹:‹û|a|bdm`‹_‹d©|´—øP”÷}™S—û\‘°•”÷ ¢
+‡‘	º
+÷ END
+endstream
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /JAOVSN+TeX-cmbx12
+/Encoding 5 0 R
+/ToUnicode 27 0 R
+/FirstChar 0
+/LastChar 196
+/Widths [675 937 875 787 750 879 812 875 812 875 812 656 625 625 937 937 312
+343 562 562 562 562 562 849 500 574 812 875 562 1018 1143 875 312 342 581 937
+562 937 875 312 437 437 562 875 312 375 312 562 562 562 562 562 562 562 562 562
+562 562 312 312 342 875 531 531 875 849 799 812 862 738 707 884 879 418 581 880
+675 1067 879 844 768 844 839 625 782 864 849 1162 849 849 687 312 581 312 562
+312 312 546 625 500 625 513 343 562 625 312 343 593 312 937 625 562 625 593 459
+443 437 625 593 812 593 593 500 562 1125 562 562 562 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 675 937 875 787 750 879 812 875 812
+875 0 0 812 656 625 625 937 937 312 343 562 562 562 562 562 849 500 574 812 875
+562 1018 1143 875 312 562 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /JAOVSN+TeX-cmbx12
+/FontBBox [-57 -250 1139 751]
+/FontFile3 35 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 751
+/Descent -250
+/StemV 108
+/StemH 47
+>>
+>>
+endobj
+36 0 obj
+<<
+/Length 7986
+/Subtype /Type1C
+>>
+stream
+  PQNTOE+TeX-cmr10 äOâPÿ	ÿuÆ÷L°      " $ % & ' ) * - . 0 1 3 4 5 6 8 B C D E F G H I J L M N O P Q R S T U V W X Y Z
+ m 	 
+                 < > ?   ‘$‘{g¼WË>ì¥WÜ	M	Â
+D
+°+—ö–ÓnûxêŠÔ6°q/Ô´]ºjÃØúL—»ÍkÑhı;¨Îú|ù‚‹®÷P®«‹¬‹­­‹³‹³ˆ³‹®m^—°‹‹Œ¸÷÷‡Áû0‹‰Œ‰‹ŠpJ‹xh½‹½¼‹¶‹·ˆ¶‹®h‹W‹}«ûoù‰’„„‹~„‹„‡‰„ûfü÷{]Z~^‹h÷`÷–÷÷Ó÷ûÓûoùfu®ù%®Âöøo¨÷wöWÍ~á‹Ş‹Ü˜â¿Í¹ÆÓ®Õ‹½‹¸v®i¶`²6‹O†‡÷¢‡‡„ˆ‹‰‰‰ŠQ9]¿K¬E‹û[û,û=ûVûW÷,û=÷[÷$÷÷÷$ˆ‘††‡‡‡û0ûû@‹C®\Æù‹®øù®÷åøó«‹ø÷H÷÷8÷?÷@û÷DûNüh¨Õ‹kü¹kA‹nh÷UÎø¹«¢‹§ïÏ‹Ík´S¹K’9‹<‹?„<]NaUImH‹'ot‹«ù=‹®÷Â®÷¨®÷è÷V¨÷&¨ª‹ø×µ÷šnoûBrVûN‹!ot‹«÷¢Õí¡z'¨÷¡n'uz)A÷ˆ«¢‹§í÷9‹®mŸû8¨o÷yüÊh¨Õ‹kü¹kA‹nhù!‹®÷µ®÷µ®÷è÷Q¨÷¨ª‹½‹½½‹Å‹ÅˆÅ‹®o'‹«÷•Òîy(¨÷¡n(xy(D÷•«¢‹§æ÷7‹©hû3¨o÷yü»h¨Õ‹kü¹kA‹nhù‚‹®÷Ã®÷§®÷è÷»èª‹½‹½½‹¼‹½ˆ½‹®nA‹«÷£÷»û£kA‹nh½‹½½‹¼‹½ˆ½‹®nA‹«ø¹«Õ‹¨®Y‹YˆZ‹Y‹YY‹h¨Õ‹kû‡û»÷‡«Õ‹¨®Y‹YˆZ‹Y‹YY‹h¨Õ‹kü¹kA‹nh÷ı‹®øù®÷è¦‹¾‹¾¿‹¾‹¾ˆ¾‹®o<‹«ø¹«Ú‹§®X‹XˆX‹W‹XX‹h§Ú‹kü¹k<‹ohù‹®øù®÷è÷Ú¨ª‹øŸ§÷šn}ûo-û0‹>ot‹«ø¹«ï‹§®Q‹QˆQ‹Y‹YY‹h¨Õ‹kü¹kA‹nhú)‹®øù®÷«øŸà®‹³‹²³‹³‹²ˆ³‹®cL‘Àø·÷‡ı
+„‘‡“‹“‹‘’÷ŠùüÚkA‹nh¼‹»¼‹»‹»ˆ¼‹®nA‹«ø¹«Õ‹¨®ûQ„‹„‡‰„ûnüÊûnøÊ‰’„„‹ûQh¨Õ‹küVL…chùu¨ù1¨ÂöøYöøu÷V÷÷C÷N÷Nû÷HûXûYûûHûNûN÷ûC÷Wû;÷\Ó~ã‹â‹Ü™İ¹Ì±ÁÈ²Ï‹Î‹Èd±U¹J™9‹:‹4~3\CfRO_F‹E‹O·fÄù=‹®÷©¨÷Ç®÷è÷¶ö«‹½‹½½‹¼‹½ˆ½‹®nA‹«÷‰÷5ó÷Ê÷÷ûÎ!ûùh¨Õ‹kü¹kA‹nh÷U÷é÷§«¢‹§á÷¹_ûû \]ûûùtu¥‡®÷º¥÷¹®÷å÷ªöè¨~«‹½‹¼¼‹¼‹¼ˆ½‹®nA‹«÷š÷ÎÀTI2(âaäÅ«É¿ˆ“„‚‡…†‡f{T]S‹†Ù„´}äÊX·Q ÖêÂ‹ä÷û2Ã"ûÏh¨Õ‹kü¹|kA‹nh÷U÷÷÷™«¢‹§ÄôÌiûûHh$û øÀu®ù'®ÁÑF¨÷ïÑQ¨˜Â}‡‡‘‹ŒŒµÍ¼ZĞwÏ‹÷Şï÷‹æOä0¢û«dS™c¿‹ÅĞÄÄĞ»‹¹}­i°f§D‹X†‡—÷|‡‡„ˆ‹ˆ‰ŠŠbJc¹P£O‹!10!‹3É<áu÷k˜È|°O‹NDWFAû.Ó÷‡‡†‡‡‡û}ùf‹®øù®¯¨÷è÷¨÷=‹Ë‹ËË‹Ê‹ËˆË‹®nû‹«ø¹«¢‹§µ´‹¹†©l§o‘AS¨x÷yü÷xûy¨Ã‘Õ§§©ª¹´‹µ§¢‹kü¹kû‹nhù‚u®ù®÷è÷õ®÷÷vû÷û÷÷é÷÷÷ÿÀÊ‘³®c‹cˆc‹b‹cc‹h³Ê…VûûûD"ûûe÷ôø«Õ‹¨®Y‹YˆZ‹Y‹YY‹h¨Õ‹küú˜uŸù®÷Ë€…‘†’‹’’‹‘‘÷:ø’÷9ü’…‘†’‹’’‹‘‘÷Wøì™·´š¶‹®n‹nˆn‹`‹aa‹h©Ä€d‹ˆŠˆŠˆû*üeû3ø}‹Š‹¦Ì‹®Z‹YˆY‹c‹dc‹h­‹¶‹—k¢Eûü:û4ø€‹‹Œ‹¦Ì‹®Z‹YˆY‹c‹dc‹h­‹¶‹—k÷`ıøˆ€¥÷s¥÷2¥³Ü÷_ÔÎ¨³í9êpÍÃ‹¾«¤½c©f´‹º²³ºËnKvƒlrqƒª ÷uå,¿;K1p>p v¦¦  ¦£y£q§¢²’®‹É³NRc'ûLgûÜ‹ğ÷²ß#KXTJ]b¯ºøÀ€¥ø%¥÷b¹óÑ÷™âó‹¨­Çª`¼oÀ‹÷íó÷÷	3÷ûW‹Xuhd÷Íû(€h¿¥‹SüäÔí÷„¥º»ªÁ‹º‹³l bŸc^‹`0nûûW‹_¯vºøP€¨÷°÷&n¨¬â÷Pë¸÷€Ü‹Ë¼ Ú‹‹Š‹‡‡‡‡ˆˆ{N^_J‹#f÷âÜ¥÷ò¬‹°‡§yt†{y‹sHp v¦¦  ¦¸Ø- Nû0ûûûè ÷øÀ€¥q¹ø¥÷b¹¬â÷™Ñ¼÷ˆ€¾‹¼£­²|L÷+–®Wq‹Ãøïû(€h¿¥‹Sûdk¯]¡[‹û)#û¬û
+ãû÷%íw³‰¸‹¶æ¨÷÷¾‹¶l¢_û„tYZgS‹\‹cªv´øP€¨÷i¥÷9¥§â÷yÑ÷€Ù‹ĞÁÖ‘ˆ’„‚†‹‡†Š‡|QW]N‹ûl÷è–÷¶’’‘÷Såûû6ûûûëû ÷û÷ Ï±ìİà£)Hûy÷Æ‹®÷ı®÷0÷
+q¥÷ÑååÜ«‹±‹°±‹·‹·ˆ·‹®nG‹«÷İ÷®û	÷
+¿¨ÙÊ•‹•‰”ˆz„{‹x$qŸx¥¤¥Ü¹^¦a7<H4û>hØûİkZ‹nhøˆûb¥÷MÉÛ¥÷ZÜf¥}¥§ÃqÙM®÷ZÙ©Ã[ÉÂ §=+÷&k×Ö÷&«ë÷û(8dĞhsª­‹œš”˜©w®®‹ŞÛÇã‹®}®r¥£¢«˜¬‹ƒ†‡€‹z˜~œ™˜œ§v£ob‹dzpn	 l¢e–e‹8:P4‹cg§p €xt€m‹m‹j™i¦wÂ _}`f‹ZÃ‹¹²°¸ŞÄöˆ;B nQP ¨Ô)@÷÷C}ËÅÄ™ÊÓÓ˜LRQ~KCøÀ‹®ø¥÷b¹÷ Ñ÷dÔ©‹±‹±²‹±‹±ˆ±‹®nZ‹«÷Y×¿×ÜÌ’NXûkZ‹nh±‹±²‹±‹±ˆ±‹®nZ‹«÷„ç[¶0N‹UepU÷ìû(€h¿¥‹Sü¡kZ‹nh÷ª‹®÷ı¹÷	÷Ô÷AÑèª‹±‹°±‹®‹®ˆ®‹®nb‹«øû$€h¾¢‹Sû¥kZ‹nh0µøúm¤r©©¤¤©©r¤mmrrmø¤‹®÷ı®÷m¹óÑ¥‹°‹°±‹°‹°ˆ°‹®nY‹«÷ÉÀëû”€”}‹~yxˆ|h±‹°±‹¨‹§ˆ¨‹®Q‹~˜k¹û÷HÒÊ±¬º¥¿‹®u‹vˆv‹a‹bb‹h™™ƒ{‹}€‚ûû
+øoû(€h¿¥‹Sü¡kZ‹nh÷ª‹®øù¹÷Ñª‹±‹°±‹±‹°ˆ±‹®nZ‹«ùû(€hÀ¤‹Sü¡kZ‹nhùÕ‹®÷ı¹q¥÷ Ô÷aÔ÷aÔ¼©‹±‹±²‹±‹±ˆ±‹®nZ‹«÷Y×¿×ÜÌ’NXûkZ‹nh±‹±²‹±‹±ˆ±‹®nZ‹«÷Y×¿×ÜÌ’NXûkZ‹nh±‹±²‹±‹±ˆ±‹®nZ‹«÷„ç[¶0N‹SeqS|ÒU¢I‹K‹TbpRÜíû$€h¿¥‹Sû¥kZ‹nhøÀ‹®÷ı¹q¥÷ Ô÷aÔ¸©‹±‹±²‹±‹±ˆ±‹®nZ‹«÷Y×¿×ÜÌ’NXûkZ‹nh±‹±²‹±‹±ˆ±‹®nZ‹«÷„ç[¶0K‹TbpRĞíû$€h¿¥‹Sû¥kZ‹nhøˆ€¨ø(¥§â÷¡â÷€÷îñ÷÷-÷ûû-ûûûî%÷‹¨û|÷æ‹½Œ¾§µ£­³ µ‹´‹³v£i§aŒX‹Y0|ûûøÀûV®÷(¥ø¹n¨óÔ÷–âÜ¥ûV±‹±²‹±‹±ˆ±‹®nZ‹«÷Bªg·u»‹÷íó÷÷6÷ûV‹Wugc¨Éû(€h²²‹büvkZ‹nh÷+÷·÷ƒ\¥º¼©À‹æ²ûA9^û+W‹_¯v¹ø¤ûV®÷(¥ø"¨¬â÷™Ñ÷ÀûV±‹±²‹±‹±ˆ±‹®nZ‹«øÍqg3p¾Y°P‹û*"ûû
+äû÷À‹¼¦«µûMkZ‹nhY÷e/e÷Õİ¸÷ëÌ‹µO˜QûDvS\[L‹ø‹®÷¾÷\¹q¥óÑïåœ¥‹±‹°±‹·‹·ˆ·‹®nG‹«÷8Ñ£÷ä‘~ƒ…|‹|DrŸw¤¤ŸŸ¤³c£fN‹e^yVí¨û$€h¿¥‹Sû¥kZ‹nhø€¥ø-¥¬¿÷q¨¬ˆ‡‡‘ŒŒŒ°³¨o±}³‹äÕµî‹ÖNºHšG˜h“_ ‹µÇÊ˜»Ñ³\G†‡—÷‡‡„‰ˆŠŠnrqk•l‹;7i.‹EÊeÈ~Î~´¶n‹\JTtS6‹gÒ}ÕŠˆ‡‹†‡‡‡û7ø€¨ø®ñÔ÷¨ñ÷:¾YÛÏ«ÓÆÈnPc}KYTÉµ÷¦÷!®û!÷Ln>kû+qßû¨øÀ€¥q¹÷ı¹÷ Ô÷aÔ¸÷ ÷(ÏlãÃ‹¸¯£»h7÷(–®Wq‹Ã÷óû+€h¿¥‹SûF¸Gc<>;ƒ¬Ò÷×û+€h¿¥‹Sûqø¤€Ÿø®÷ˆ‹„’‡’‹’’‹’’÷÷èš°­³‹®s‹rˆr‹l‹ml‹h¤¢|q‹†Š…‰†&û“û÷®Š‹‹£²‹œ®e‹eˆe‹k‹kk‹hª‹¬‹šn÷&üùf€Ÿø®÷q‹„‘‡’‹“’‹‘’ñ÷²ğû²„‘‡’‹“’‹‘’÷÷å™°©¡³‹®t‹tˆs‹j‹ij‹h¦ª|m‹†Š†Š‡0û“'÷®‹Š‹¤´‹®f‹gˆf‹n‹nn‹h¬‹§‹˜k—h8û+÷¢‹Š‹¤´‹®e‹eˆe‹l‹ml‹h¬‹§‹˜k÷ü ø¤‹®÷ı®—‹¦‹¦¨‹­‹¬ˆ¬‹®z€™›‹•–’“ÓçæûŒˆŒˆ‹ˆzu…~h°‹±±‹ª‹«ˆ«‹®c‹l‹p«û÷=Úğ«³º¾‹®o‹pˆo‹i‹ij‹hœ—}{‹†€„ƒO>;ó‰Š‹œ¡‘™®e‹fˆe‹k‹kl‹h³‹ª‹¥k÷
+û.0ûkc\xY‹hø¤ûa¥q÷øm®â°Ğû9¢™‹¡P¤yrrxxr°Z¸hºÏ‹¶Ì¢Ã÷Aø<›°­³‹®r‹sˆr‹l‹ml‹h£¢|r‹…Š…‰†'ûŠû÷¥ŠŠ‹£²‹œ®e‹eˆe‹k‹kk‹h«‹«‹šn÷*üi7y`kWV‹{‹}”øÛ‹®÷ı®÷0÷
+q¥óÑ÷cÑååŞ¥‹±‹°±‹±‹°ˆ±‹®nZ‹«÷İ÷cûİkZ‹nh±‹°±‹·‹·ˆ·‹®nG‹«÷İ÷®û	÷
+¿¨ÙÊ•‹•‰”ˆz„{‹x"qŸx¥¤¥Ş¹^¦ac‹a|mpsª^–e‹2û[!û>hØûİkZ‹nh÷$øC÷
+ØÖÀÔ£‹¦‡ ~v†~z‹u‹y•{œƒŠƒŠ‚‹ƒûûgøÀ‹®÷ı®÷÷+@Ÿ¨¥óÑ÷HëFÑİ¥‹±‹°±‹±‹°ˆ±‹®nZ‹«÷İ÷<°‡y‹kû§kZ‹nh±‹°±‹±‹°ˆ±‹®nZ‹«øû(~û÷
+ÙÖ¿Ô¨‹©‚ w"qxtrpŸv§¦  ¦ÎÌJ±Q2û[!û>hØûİkZ‹nhøíÉ÷ËûŒŠŠ”‹Š‰û÷d÷H‹÷D‹÷G²÷E÷÷ŒŒŒ‹‡‡‚‰ˆŠŠû+û
+MûW‹ûM‹ûMÉûW÷+û
+ø÷xÉËû”Œ‹ŒŒŒ÷*÷
+É÷W‹÷M‹÷MM÷Wû*÷
+ŠŒˆŒŠ‹‚†‡†‡‹ˆŒˆ‰÷û²ûH‹ûD‹ûGdûEûûŠŠŠˆ‹‰‡†ù÷z³ø³Õ÷z÷»û»•ƒ•••“•÷»÷»•“•••ƒ•û»÷»•“ƒû»û»€ƒ“–÷ªûVŸ÷B÷ß÷q¥ĞîûH…“ƒ’‹ŒŒÀ¿«Ğ‹Öµ~ËV`lssll£sªš‹™––‹‡‹‡‹‡‹HoL[]‰‰‰ˆ‹ˆ÷á÷MÉ–÷M÷ÉûM÷ª‹÷ß÷ßÂm¤r©©¤¤©©r¤mmrrmøˆu¥ù¥²â÷‹â÷u÷K¦÷]÷ ÷!q÷bûLûMqûbû!û ¦û]÷L‹¥û‹÷éè‹÷h÷÷‹ûh.-‹ûûøˆ‹®ø¨®·Ÿ÷nÙè‹Â‹ÁÂ‹Â‹ÁˆÂ‹®n+‹«øâ…‡}[ZE|I‹h¸‹¹‘²ü¡k+‹nhøˆ‹Ûø»®¾ö÷Yèo¨ˆ½‹ø§÷Fn†k„\~…†$ŠO‹+÷÷ğÜÙ÷×‹÷÷)Öû&7;%l¢sª©¢£ªªt¢m‡‹ˆ‹‡ŠÁ½³Å‹ä¸;:‹ :6HAû/û@ŠŠŠˆ‹Špøˆt®÷×¨÷¥¨µ÷2ö÷2ë;öêêØ’¬¤¤¬¬r¤jjrrj"÷Væ÷ôÜ÷‹é8Ï5šlÙ¤ËÏ‹àèû ¸<;-[0m¢t©©£¢©©s¢mˆ‹‰‹‰Š§´Àœº‹Ì¥XQOo#?Tˆ†‡‡‡‚†‡ÎÂá¡,GHu.6T‹Nkºøˆ‹®÷®øRŸ÷¾Ö§÷9÷œ)kG‹nh¹‹¹¹‹¸‹¹ˆ¹‹®nG‹«íí®)ø[‘†…|‡‹‡‰‰ˆûÉüah¬®÷÷öûöûøˆt®ïñ÷H¥÷á—Ÿ½óT®÷rèûâ÷‹“‰‘å¨£¡¨¨s¡nnuun(Ù4ğ÷íñ÷õB÷û	»\‹_zij÷Q¥„§‡§‹Õ‹Ô¯¸ÇŒŒ”†‡ˆ^vZ€Y‹Z‹Z–^ ˆ‡†‡‡ûâ‡‘†•™¤×ğ‹»‹©\–b“j‹f‹i7w! K‹Q´wÈøˆt®ø¥Ø÷4n¨µè÷]ëFèÚ÷t÷İ÷÷÷@÷ûQ‹`btW‹ĞÓªÉ¦¿º¹É‹ª‹­‚q†$pvvpp v¦¦  ¦ÜÕQ±FûA1ûTû+û¬ûh÷C‹®+{÷	Ó‹ŒŒ‹Š’‹‘‹’Ò¨õãÂ÷ ‹û=9ˆûûøˆuŸøÉÛ÷Bë÷B¥p v¦¦  ¦‹÷‹÷)×÷÷÷U‹ŒŒŒ‹Œ¤ûNpû/Œ¨njûf¨«’¸˜š÷‹Ë‹÷0û5ûSû#‹û(øˆt®ù¨µÁp»÷»pÁäµ÷,û÷ JïöïÛ÷‹ËhÆV­R°XÇªÅ½‹Ôê,Á6,5D)‹TªV¹m°s¤BgGP‹3Á‹‹Ô¿ÇÉ¬÷4­v¤h‹b;9aD<@ÅİXĞ÷Æpœv§‹¬ÎÕ­ÅÏÌYD‹N]\YnûÚøˆt÷4û4®÷a¥ø¨µèGë÷\èz÷µ„¦  ¦¦vŸppvwpV:ÑkÒ÷=Ú÷^÷$÷m÷iû?zû3#ûû×û÷Å‹¶´¡¾‹EŠ@kJt\_cT‹j‹cu¥÷÷]û Š÷Ùß’÷÷è˜ûFtCo!2÷ª‹÷÷g÷ß÷ßÂm¤r©©¤¤©©r¤mmrrm‹÷Õm¤r©©¤¤©©r¤mmrrmù÷³÷.³Õ÷ù
+•“•••ƒ•ı
+€ƒ“–‹÷Vù
+•“•••ƒ•ı
+€ƒ“–÷ªû³ú,³÷
+³÷
+û÷³*ú,ì³ûş|÷ªû³ú,³÷³¡û÷ú|ûcìş,*cu¡øC÷}¡N¡ûa–¥”³©¢
+7‘	®
+ÑEND
+endstream
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /PQNTOE+TeX-cmr10
+/Encoding 5 0 R
+/ToUnicode 27 0 R
+/FirstChar 0
+/LastChar 196
+/Widths [625 833 777 694 666 750 722 777 722 777 722 583 555 555 833 833 277
+305 500 500 500 500 500 750 444 500 722 777 500 902 1013 777 277 277 500 833
+500 833 777 277 388 388 500 777 277 333 277 500 500 500 500 500 500 500 500 500
+500 500 277 277 277 777 472 472 777 750 708 722 763 680 652 784 750 361 513 777
+625 916 750 777 680 777 736 555 722 750 750 1027 750 750 611 277 500 277 500
+277 277 500 555 444 555 444 305 500 555 277 305 527 277 833 555 500 555 527 391
+394 388 555 527 722 527 527 444 500 1000 500 500 500 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 625 833 777 694 666 750 722 777 722
+777 0 0 722 583 555 555 833 833 277 305 500 500 500 500 500 750 444 500 722 777
+500 902 1013 777 277 500 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /PQNTOE+TeX-cmr10
+/FontBBox [-44 -250 1009 750]
+/FontFile3 36 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 750
+/Descent -250
+/StemV 70
+/StemH 35
+>>
+>>
+endobj
+37 0 obj
+<<
+/Length 3494
+/Subtype /Type1C
+>>
+stream
+  VFZYIE+TeX-cmsl10 æ_âPÿ#ÿuÇ÷°|      " $ ( ) . 5 8 B C D F J M O P S T U V W        "ã9¶u0¨¡gjõ	¢
+
+¤!C±Ùú|ù‚‹®÷P®«‹­‹¬­‹³‹³ˆ³‹®qb”­‹Œ‘Í÷÷‡§û0ˆnG‹w…h½‹½½‹¶‹¶ˆ¶‹‘®k‹R‹„«ûùŠ’……‹}„‹„†ˆ…ûÌü÷t^Y}\‹…h÷‹÷–÷7÷ÓÃûÓûoùfu®ù%®öô÷h÷Š‹Üœç¯Ô¾ïğÙ÷‹÷
+¿û$‹‚‹ƒŠƒ†…‘¸÷ ‡‘†…ˆ‹‰‰‰ŠD9dÁMªH‹ûqûUûbûnû?÷û÷A÷'‹÷÷¢÷#ˆ‘††‹ˆ‡Š‡wûûûû‹ûDñ÷ù¥u®÷u®ø!®öô÷h÷‹‹İœå¯Ô¾ïğÙ÷‹÷
+¿û$‹‚‹ƒŠƒ†…‘¸÷ ‡‘†…ˆ‹‰‰‰ŠD9dÁMªH‹ûqûUûbûnû?÷û÷AÓ‹Ş¢¸Ç‘~®[™‹‹Œ÷›ê“¤²‹¥‹‘®d‹dˆe‹R‹RR‹…h®‹»‹Ÿ†•ˆ’‚‹|2A4hH‹û @ï÷ù‚‹®÷Ã®÷§®ª‹½‹½½‹½‹¼ˆ½‹®sB‹¦¹÷¨÷º]û¨€pI‹m‹…h½‹½½‹½‹¼ˆ½‹®sB‹¦èøÃ•¦Î‹©‹®Z‹YˆY‹Y‹ZY‹…h¤Ô‹pbûŒû»µ÷Œ•¦Î‹©‹®Z‹YˆY‹Y‹ZY‹…h¤Ô‹p.üÃ€pI‹m‹…hú)‹®øù®®‹³‹³²‹³‹²ˆ³‹‘®hP»Œ‹Œ‹çø½÷ı
+Œ„’‡’‹“‹’’÷ôù)üŞ€pI‹m‹…h¼‹»¼‹»‹»ˆ¼‹‘®rB‹¦èøÃ•¦Î‹©‹‘®ûQƒ‹„†ˆ…ûÌüÊûøÊŠ’…„‹ûQ…h¤Ô‹p2ü©~\R…b‹…hùf‹®øù®ùt·÷=‹Ë‹ËË‹Ë‹ÊˆË‹‘®b‹S‹t€‚“‹—éøÇ‘¡§‹Ÿ‹µå±v-‹q‰o‰r¨÷yü÷Rûy¨©÷™Õ÷$‹µš«‹x‹Š‹Š‹Š-üÇo"‹k‹…hú˜uŸù®÷É€Œ„‘‡‘‹“’‹‘‘÷ø’Ûü’Œ„‘‡‘‹“’‹‘‘÷»øì µµœ¸‹‘®n‹nˆm‹a‹aa‹…h¦¿‚g‹†Š†ˆ‡ûxüe>ø€¨Ğ‹Ÿ‘®Y‹ZˆY‹c‹cd‹…hª‹º‹‘k–Eûcü:>ø€¨Ğ‹Ÿ‘®Y‹ZˆX‹d‹cd‹…hª‹º‹‘kîıøˆ€¥v®÷e¥÷2¥Âİí÷%İ¦±»ÂàAâuÆÄ‹Â«ª»†wg£i±¼‹·³’º”Ëp€Kˆu~mq‹x„ ›‹Œ‹”½¨÷AŒ‘Œ‘‹‘Ş9¶BJ"k;s{¢©¥¤©‹ {œv©¢´“¯‹Àª_Z‹ƒŠƒŠ„„aF‹B~Ln¨WqS\‹Kİ‰ô÷½ãy#€KOTI‹dj§³øÀ€¥ø%¥øsİó‹¨¸È£^ºp¾‹÷÷÷÷òDà!U‹Vtdf½÷À‹‹‡–û*€…h¥¹‹l‹ˆŠˆ‹ˆ3ü¥~<äë³÷…¬¹À¬Ä‹Ò«LMû[û9ûY‹e­}ºøP€¨÷°÷&n¨Íà÷kí¸÷€Ş‹Ñ¿«×ŒŒ‹‹‹‡†‡‹‰ˆ‰ˆrPV]J‹=iÓÏì¾÷8÷ª‹¯ˆ¥xo‡wt‹oHs{¢¬¢§«¸Ğ3œUûû	ûû"×7öøP€¨÷i¥÷9¥Èà÷‰Ğ÷&÷+‹¦¦¥÷·‹ëSÅ+ûûûûû Ú6÷Û‹ÕÁªÔŒ‹Š‹‡‘…‚‡‹‡ˆŠˆrQQZJ‹>gÉÒ˜õ›Òºéá‹ÊŸPU‹y‰y‰{ûx÷ª‹®ø ÷÷C÷ª‹±‹±°‹®‹®ˆ®‹‘®v^‹¡‹Œ‹Œ‹ŒÉø‹‹‡–û&€…h¤¶‹l‹ˆŠˆ‹ˆZû»‚q]‹p‹…h÷$øóp v¦¬©¨¬¦u qjmnj÷ª‹®ª‹±‹±°‹±‹°ˆ±‹®vW‹¢‹Œ‹Œ‹Œóù‹‹‡–û*€…h¥¹‹l‹ˆŠˆ‹ˆ0ü·‚q]‹p‹…høÀ‹®ø¥øNÒ©‹²‹±±‹±‹±ˆ±‹‘®uW‹£‹‹ŒŒ­÷_˜×Ì×İ‹´›qd‹€Št‡bûŠ‚q]‹p‹…h±‹²±‹±‹±ˆ±‹‘®uW‹£‹‹ŒŒ´÷†‹˜—‹˜ØV£GI‹PaiU›ëû'€…h¥¹‹l‹ˆŠˆ‹ˆZû»‚q]‹p‹…høˆ€¨ø(¥Çİ÷´İÇ÷D Ü;ö÷÷÷÷ö=âûû ûûû÷Uû2BeÂÏ‹Ë ÷µ½§¬¶¡·‹Ò²UH‹KvûaXoiau_‹ø‹®÷¾÷\¹q¥÷äæ˜¥‹±‹±°‹·‹·ˆ·‹‘®sG‹¦§÷=—Ô¸÷ã‹{‚y‹yHu{¡¨¡£¨¯hŸjO‹]]qY™ß‹‹‡– ‚û€…h¥¹‹l‹ˆŠˆ‹ˆZû»‚q]‹p‹…hø€¥ø-¥áÄ÷KÄ´€’Œ‹ŒŒŒ·³£m±°‹ìåÂô‹ËZ´P˜I˜n’f‹¯ËÔ¿Â°mS‹‚Š‚Š‚†…—‹Œ ÷ˆ‘†„‰‹‰ŠŠŠjrtŸk”m‹5)a'‹NÀjÀÌ~®ƒ­r‹dDIlM6rÓÔ‡‡†‹ˆ‡Š‡qû5‡…ø€¨ø®÷Ò÷±÷çFºiÍÏ‹µÓ•Æ•Èn‚R€bxJU‹f~¬«‹—˜—¹÷¨÷!‘®û!ª÷Ln};Xû+‹‡qß]û¦ŠŠ‹øÀ€¥ø+Ÿ÷Ğ÷ç6ÎyÒÃ‹½¯©¹€F‹…‹‰€÷*–‘®q]‹ª‹Œ‹Æ÷÷‹‹‡–û!€…h¥¹‹l‹ˆŠˆ‹ˆkûVFU=>‹ef‘¹‹—©•¿÷Ë‹‹‡–û!€…h¥¹‹l‹ˆŠˆ‹ˆdû}‹€‰‹ø¤€Ÿø®÷ˆ‹Œ„‘‡’‹’“‹’‘÷T÷è¡¯®Ÿµ‹‘®r‹sˆr‹l‹ml‹…h  €t‹ƒˆƒ‡„û#û“J÷®ŠŒ‹Œ‹Œ¦µ‹‘®e‹eˆd‹k‹kl‹…h¨‹¯‹”nàü÷ª‹÷è÷èºq v¦¬©¨­¥u qjmniøˆu¥ù¥ÚÙ÷ºÙ÷ŠuÍ‹Ì­´¿Ôé±÷D‹÷÷ `ôûH‹JhcWA,gûD‹ûû µ$÷¥FsÉÇ‹Æ™Ş–Î›ïŸ÷a÷‹Ğ¥QO‹UAPz&vûzû!‹øˆ‹®÷®øRŸ÷Âí÷W‹¹‹¹¹‹¹‹¸ˆ¹‹‘®sG‹¦›òî®)×ø\‘‡†|‡‹‡‰‰‰üüb†h÷›z$pM‹n‹…h&÷\÷¼÷öPûöûøˆt®ïñ÷H¥÷á—ŸÖô÷oâ÷÷Š‹‹¬¥¦«¥wœr\~bc4ËFã÷÷÷÷èPá(Z‹]zfk«÷Q¥ƒ¦‡¦‹Ü‹Ó²ÂÄ‹’‹‡†ˆ]wXX‹[‹[•`¡„‹‡‡Š†Tûİ…„’–‹Œ®¹¾¨Å‹ŒÂP^‹V|1s\rZZdR‹M‹W³‚É‹Šu¡øCœ÷¡N¡ûa–¥”¨©µ
+7‘	®
+ğEND
+endstream
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F0
+/BaseFont /VFZYIE+TeX-cmsl10
+/Encoding 5 0 R
+/ToUnicode 27 0 R
+/FirstChar 0
+/LastChar 196
+/Widths [625 833 777 694 666 750 722 777 722 777 722 583 555 555 833 833 277
+305 500 500 500 500 500 808 444 500 722 777 500 902 1013 777 277 277 500 833
+500 833 777 277 388 388 500 777 277 333 277 500 500 500 500 500 500 500 500 500
+500 500 277 277 277 777 472 472 777 750 708 722 763 680 652 784 750 361 513 777
+625 916 750 777 680 777 736 555 722 750 750 1027 750 750 611 277 500 277 500
+277 277 500 555 444 555 444 305 500 555 277 305 527 277 833 555 500 555 527 391
+394 388 555 527 722 527 527 444 500 1000 500 500 500 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 625 833 777 694 666 750 722 777 722
+777 0 0 722 583 555 555 833 833 277 305 500 500 500 500 500 808 444 500 722 777
+500 902 1013 777 277 500 ]
+/FontDescriptor <<
+/Type /FontDescriptor
+/Flags 4
+/ItalicAngle 0
+/FontName /VFZYIE+TeX-cmsl10
+/FontBBox [-65 -250 1123 750]
+/FontFile3 37 0 R
+/CapHeight 562
+/XHeight 426
+/Ascent 750
+/Descent -250
+/StemV 101
+/StemH 35
+>>
+>>
+endobj
+2 0 obj
+[ /PDF /Text /ImageB /ImageC ]
+endobj
+4 0 obj
+<<
+/Kids [21 0 R 24 0 R ]
+/Count 2
+/Type /Pages
+/MediaBox [0 0 595 842 ]
+>>
+endobj
+1 0 obj
+<<
+/Producer (BaKoMa TeX 7.80 12618G9324/715258775)
+/Creator (Imperial College)
+/CreationDate (D:20210923113928)
+>>
+endobj
+3 0 obj
+<<
+/Pages 4 0 R
+/Type /Catalog
+>>
+endobj
+xref
+0 38
+0000000000 65535 f
+0000095862 00000 n
+0000095715 00000 n
+0000095996 00000 n
+0000095764 00000 n
+0000000017 00000 n
+0000094577 00000 n
+0000089871 00000 n
+0000080667 00000 n
+0000078120 00000 n
+0000000957 00000 n
+0000075879 00000 n
+0000002628 00000 n
+0000074197 00000 n
+0000068469 00000 n
+0000003419 00000 n
+0000066384 00000 n
+0000064725 00000 n
+0000061604 00000 n
+0000005895 00000 n
+0000046847 00000 n
+0000046726 00000 n
+0000046989 00000 n
+0000055520 00000 n
+0000055399 00000 n
+0000055628 00000 n
+0000057399 00000 n
+0000058779 00000 n
+0000061294 00000 n
+0000062755 00000 n
+0000065657 00000 n
+0000067535 00000 n
+0000069606 00000 n
+0000075129 00000 n
+0000077029 00000 n
+0000079261 00000 n
+0000081808 00000 n
+0000091006 00000 n
+trailer
+<<
+/Size 38
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+96051
+%%EOF

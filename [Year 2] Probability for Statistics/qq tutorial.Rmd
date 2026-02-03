@@ -1,0 +1,91 @@
+---
+title: "Brief overview of QQ plots"
+author: " "
+date: " "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+QQ plots compare the distributions of two variables. Most frequently, we want to compare the distribution of some data (or of some residuals) to a reference distribution, such as the standard normal. We plot the quantiles of one distribution against the quantiles of the other. This means we plot the median of $x$ against the median of $y$ (50% quantiles), lower quartile of $x$ against lower quartile of $y$ (25% quantiles); the same for the upper quartiles and indeed for all quantiles.
+
+We can either plot some observed data against the exact quantiles of a known distribution, or plot two sets of observed data against each other.
+
+Let's compare a random sample from the standard normal to the known distribution. 
+```{r}
+set.seed(2342)
+n.samp<-1000
+z<-rnorm(n.samp)
+qqnorm(z)
+abline(0,1,col=2)
+```
+
+Note how, particularly in the centre of the distribution, the theoretical and sample quantiles match perfectly.
+
+To compare two samples of observed data, we proceed as follows
+
+```{r}
+x<-rnorm(n.samp)
+y<-rnorm(n.samp)
+qqplot(x,y)
+abline(0,1,col=2)
+```
+
+Changes in the mean and standard deviation affect the QQ plot in an easily identifiable way. You should be able to work out how, by thinking about the properties of expectation.
+
+Let's look at what happens when we plot a variable with a higher mean, but otherwise identical distribution
+
+```{r}
+x<-rnorm(n.samp)
+y<-2+rnorm(n.samp)
+qqplot(x,y)
+abline(0,1,col=2)
+```
+
+And now an identical distribution, but bigger standard deviation
+
+```{r}
+x<-rnorm(n.samp)
+y<-2*rnorm(n.samp)
+qqplot(x,y)
+abline(0,1,col=2)
+```
+
+
+## Skew
+What about if we look at a skewed distribution? We use the `scale` command to make `y` have zero mean and standard deviation 1 (since we know how these affect the QQ-plot).
+
+```{r}
+x<-rnorm(n.samp)
+y<-rgamma(n.samp,shape=2)
+qqnorm(scale(y),main="")
+abline(0,1,col=2)
+```
+
+Note the bowing behavior.
+
+# Heavy tails
+
+```{r}
+x<-rnorm(n.samp)
+y<-rt(n.samp,df=2)
+qqplot(x,scale(y))
+abline(0,1,col=2)
+```
+
+Note the S-shape.
+
+# Small samples
+
+Large samples have easily interpretable patterns. To understand what is reasonable for a small sample, look at many small samples of how well genuinely normally distributed samples match the theoretical distribution. Note that a couple of times in 20 we see quite marked departures from the line.
+
+```{r}
+n.samp<-15
+for(i in 1:20){
+  z<-rnorm(n.samp)
+  qqnorm(z)
+  abline(0,1,col=2)
+}
+```

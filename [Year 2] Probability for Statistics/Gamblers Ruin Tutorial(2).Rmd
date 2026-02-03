@@ -1,0 +1,152 @@
+---
+title: "Gambler's Ruin Tutorial"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(markovchain)
+```
+
+In this tutorial we will consider the Gambler's Ruin problem (which you have seen in problem sheets) in more detail. 
+
+Suppose we are playing a gambling game where in each turn we can either
+
+* win one pound with probability $p$,
++ lose one pound with probability $1-p$.
+
+Then game ends when we either have no money (in which case we lose), or N pounds (and we win).
+
+What are the possible states of this Markov chain? Can you write down the transition matrix?
+
+Let's define this chain and look into some of its properties. First we specify the states and their transition probabilities. We need to choose a probability $p$, and the amount of money we're aiming to win $N$.
+
+```{r}
+p=0.1
+N=10
+
+# states of Markov Chain
+states= as.character(0:N) 
+
+#transition matrix
+transitionMatrix= matrix(data = c( 
+                   1,0,0,0,0,0,0,0,0,0,0,
+                   1-p,0,p,0,0,0,0,0,0,0,0,
+                   0,1-p,0,p,0,0,0,0,0,0,0,
+                   0,0,1-p,0,p,0,0,0,0,0,0,
+                   0,0,0,1-p,0,p,0,0,0,0,0,
+                   0,0,0,0,1-p,0,p,0,0,0,0,
+                   0,0,0,0,0,1-p,0,p,0,0,0,
+                   0,0,0,0,0,0,1-p,0,p,0,0,
+                   0,0,0,0,0,0,0,1-p,0,p,0,
+                   0,0,0,0,0,0,0,0,1-p,0,p,
+                   0,0,0,0,0,0,0,0,0,0,1), byrow = TRUE, nrow = 11, dimnames=list(states,states))
+
+```
+
+We can then define the Markov chain as follows.
+
+```{r}
+mcGambler=new("markovchain", states, byrow=TRUE,transitionMatrix , name = "Gambler")
+```
+
+The *summary* function outlines basic properties of this Markov chain. Check that you understand the output using the help tool. 
+
+```{r}
+summary(mcGambler)
+```
+
+What are closed, reccurent and transient classes? 
+
+Why is the chain not irreducible? 
+
+Let's look at the communicating classes.
+
+```{r}
+communicatingClasses(mcGambler)
+```
+The states '0' and N='10' are contained in their own communicating class. We call these absorbing states. 
+
+```{r}
+absorbingStates(mcGambler)
+```
+
+In the gambling game, once we reach state '0' or N='10', we should stay there. We call these closed states. Let's see if this is reflected in our chain. We can check if it is possible to go from state '0' to state '6' using the *is.accessible* function. 
+
+```{r}
+is.accessible(mcGambler, from ="0", to="6")
+```
+
+Try out some other states. Is this behaving as you expect it to?
+
+Now let's try simulating values from this chain. Let's say we start with 5 pounds. Using the previous tutorial, we can simulate values from this Markov chain. Notice that we have used a while loop to stop the chain once we reach either $0$ or $N$ pounds. Recall that the function *set.seed* ensures that the same random value is produced each time.
+
+
+```{r}
+set.seed(2020)
+
+x0=5 # initial starting point
+x=c(x0) # vector to record states in chain
+i=2 # counter
+
+while(0<x[i-1]&& x[i-1]<N){
+  x[i]<-sample(0:N,size=1,prob=transitionMatrix[x[i-1]+1,]) #sample from     the chain
+  i=i+1 #update the counter
+}
+
+x
+```
+
+So unfortunately, we lose! That's not too surprising given the probability of increasing our money is only 0.1.
+
+Now let's try a few other scenarios. We will define a function to make this easier. The function takes as its input the probability of earning a pound $p$, the money we're aiming to win $N$ and the amount of money we start with $x0$. It then simulates values from the chain using the code above. The function returns 'Win' if the Markov chain hits $N$ first, and 'Lose' if it hits $0$ first.
+
+```{r}
+mcSamples <- function(p, N, x0){
+  
+  #define the transition matrix
+  transitionMatrix=matrix(0,N+1,N+1)
+  transitionMatrix[1,1]=transitionMatrix[N+1,N+1]=1
+  for(j in 2:N){
+    transitionMatrix[j,j+1]=p
+    transitionMatrix[j,j-1]=1-p
+  }
+
+  #simulate the chain
+  x=c(x0) # vector to record states in chain
+  i=2 # counter
+
+  while(0<x[i-1]&& x[i-1]<N){
+    x[i]<-sample(0:N,size=1,prob=transitionMatrix[x[i-1]+1,])     #sample      from the chain
+    i=i+1 #update the counter
+  }
+  return(if (x[i-1]==0){'Lose'} else {'Win'})
+}
+```
+
+You can call the function using
+```{r}
+mcSamples(0.1,10,5)
+```
+Try a few of your own examples. 
+
+Consider making $N$ large, $N=1000$ should do. What happens when $p \leq 0.5$? What happens when $p>0.5$?
+
+Let's consider the proportion of times we win when $p=0.49$ if we run the chain several times. This may take a minute to run. 
+
+```{r}
+iter=50 #number of iterations
+counter=0 #counts the number of times we win
+
+for (i in 1:iter){
+  if (mcSamples(0.49, 1000, 100)=='Win') {counter=counter+1}
+}
+
+counter/iter #proportion of times we win
+
+```
+
+We seem to lose every time. In fact, as $N\rightarrow \infty$, the probability of winning when $p\leq 0.5$ is zero! For $p>0.5$, it is possible to either win or lose.  So, only bet against an infinitely rich component if you have better chances of winning each round.

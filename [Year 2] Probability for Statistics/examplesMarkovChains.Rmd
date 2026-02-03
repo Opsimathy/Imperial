@@ -1,0 +1,168 @@
+---
+title: "Examples of Markov Chains"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(markovchain)
+library("diagram") #to plot the transition matrix
+library("expm") #to compute powers of matrices
+```
+
+In this tutorial we will consider a few examples of Markov chains that can be used to model real life events. 
+
+## Ehrenfest chain
+
+Let's begin with the Ehrenfest chain. Suppose we have $N$ marbles which we distribute among two bowls. In each turn, a marble is chosen randomly and moved to the other bowl. Let $X_n$ be the random variable defining the number of marbles in bowl 1 after $n$ turns. 
+
+We will first investigate some properties of this chain and then discuss how well it models particles bouncing around two chambers.
+
+Why is this a Markov chain? 
+
+What are the transition probabilities? Write down the transition matrix and transition diagram for $N=4$.
+
+We can define a Markov chain with this transition matrix as follows.
+
+```{r}
+N=4
+
+#define the states
+states= as.character(0:N) 
+
+#define the transition matrix P, careful with the transition probabilities from states 0 and N
+P=matrix(0, N+1,N+1, dimnames=list(states,states))
+P[1,2]=1 
+P[N+1,N]=1
+for(i in 2:N){
+    j=i-1
+    P[i,i+1]=(N-j)/N
+    P[i,i-1]=j/N
+}
+
+#define the markov chain
+ehrenfestChain=new("markovchain", states, byrow=TRUE,P , name = "ehrenfestChain")
+```
+
+You can check your transition diagram by comparing it to the following plot. 
+
+```{r}
+plotmat(t(P), box.col = "lightgray",relsize=0.6,dtext = -1.7,curve=0.4,arr.pos=0.5,arr.col = "lightgray", self.cex=1,arr.type="simple", arr.length = 0.3,self.shifty=c(0.12,-0.12,0.12,0,0,0.12))
+```
+
+Can you identify the communicating classes and their properties (recurrent/transient/periodicity)? Check your answers using the functions *communicatingClasses*, *summary* and *period*. 
+
+Recall that a stationary distribution $\pi$ must satisfy 
+\[\pi P =\pi.\]
+These are just the left eigenvectors of $P$ with eigenvalue $1$. Try to solve this by hand first. Note that the entries of $\pi$ must be non-negative and sum to one for $\pi$ to be a distribution.
+
+We can check our answer using
+```{r}
+#stationary distribution
+steadyStates(ehrenfestChain)
+```
+This is actually the binomial distribution with $N=4$ trials and probability $1/2$:
+\[\pi_k={4 \choose k} (1/2)^k.\]
+
+Now consider the limiting behaviour of the chain by finding $P^n$ for $n$ large. What happens if we take $n$ large and even, compared to $n$ large and odd? 
+```{r}
+#transition probabilities after n=100 and n=101 steps
+trans100=P%^%100 
+trans101=P%^%101
+
+#change row and column names
+rownames(trans100)=colnames(trans100)=states
+rownames(trans101)=colnames(trans101)=states
+
+trans100
+trans101
+```
+
+Try some different values of $n$. Do the transition probabilities converge? Can you explain why?
+
+
+Markov chains are often used to explain phenomena that occur in the real world. For example, the Ehrenfest chain is a simple model for the physical process of diffusion. One  example of diffusion is the steady mixing of two gases. E.g. suppose a quantity of perfume is released in one corner of a room. Because of the random motion of molecules, the perfume will eventually disperse throughout the room. In our simple model of this process, we imagine particles bouncing around two chambers that are connected by a small tunnel, such as in this simulation https://www.youtube.com/watch?v=pK1NPKm2Dfc.  What does the Ehrenfest model imply about the long term behaviour of the particles in the two chambers? To what extent do the modelling assumptions in the Ehrenfest chain seem reasonable? How could you make the model more realistic?
+
+### Wright-Fisher model
+
+Suppose we have a total of $N$ balls, of which $i$ are white and $N-i$ are brown. At the next step, the Wright-Fisher model samples a new collection of $N$ balls with replacement from the original set. Let $X_n$ be the number of white balls selected at time $n$. The transition probabilities are
+
+\[\mathbb{P}(X_n=j \mid X_{n-1}=i)={N \choose j}\left(\frac{i}{N}\right)^j\left(\frac{N-i}{N}\right)^{N-j}.\]
+
+
+The Wright-Fisher model can be used to explain genetic drift, the random change in frequency of a particular gene arising over time. Think of the balls as representing rabbits and colours as representing different characteristics (eg: fur colour). Suppose we start with $N=100$ rabbits, $50$ of which have white fur and $50$ with brown fur. In each new generation, the rabbits reproduce randomly (we assume they produce exactly $N$ new rabbits). We can represent this by selecting $N$ new balls randomly with replacement from the previous set, with the ball colours repsenting the fur colours of the new rabbits. If this new set represents exactly $50$ white and $50$ brown rabbits then no genetic drift has occured as the frequency of white and brown rabbits remains the same as the previous generation. However, if this is not the case, then genetic drift has occured.
+
+Why is this a Markov chain? 
+
+Compute the transition matrix for $N=4$. 
+
+Identify the recurrent and transient classes. Are there any absorbing states? 
+
+The following function simulates values from the Wright-Fisher model, for a population of size $N$ with $x0$ white rabbits to start with. It takes as its input a variable *numSamples* representing the number of samples simulated from the chain. The output is a vector containing the number of white rabbits in each generation.
+
+```{r}
+wrightFisher<- function(N, x0, numSamples){
+  
+  xVec=1:(numSamples+1) #vector to store values for X_n
+  xVec[1]=x0 #initial state X_0
+  
+  for (gen in 1:numSamples){
+    i=xVec[gen] #previous state
+    xVec[gen+1]=rbinom(1, N, i/N) #sample a new state based on previous state
+  }
+  return (xVec)
+
+}
+```
+
+We can implement the function as follows. Try a few values of $N$ and $x_0$.
+
+```{r}
+wrightFisher(10, 5, 100)
+```
+To visualise how the number of white rabbits might vary over generations we use the following function. It simulates a number of chains for given values of $N$ and $x0$, and records the values in a matrix. 
+```{r}
+wrightFisherReps<-function(N, x0, iterations){
+  iterations=20 #number of simulations
+  numSamples=100 # number of samples per simulation
+  
+  mat=matrix(0,numSamples+1, iterations) #matrix to store simulated values
+  
+  for (i in 1:iterations){
+    mat[,i]=t(wrightFisher(N,x0, numSamples)) #simulate from wright fisher model
+  }
+  
+  return(mat)
+}
+```
+
+We will plot the various simulations for populations with $N=50$ and $N=5000$ rabbits. The proportion of white rabbits was initialised at $0.2$, $0.5$ and $0.8$. What do you notice about the various plots?
+
+```{r}
+par(mfrow = c(2, 3)) #arrange plots
+
+N=50
+
+# plots for N=50
+matplot(wrightFisherReps(N,10)/N, type = "l",pch=0.1, xlab="Generation n", ylab="Proportion of white rabbits", main="N=50, x0/n=0.2",ylim=c(0,1))
+
+matplot(wrightFisherReps(N,25)/N, type = "l",pch=0.1, xlab="Generation n", ylab="Proportion of white rabbits", main="N=50, x0/N=0.5",ylim=c(0,1))
+
+matplot(wrightFisherReps(N,40)/N, type = "l",pch=0.1, xlab="Generation n", ylab="Proportion of white rabbits", main="N=50, x0/N=0.8",ylim=c(0,1))
+
+
+N=5000
+
+#plots for N=5000
+matplot(wrightFisherReps(N,1000)/N, type = "l",pch=0.1, xlab="Generation n", ylab="Proportion of white rabbits", main="N=5000, x0/N=0.2", ylim=c(0,1))
+
+matplot(wrightFisherReps(N,2500)/N, type = "l",pch=0.1, xlab="Generation n", ylab="Proportion of white rabbits", main="N=5000, x0/N=0.5",ylim=c(0,1))
+
+matplot(wrightFisherReps(N,4000)/N, type = "l",pch=0.1, xlab="Generation n", ylab="Proportion of white rabbits", main="N=5000, x0/N=0.8",ylim=c(0,1))
+```
+
+
+What does this model say about genetic drift? What does this model suggest about the extinction of certain traits? 

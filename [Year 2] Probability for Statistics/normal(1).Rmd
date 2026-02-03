@@ -1,0 +1,88 @@
+---
+title: "Simulating Normal Random Variables "
+author: " "
+date: " "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+In the problem sheets, we saw the *Box-Muller transform*. This takes $U_1, U_2$, independent uniform variables on $[0,1]$ and transforms them
+
+$$Z_1 = \sqrt{-2\log(U_1)}\sin 2\pi U_2 \qquad Z_2 = \sqrt{-2\log(U_1)}\cos 2\pi U_2.  $$
+
+In that question, you showed that $Z_1$ and $Z_2$ are independent standard normal variables. Let's check this.
+
+First, we generate the variables
+```{r}
+n<-1000
+U1<-runif(n)
+U2<-runif(n)
+Z1<-sqrt(-2*log(U1))*sin(2*pi*U2)
+Z2<-sqrt(-2*log(U1))*cos(2*pi*U2)
+```
+
+Then we look at QQ-plots against the standard normal
+```{r}
+par(mfrow=c(1,2))
+qqnorm(Z1)
+abline(0,1,col=2)
+qqnorm(Z2)
+abline(0,1,col=2)
+```
+
+we can see that the variables are uncorrelated from a plot
+```{r}
+plot(Z1,Z2)
+```
+
+or of course from computing the correlation
+```{r}
+cor(Z1,Z2)
+```
+
+What we've done here is find a very simple way of sampling normally distributed random variables.
+
+
+## Where does this come from? 
+
+It is very closely related to the trick you may know for evaluating the Normal probability integral. Recall how this works.
+
+We want to evaluate 
+
+$$ I = \int_{-\infty}^\infty \exp(-\frac{1}{2}x^2) \, dx$$
+
+The trick is to consider the following integral in the plane
+
+$$ \int_{-\infty}^\infty  \int_{-\infty}^\infty \exp(-\frac{1}{2}(x^2 + y^2)) \, dx \, dy =  \int_{-\infty}^\infty \exp(-\frac{1}{2}y^2)  \int_{-\infty}^\infty \exp(-\frac{1}{2}x^2) \, dx \, dy = I^2. $$
+
+Notice that the left-hand side is easy to evaluate, by switching to polar coordinates, and recalling the area element in polar coordinates $dx dy = r dr d\theta$.
+
+We have
+
+$$ I^2 = \int_0^{2\pi} \int_0^\infty r\exp(-\frac{1}{2}r^2) \, dr \, d\theta = 2\pi \int_0^\infty r\exp(-\frac{1}{2}r^2) \, dr = 2\pi\left[ -\exp(-\frac{1}{2}r^2) \right]_0^\infty = 2\pi. $$
+
+Normalizing by $I^2$, we have here a 2-dimensional probability density
+
+$$ f_{R\Theta}(r,\theta) = \frac{1}{2\pi}r\exp(-\frac{1}{2}r^2), 0 <r <\infty, 0\le\theta<2\pi$$
+ such that the change of variables 
+ 
+ $$X = R\cos \Theta, Y = R\sin \Theta$$
+ produces two independent, Normal random variables. Note that $R$ and $\Theta$ are independent, and $\Theta$ is uniformly distributed.
+ 
+ The CDF of $R$ is just 
+ $$ F_R(r) = \int_0^r z\exp(-\frac{1}{2}z^2) \, dz = 1 - \exp(-\frac{1}{2}r^2), 0 < r < \infty. $$
+ 
+Inverting $F_R$, to apply the probability integral transform, we see that if $U$ is uniform $[0,1]$, then 
+ 
+ $$R = F_R^{-1}(U) = \sqrt{-2\log(1-U)}$$
+simulates from the distribution of $R$. (Note that $U$ and $1-U$ have the same distribution, so this is just as we had at the beginning).
+
+## But how do you simulate uniform random numbers?
+
+This is a more advanced topic! In fact, it is covered in detail in the Year 3 module Stochastic Simulation. For a brief flavour, you might want to look at these nice notes by Art Owen at Stanford
+
+https://statweb.stanford.edu/~owen/mc/Ch-unifrng.pdf

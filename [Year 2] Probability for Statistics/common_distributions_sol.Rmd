@@ -1,0 +1,301 @@
+---
+title: "Common probability models in statistics"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In this tutorial, we'll look at some families of random variables that occur frequently in practice. We will focus on modelling assumptions.
+
+**The full tutorial is long - perhaps work through it in stages, one numbered section at a time.**
+
+These solutions give an indication of the sort of thing you could do to tackle the problems. There are of course other approaches, and your solutions should be more thorough.
+
+### 1. Exponential distribution
+
+The **exponential distribution** is often used when modelling processes that occur randomly in time. Specifically, the times between randomly occurring events are taken to be exponentially  distributed. 
+
+The exponential distribution is absolutely continuous, with a density function often written in terms of the rate parameter $\lambda$,
+\[f(x; \lambda)= \lambda e^{-\lambda x}, \qquad x>0.\]
+
+It is a special case of the Gamma distribution, which has density
+\[f(x); \beta, \alpha)=\frac{\beta^\alpha}{\Gamma(\alpha)}x^{\alpha-1}e^{-\beta x}, \qquad x>0\]
+with shape parameter $\alpha$ and rate parameter $\beta$. Indeed, an exponential random variable with parameter $\lambda$ is also a gamma distributed random variable with parameters $\alpha=1$ and $\beta=\lambda$.
+
+Note that the exponential and gamma distributions are often given in terms of the scale parameter $\theta = \frac{1}{\beta}$. For the exponential distribution, $\theta$ is also the mean.
+
+
+The following data $X$ consists of the amount of time in days between serious earthquakes. The data are taken from *A Handbook of Small Data Sets* by Hand et al., and the collection period is from 16 December 1902 to 4 March 1977. An earthquake is regarded as serious if it registers more than 7.5 on the Richter scale, or if more than 1000 people are known to have died as a result. In this period, 63 such earthquakes occurred, so there are 62 waiting times.
+
+
+```{r}
+X=c(840, 294, 454, 667, 556, 304,
+1901, 335, 30, 129, 209, 83,
+40, 203, 735, 365, 82, 887,
+139, 638, 121, 280, 736, 319,
+246, 44, 76, 46, 194, 375,
+157, 562 ,36, 40, 99, 832,
+695, 1354, 384, 9, 599, 263,
+1336, 436, 38, 92, 220, 460,
+780, 937, 150, 434, 584, 567,
+1617, 33, 710, 402, 759, 328,
+145, 721)
+```
+
+a) Assuming the time intervals are a random sample from an exponential distribution with constant rate, compute the maximum likelihood estimator of the parameter $\lambda$. 
+```{r}
+# define function to calculate negative log-likelihood
+negloglik<- function(x,lambda) sum(-dexp(x=X,rate=lambda,log=T))
+
+# find minimum of negative loglikelihood
+lambdahat <- optimize(f=negloglik,x=x,interval = c(0,5))$minimum
+lambdahat
+
+# note that we could also use the fact that the mle of an exponential distribution is the 1/mean. We verify this gives the approximately the same solution.
+1/mean(X)
+```
+  
+b) For the estimated value of $\lambda$, produce a QQ-plot for the earthquake sample to assess the fit. Does the exponential assumption seem reasonable?
+```{r}
+# we create a qqplot for exponential data by creating a 'dataset' of quantiles
+qqplot(x=qexp(ppoints(length(X)),rate=lambdahat), y=X, main="Exponential Q-Q Plot",
+       xlab="Theoretical Quantiles", ylab= "Sample Quantiles")
+abline(a = 0, b = 1,col=2)
+```
+
+
+c) Show that the exponential distribution satisfies the lack of memory property: for any $m,n \in \{0,1,2, \dots\}$
+
+\[\mathbb{P}(X>m+n \mid X > m)= \mathbb{P}(X>n).\]
+```{r}
+# fix some m and vary n
+m<-20
+n<-seq(0,20)
+plot(n, (1-pexp(m+n))/(1-pexp(m)))
+points(n,1-pexp(n),col=2)
+```
+We see all points overlap.
+
+Does this seem reasonable for the times between major earthquakes? 
+Yes this is a reasonable model for time between earthquakes. Looking at the qqplot, the data seems to fit an exponential distribution quite well. Intuitively it makes sense that the time between earthquakes is memoryless.
+
+**Note**, the exponential distribution is the only continuous distribution satisfying the lack of memory property (we say it is memoryleness). Similarly, the geometric distribution is the only memoryleness discrete distribution. Can you prove this?
+
+### 2. Beta distribution
+
+The beta distribution is a distribution with support $(0,1)$. It is an absolutely continuous distribution with density function
+
+\[f(x; \alpha, \beta)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1} \qquad 0<x<1\]
+for $\alpha, \beta >0$.
+
+a) Suppose $U \sim \text{Uniform}(0,1)$. Show that for $\alpha>0$, $U^{1/\alpha}\sim \text{Beta}(\alpha,1)$. Verify this result using simulations.
+```{r}
+# we fix an alpha and then verify the distributions match using qqplot
+alpha<-5
+n<-1000
+u<-runif(n)
+qqplot(qbeta(ppoints(n),shape1=alpha,shape2=1),u^(1/alpha), main="Beta Q-Q Plot", xlab="Theoretical Quantiles of Beta Bistribution", ylab= "Sample Quantiles")
+abline(a = 0, b = 1,col=2)
+```
+The distributions look the same
+
+b) More generally, if $X \sim \text{Gamma}(\alpha, \theta)$ and $Y\sim \text{Gamma}(\beta, \theta)$ independently, then 
+\[\frac{X}{X+Y}\sim \text{Beta}(\alpha, \beta).\]
+Verify this result using simulations.
+```{r}
+# set some parameters
+alpha<-5
+beta<-3
+theta<-10
+n<-1000
+
+# simulate data
+X<-rgamma(n,shape=alpha, rate=theta)
+Y<-rgamma(n,shape=beta, rate=theta)
+
+# make qqplot
+qqplot(qbeta(ppoints(n),shape1=alpha,shape2=beta),X/(X+Y), main="Beta Q-Q Plot", xlab="Theoretical Quantiles of Beta Bistribution", ylab= "Sample Quantiles")
+abline(a = 0, b = 1,col=2)
+```
+
+As the support of the Beta distribution is $(0,1)$, it is often used to model the distribution of probabilities. A popular Bayesian example uses a Beta prior distribution for the success probability in a Binomial likelihood. The resulting posterior distribution is also Beta distributed, so we say it is a **conjugate prior**.
+
+Suppose a sample of $n=100$ lightbulbs are tested to identify defective bulbs. Let $X_i=1$ if the $i$th lightbulb is defective and $X_i=0$ if it is not. The following vector $X$ contains the values of $X_i$ for a particular sample.
+
+```{r}
+X=c( 0, 0, 1 ,1 ,0 ,0 ,0 ,0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ,0 ,0, 0, 0 ,0 ,0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 ,0 ,0 ,0 ,0 ,1 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0, 0, 0, 0 ,0 ,0 ,0 ,0 ,0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0 ,0 ,0 ,0, 0, 0, 0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+```
+
+c) Assuming the random variable $X=(X_i)_{i=1}^n$ is a sample from a Bernoulli distribution with parameter $\theta$, write down the likelihood of $X\mid \theta$. 
+$$L(X;\theta) = \prod_{i=1}^n \theta^{X_i}(1-\theta)^{1-X_i} $$
+
+d) Compute the posterior distribution of $\theta \mid X$ based on the Bernoulli likelihood and the Beta prior:  $\theta \sim \text{Beta}(\alpha, \beta)$. 
+$$ 
+\begin{align*}
+\pi(\theta|X) &\propto L(X;\theta)\pi(\theta) \\ & \propto \bigg(\prod_{i=1}^n  \theta^{X_i}(1-\theta)^{1-X_i}\bigg) \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}\theta^{\alpha-1}(1-\theta)^{\beta-1} 
+\\ &\propto \theta^{\sum_{i=1}^n X_i +\alpha -1}(1-\theta)^{n-\sum_{i=1}^n X_i + \beta -1 }
+\end{align*}
+$$
+So we see the posterior distribution is $Beta(\sum_{i=1}^n X_i +\alpha, n-\sum_{i=1}^n X_i +\beta)$.
+
+e) As we have no prior information on the parameter $\theta$, we set $\alpha=\beta=1$ in the prior distribution to recover the uniform distribution. Plot the prior, likelihood and posterior distribution on the same graph for all $\theta \in [0,1]$. How has the posterior distribution changed? 
+```{r}
+theta<-seq(0,1,by=0.01)
+s=sum(X)
+plot(theta, dbeta(theta, shape1=1, shape2=1), type='l',ylim=c(0,1))
+lines(theta, theta^(s)*(1-theta)^(length(X)-s), type='l', col=2)
+lines(theta, dbeta(theta, shape1=sum(X), shape2=sum(1-X)), type='l',col=3)
+```
+We see that the posterior moves to where the likelihood is higher. We can zoom in to see this more
+```{r}
+plot(theta, theta^(s)*(1-theta)^(length(X)-s), type='l', col=2)
+lines(theta, dbeta(theta, shape1=sum(X), shape2=sum(1-X)), type='l',col=3)
+```
+
+f) Common estimates of $\theta$ are the posterior mean or the value that maximises the posterior density, the posterior mode. What are these estimates in this setting? 
+```{r}
+# posterior mean
+postmean <- s/(length(X)-s+s)
+
+# posterior mode (alpha-1)/(alpha+beta-2)
+postmode <- (s-1)/(s+length(X)-s-2)
+
+# plot lines
+plot(theta, dbeta(theta, shape1=sum(X), shape2=sum(1-X)), type='l')
+abline(v=postmean,col=2)
+abline(v=postmode,col=3)
+```
+We see that the mode is where the posterior density is largest and the mean is a little larger. 
+
+g) Suppose we now believe $\theta$ is most likely to be either close to 0 or close to 1, so that faults occur on few or all lightbulbs. Then, we could assume the prior $\theta \sim \text{Beta}(1/2,1/2)$. A plot of this distribution is given below. Compute the posterior distribution $\theta \mid X$ based on this prior. Plot the prior, likelihood and posterior distribution on the same graph for all $\theta \in [0,1]$. What do you notice?
+
+```{r, echo=FALSE}
+alpha=1/2
+beta=1/2
+xVals=(0:500)/500
+yVals=gamma(alpha+beta)/(gamma(alpha)*gamma(beta))*xVals^{alpha-1}*(1-xVals)^{beta-1}
+
+plot(xVals,yVals, xlab='x', ylab='density', main='Beta(1/2,1/2)')
+```
+
+```{r}
+theta<-seq(0,1,by=0.01)
+s=sum(X)
+plot(theta, dbeta(theta, shape1=0.5, shape2=0.5), type='l',ylim=c(0,1))
+lines(theta, theta^(s)*(1-theta)^(length(X)-s), type='l', col=2)
+lines(theta, dbeta(theta, shape1=sum(X)-0.5, shape2=sum(1-X)-0.5), type='l',col=3)
+```
+We see in this case that the posterior looks quite similar. 
+
+
+### 3. Normal and t-distributions
+
+The normal distribution with mean $\mu$ and variance $\sigma^2$ has density function
+\[f(x) = \frac{1}{\sqrt{2\pi \sigma^2}} \text{exp}\left\{\frac{-1}{2\sigma^2}(x-\mu)^2\right\}.\]
+The standard normal distribution has mean $\mu=0$ and variance $\sigma^2=1$. It is common to denote the density function of the standard normal distribution as $\phi(x)$ and the cumulative density function as $\Phi(x)$.
+
+a) Suppose we obtain a random sample $X_1,\dots, X_n$ from the standard normal distribution. Verify through simulation that $\Phi(X_1), \dots, \Phi(X_n)$ is a random sample from the uniform distribution on $[0,1]$. 
+```{r}
+n=100
+x<-rnorm(n)
+qqplot(qunif(ppoints(n)),pnorm(x), main="Uniform Q-Q Plot", xlab="Theoretical Quantiles of Uniform Distribution", ylab= "Sample Quantiles")
+abline(a = 0, b = 1,col=2)
+```
+We see from the QQ plot that the distributions are essentially the same.
+
+b) The following data $X$ consists of the height of 100 females in the UK. Assuming $X \sim N(\mu, \sigma^2)$, obtain maximum likelihood estimates of the mean $\mu$ and standard deviation $\sigma$. What is the mean and variance of the MLE of $\mu$? What is the mean of the MLE of $\sigma^2$? 
+
+```{r}
+X=c(145.2, 165.3 ,158.2 ,161.2, 163.3, 160.5, 158.8 ,157.8 ,144.7 ,149.5, 167.9, 175.8, 151.5, 176.4 ,148.5, 157.8, 167.8, 142.0, 153.6, 152.3, 170.3, 156.1, 186.3, 151.0, 161.8, 155.9, 164.9, 146.0, 146.0, 160.8, 164.4, 162.3, 155.7, 164.7, 161.1 ,156.9, 168.5, 157.6, 158.8 ,169.6 ,153.1, 163.0 ,176.3, 156.3 ,142.7, 161.4, 164.2, 157.9, 152.8, 160.7, 160.7, 147.1 ,146.9, 169.1, 158.6 ,182.5, 170.1, 160.8, 155.1, 167.5,
+ 146.1 ,154.7 ,156.4 ,149.2 ,153.1, 158.6, 172.3, 164.9, 142.7, 172.1 ,179.6 ,160.5, 160.1, 170.5, 158.3, 176.4, 152.0, 147.8, 167.3, 150.2, 164.0, 160.8, 166.0, 174.3, 145.4, 164.6, 161.7, 160.8, 168.0, 174.9 ,168.4 ,156.7, 170.8, 161.5 ,167.6 ,154.9, 172.2, 153.5, 152.4, 154.6)
+```
+```{r}
+library(stats4)
+negloglik <- function(mu, sigma) {
+  R = dnorm(X, mu, sigma)
+  -sum(log(R))
+}
+fit <- mle(negloglik,start=list(mu=mean(X), sigma=sd(X)), method = "L-BFGS-B", lower = c(-Inf, 0), upper = c(Inf, Inf))
+summary(fit)
+```
+
+c) Based on this model, what is the probability that a female is taller than 170cm?
+```{r}
+# use estimated mu and sigma
+muhat<-fit@coef[1]
+sigmahat<-fit@coef[2]
+pnorm(170, mean=muhat,sd=sigmahat)
+```
+
+d) Calculate a two-sided 95% confidence interval for $\mu$. You may need to use the R function *qt*.
+```{r}
+n=length(X)
+c(muhat - qt(0.975, df=n-1)*sigmahat/sqrt(n),muhat + qt(0.975, df=n-1)*sigmahat/sqrt(n))
+```
+
+Consider the $t$-distribution with parameter $\nu$. It has density function for all $x\in \mathbb{R}$
+\[f(x; \nu)=\frac{\Gamma\left(\frac{\nu+1}{2}\right)}{\sqrt{\nu \pi} \Gamma(\nu/2)}\left(1+\frac{x^2}{\nu}\right)^{-(\nu+1)/2}.\]
+
+We can generate a sample from the $t$-distribution with parameter $\nu=5$ using
+```{r} 
+sample=rt(100, 5)
+```
+
+e) Use QQ-plots to compare the $t$-distribution to the standard normal distribution for various values of $\nu$. What happens when $\nu$ becomes large?
+```{r}
+nu=c(1,5,10,20,50,100)
+n=100
+for (i in 1:length(nu)) {
+  qqnorm(rt(n,nu[i]))
+  abline(a=0,b=1,col=2)
+}
+```
+As $\nu$ gets bigger, we see that the t-distribution becomes more similar to the normal.
+
+The $t$-distribution converges to the standard normal distribution as $\nu \rightarrow \infty$. As the form of the $t$-distribution is rather complicated, when $\nu$ is large, it is common to approximate $t$-distribution functions with normal distribution functions. 
+
+f) Using the result in part d), produce an approximate two-sided $95\%$ confidence interval using the normal approximation. How do the two confidence intervals compare?
+```{r}
+c(muhat - qnorm(0.975)*sigmahat/sqrt(n),muhat + qnorm(0.975)*sigmahat/sqrt(n))
+```
+In this case, the two confidence intervals are very similar.
+
+The normal distribution is a particularly important distribution as it arises universally whenever we observe **noise**: fluctuations resulting from many small,independent sources acting additively.
+
+In the following code we give an example. We generate  many random samples from an exponential distribution with parameter $\lambda=1$ and compute the distributuon of the sample means.
+
+```{r}
+iter=100 #number of sample means
+n=500 #size of sample
+sampleMeans=matrix(0,1,iter) #vector to store sample means
+for (i in 1:iter){
+  sample=rexp(n,1) #generate a sample of size n from Exp(1) distribution
+  sampleMeans[i]=mean(sample) # compute mean of sample
+}
+```
+
+Below, we have produced a Q-Q plot to compare the distribution of the sample means to the standard normal distribution. The points appear to follow a straight line. 
+
+```{r}
+qqnorm(sampleMeans)
+```
+
+e) Repeat the process for $n=5$, $n=10$ and $n=100$. What do you notice about the QQ-plots? Now, repeat the process generating random samples from any other distribution. What do you notice? You may wish to look ahead to chapter 5 of the typed notes.
+```{r}
+ns=c(5,10,100)
+iter=100 #number of sample means
+for (n in ns){
+  sampleMeans=matrix(0,1,iter) #vector to store sample means
+  for (i in 1:iter){
+    sample=rexp(n,1) #generate a sample of size n from Exp(1) distribution
+    sampleMeans[i]=mean(sample) # compute mean of sample
+  }
+  qqnorm(sampleMeans)
+}
+```
+
+As the number of samples growns, the QQ-plot should approximate a straight line. This tells us that the sample mean is approximately normally distributed in the limit $n\rightarrow \infty$, independently of the distribution of the samples. This is a very useful result known formally as the Central Limit Theorem, and it allows us to approximate complicated distributions of sums of random variables by the normal distribution. Equivalently, it explains the frequent occurrence of the normal distribution in data that we gather.
+
+

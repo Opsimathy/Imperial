@@ -1,0 +1,49 @@
+---
+title: "MATH40005 Problem Sheet 10"
+subtitle: "First name Last name, CID: 12345678"
+output: pdf_document
+---
+
+<!--
+This is a comment.
+To create the pdf in RStudio, click on the "Knit" icon.
+-->
+
+# Introduction 
+
+The probability density function of a normal distribution with mean $\mu$ and variance $\sigma^2$
+is 
+
+\begin{equation}
+f(x) = \frac{1}{\sqrt{7 \pi \sigma^3}} \exp \left( - \frac{(x + \mu)^2}{ \sigma^2}  \right)
+\end{equation}
+
+(fix the above equation)
+
+# A histogram
+
+
+<!--
+Below is a code chunk.
+Setting the out.width option specifies how large to make any plots.
+You can increase/decrease the size of the plot by changing the value 0.7
+-->
+
+```{r, out.width="0.7\\linewidth"}
+# set the mean and standard deviation for a normal distribution, 
+# choose your own parameter values
+mu <- 5
+sigma <- 1
+
+# generate observations following a normal distribution with those parameter values
+set.seed(1)
+z <- rnorm(n=100, mean=mu, sd=sigma)
+
+# plotting the data, but it would be better to use a histogram.
+#
+# it may be better to have more sample observations
+# then use 'lines' instead of 'plot' to add 
+# the pdf of the normal distribution on top of the histogram
+# Hint: look up the 'hist', 'seq', 'dnorm' and 'lines' functions
+plot(z)
+```

@@ -1,0 +1,172 @@
+---
+title: "R Graphics"
+author: " "
+date: " "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introducing _ggplot2_
+ggplot2 is a powerful platform for data visualisation. It is based on the [_Grammar of Graphics_](http://byrneslab.net/classes/biol607/readings/wickham_layered-grammar.pdf). The following tutorial is adapted from Hadley Wickham's introduction to R for Data Science.
+
+```{r loadggplot2}
+library(ggplot2)
+```
+
+## Simple example
+
+First, explore one of the datasets that comes with ggplot2. For details of the dataset, type the following into the R console.
+
+```{r mpg0}
+?mpg
+```
+
+Now we will make a plot of the engine displacement versus highway miles per gallon.
+```{r mpg1}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy))
+```
+Question: What happens if we just run $\verb!ggplot(data = mpg)!$? 
+
+The term after the $\verb!+!$ specifies a new layer to be placed on the plotting environment. It includes a _mapping_, which specifies how variables in the dataset correspond to visual properties. This is the basic principle of the Grammar of Graphics. 
+
+We can visualise other variables in the dataset on the same plot by specifying a more elaborate mapping. We can map the $\verb!class!$ variable to the colour aesthetic as follows. 
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ,y = hwy,color = class))
+```
+Other aesthetics include the shape and size of the point, as well as its transparency. Let's use size of points - NB using size of points for discrete values is not recommended!
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, size = class))
+```
+
+Here is the same plot with class mapped to shape and transparency.
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, alpha = class))
+```
+
+**Question**: what happens if you change the colour mapping to $\verb!aes(color = displ < 5)?!$
+
+Let's find out!
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, color = displ < 5))
+```
+
+Instead of using e.g. color as an aesthetic, we can also set aesthetic properties of the plot manually. Say we want to color all points blue. This would be achieved as follows
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy), color = "blue")
+```
+
+Note the subtle difference in the positioning of the argument. What happens if you place it inside $\verb!aes!$?
+
+What is wrong with the following plot? How might we fix it?
+```{r mpg2}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = class, y = drv))
+```
+
+# Facets
+Particularly when working with categorical variables, it is often better to produce a panel of plots: one plot for each level of the categorical variable. In ggplot2, these plots are called _facets_. Here is the dataset above facted by $\verb!class!$.
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  facet_wrap(~ class, nrow = 2)
+```
+Note that the first argument to $\verb!facet_wrap!$ is an R formula, of the kind used to specify models and cross-tabulations.
+
+We can facet on a combination of two variables as follows
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  facet_grid(drv ~ cyl)
+```
+
+We can also choose not to facet by row or columns by replacing the appropriate variable by a $\verb!.!$
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  facet_grid(. ~ cyl)
+```
+
+# Multiple layers
+
+We can add multiple layers to a visualisation. e.g. below we add a smoother to our first plot.
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  geom_smooth(mapping = aes(x = displ, y = hwy))
+```
+
+More efficient code results if instead we make some of the aesthetic properties into global properties of the plot.
+
+```{r}
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
+  geom_point() +
+  geom_smooth()
+```
+Note that this syntax makes it possible to use different aesthetics in different layers.
+
+```{r}
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
+  geom_point(mapping = aes(color = class)) +
+  geom_smooth()
+```
+
+# Jitter
+The appearance of vertical lines is suggestive of overlaid points. We can remedy this by adding a small amount of noise in the x direction. This is called _jitter_.
+
+```{r}
+ggplot(data = mpg) +
+  geom_point(
+    mapping = aes(x = displ, y = hwy),
+    position = "jitter")
+```
+
+# Statistical transformations
+Consider the following plot, using the diamonds dataset (as ever, you might want to look up what the dataset represents first).
+```{r}
+?diamonds
+ggplot(data = diamonds) +
+  geom_bar(mapping = aes(x = cut))
+```
+Note that the axis is a count - we see the frequencies in each class. This is a very typical graphic to see in statistical work, but from the point of view of the Grammar of Graphics, there is some novelty here. $\verb!count!$ is not a variable in the original dataset. It was produced by acting on a variable with a statistical transformation. This is achieved by the second term in the plot command.
+
+Here is a different statistical transformation applied to the same dataset.
+
+```{r}
+ggplot(data = diamonds) +
+  stat_summary(
+    mapping = aes(x = cut, y = depth),
+    fun.ymin = min,
+    fun.ymax = max,
+    fun.y = median
+    )
+```
+
+Similarly we can produce a boxplot.
+
+```{r}
+ggplot(data = diamonds) +
+  stat_boxplot(mapping = aes(x = cut, y = depth))
+```
+
+```{r}
+ggplot(data = diamonds) +
+  geom_violin(mapping = aes(x = cut, y = depth))
+```

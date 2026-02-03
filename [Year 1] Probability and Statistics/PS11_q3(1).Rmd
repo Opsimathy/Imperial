@@ -1,0 +1,81 @@
+---
+title: "Problem sheet 11 Question 3"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Part (a)
+
+Plotting a standard normal density, i.e. $f_Z(z) = \dfrac{1}{\sqrt{2 \pi}} \exp\left(-\tfrac{z^2}{2} \right)$ for $Z \sim N(0,1)$.
+
+```{r normaldensity}
+mu <- 0
+sigma <- 1
+x <- seq(-4, 4, length=1000)
+y <- dnorm(x, mean=mu, sd=sigma)
+xlab <- "Value"
+ylab <- "Density"
+main <- paste0("Density of N(", mu, ", ", sigma, ") distribution")
+plot(x, y, type='l', xlab=xlab, ylab=ylab, main=main, col="blue")
+```
+
+
+
+\clearpage
+
+### Part (b)
+
+```{r gammadensity}
+alpha <- 2 
+beta <- 0.5
+x <- seq(0, 20, length=1000)
+y <- dgamma(x, shape=alpha, rate=beta)
+xlab <- "Value"
+ylab <- "Density"
+main <- paste0("Density of Gamma(", alpha, ", ", beta, ") distribution")
+plot(x, y, type='l', xlab=xlab, ylab=ylab, main=main, col="purple")
+```
+
+
+\clearpage
+
+
+## Part (c)
+
+```{r sim}
+n <- 1e3
+numtrials <- 1e4
+set.seed(1)
+#shape
+alpha <- 2
+#rate
+beta <- 0.5
+
+#computing mean and variance
+mu <- alpha/beta
+sigma_sq <- alpha/(beta^2)
+sigma <- sqrt(sigma_sq)
+
+# initialise the sums, and run the trials
+S <- rep(0, numtrials)
+for (i in seq_len(numtrials)){
+    x <- rgamma(n, shape=alpha, rate=beta)
+    #standardise
+    x <- (x - mu)/sigma
+    S[i] <- sum(x) / sqrt(n)
+}
+
+# plot the histogram
+hist(S, freq=F, breaks=30)
+z <- seq(-4, 4, length=1000)
+# add the normal density plot
+d <- dnorm(z, mean=0, sd=1)
+lines(z, d, col="blue")
+```
+
+Note how this histogram appears to show a standard normal distribution. 
+This is not an accident; for interest look up the **central limit theorem** 
+in a standard textbook. You will learn more about this in Year 2.
